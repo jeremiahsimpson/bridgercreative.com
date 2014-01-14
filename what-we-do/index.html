@@ -1,6 +1,151 @@
 ---
 title: What We Do
-layout: page
+layout: default
 excerpt: We’re a creative agency that tells visual stories through user experience, data visualization and digital interfaces.
+categories:
+  - name: UX/UI
+    examples:
+      - Information Architecture
+      - Interaction Design
+      - Interface Design
+      - Dashboard UI
+      - Video & Motion
+
+  - name: Visual Strategy
+    examples:
+      - Brand Architecture
+      - Redesign Consultation
+      - Brand Audit
+      - Brand Positioning
+
+  - name: Visual Systems
+    examples:
+      - Brand Identity
+      - Packaging
+      - Data Visualization
+      - Infographics
+      - Print/Publication
+      - Environmental
+
+  - name: Partner Services
+    examples:
+      - Ideation Workshops
+      - User Research
+      - Copywriting
+      - Photography
+      - Music Composition
+
+experience:
+  brands:
+  - "GoPro Bomb Squad"
+  - "Watkins Group"
+  - "LaNola Stone Photography"
+  - "BYU Marriott School"
+  - "Johnson & Johnson GSDO"
+  - "PrePlay"
+  - "Brejer"
+  - "brinca dada"
+  - "Nike"
+  - "AIGA"
+  - "Deseret Industries"
+  - "Target"
+  - "Sweatblock"
+  - "Local Motion"
+  - "Walmart"
+  - "Shutterfly"
+  - "Volkswagon"
+  - "Aveda"
+  - "Intel"
+  - "Subaru"
+  - "Seth Smoot"
+  - "Metropolitan Opera"
+  - "Jonathan Canlas"
+  - "General Mills"
+  - "Mindfull Tutors"
+  - "Mako Surgical"
+  - "UCET"
+  
+  agencies:
+  - R/GA
+  - Global Consulting Firm
+  - McCann Ericson
+  - MRM Worldwide
+  - Publicis
+  - Lippincott
+  - RF Binder
+  - PRSA
+  - Bonneville Communications
+  
+  industries:
+  - Health Insurance
+  - SemiConductor
+  - Large Pharmaceutical
+  - State Government
+  - Telecommunications
+  - International Banking
+  - Hospitality & Tourism
+  - International Airlines
+  - Retail
+  
+testimonials:
+  - quote: I am really in love with everything you've done. You ROCK!
+    name: LaNola Stone Photography
+  - quote: Bridger was very professional and responsive. We were impressed with their knowledge and strategy skills. We will continue to work with them in the future as new opportunities arrive.
+    name: Watkins Group
+  - quote: This is exciting stuff and it's been a huge help having a pro like you to work with!
+    name: GoPro Bomb Squad
 ---
+
+<div id="{{ page.title | handleize }}" class="container">
+
+  <h1 id="{{ page.title | handleize }}-title">{{ page.title }}</h1>
+  <p class="lead">{{ page.excerpt }}</p>
+
+  <div id="work_categories" class="row">
+    {% for category in page.categories %}
+    <div class="col-md-3">
+      {% include experience_list.html title=category.name list=category.examples %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="how_we_work">
+  <div class="container">
+    <div class="row">
+      
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="experience" class="row">
+    <div class="col-md-9">
+      <div id="brand_experience">
+        {% include experience_list.html title="Brand Experience" list=page.experience.brands %}
+      </div>
+      <div id="agency_experience">
+        {% include experience_list.html title="Agency & Design Firm Experience" list=page.experience.agencies %}
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div id="industry_experience">
+        {% include experience_list.html title="Industry Experience" list=page.experience.industries %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="testimonials">
+  <div class="container">
+    <div class="row">
+      {% for testimonial in page.testimonials %}
+      <div class="testimonial">
+        <div class="quote">&ldquo;{{ testimonial.quote }}&rdquo;</div>
+        <div class="quoted">{{ testimonial.name }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 

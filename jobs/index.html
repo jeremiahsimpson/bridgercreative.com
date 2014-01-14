@@ -1,0 +1,28 @@
+---
+title: Jobs
+layout: page
+excerpt: We’re always looking for creative geniuses who love to design and share their talents. If you’re interested, click on the link that fits and let’s chat.
+jobs:
+  - type: Onsite Team
+    url: https://bridgercreative.wufoo.com/forms/bridger-nyc/
+    positions:
+    - UX/UI Designer
+  - type: Virtual Partners
+    url: https://bridgercreative.wufoo.com/forms/bridger-virtual-team/
+    positions:
+    - Developer
+    - UX/UI Designer
+---
+
+{% for job in page.jobs %}
+  <div class="job">
+    <h3>{{ job.type }}</h3>
+    <ul>
+      {% for position in job.positions %}
+      <li>
+        <a href="{{ job.url }}">{{ position }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}

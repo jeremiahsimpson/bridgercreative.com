@@ -66,14 +66,12 @@ custom_js:
 
   <div class="container">
     <div class="row">
-			<p class="large">We are a creative agency that designs experiences to make a visual impact.</p>
-		</div>
+      <div class="col-md-12">
+  			<p class="lead">We are a creative agency that designs experiences to make a visual impact.</p>
+      </div>
 		
 		{% for block in page.blocks %}
-		  {% capture loop %}{% cycle 'odd', 'even' %}{% endcapture %}
-
-  		{% if loop == 'odd' %}<div class="row-fluid">{% endif %}
-      <div class="span{{ block.cols }}" style="background-image:url('{{ block.bgimg }}')">
+      <div class="col-md-{{ block.cols }}" style="background-image:url('{{ block.bgimg }}')">
       {% if block.video %}
         <!-- Video Markup Goes Here -->
       {% elsif block.twitter %}
@@ -82,20 +80,20 @@ custom_js:
 				<h3><a href="{{ block.url }}">{{ block.text }}</a></h3>
 			{% endif %}
 			</div>
-			
-  		{% if loop == 'even' or forloop.last %}</div>{% endif %}
-
     {% endfor %}
+    </div>
     
-    <div id="we-believe">
-      <h2>We Believe</h2>
-      <ul>
-        {% for wb in page.we-believe %}
-        <li>
-          <img src="{{ wb.img }}" data-toggle="tooltip" title="{{ wb.text | markdownify }}">
-        </li>
-        {% endfor %}
-      </ul>
+    <div id="we-believe" class="row">
+      <div class="col-md-12">
+        <h2>We Believe</h2>
+        <ul>
+          {% for wb in page.we-believe %}
+          <li>
+            <img src="{{ wb.img }}" data-toggle="tooltip" title="{{ wb.text | markdownify }}">
+          </li>
+          {% endfor %}
+        </ul>
+  	  </div>
 	  </div>
 
 	</div>

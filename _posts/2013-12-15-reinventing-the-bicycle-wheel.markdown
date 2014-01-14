@@ -11,12 +11,13 @@ wordpress_id: 388
 wordpress_url: http://www.bridgercreative.com/?p=388
 date: 2013-12-15 03:46:27.000000000 +01:00
 categories:
-- Interaction Design
+- blog
 tags:
 - Bicycle
 - MIT
 - Wheel
-comments: []
+- Interaction Design
+
 ---
 [![bicycleWheel](http://www.bridgercreative.com/wp-content/uploads/2013/12/bicycleWheel.jpg)](http://9gag.tv/v/1996?ref=fbp9)
 

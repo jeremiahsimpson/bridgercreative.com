@@ -1,7 +1,7 @@
 name: Bridger
 
 destination: public
-exclude: ["CNAME", "Rakefile", "README.md", "public", "Bridger Creative.tmproj", "Gemfile", "Gemfile.lock"]
+exclude: ["Rakefile", "README.md", "public", "Bridger Creative.tmproj", "Gemfile", "Gemfile.lock", "libs"]
 keep_files:  ['.git']
 timezone: America/New_York
 encoding: UTF-8
@@ -10,7 +10,7 @@ paginate: 5
 paginate_path: "blog/page:num"
 
 url: http://www.bridgercreative.com
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /blog/:categories/:year/:month/:day/:title/
 
 markdown: redcarpet
 redcarpet:
