@@ -22,6 +22,8 @@ header.navbar {
 
 ul.flat-list {
     list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 ul.flat-list li {
@@ -110,6 +112,12 @@ footer {
 /*
 /*****************************************************************************/
 
+#experience .flat-list li:after {
+    content: ', ';
+}
 
+#experience .flat-list li:last-child:after {
+    content: '';
+}
 
 

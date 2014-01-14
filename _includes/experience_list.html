@@ -1,5 +1,5 @@
 <h3>{{ include.title }}</h3>
-<ul>
+<ul class="{{ include.list_class }}">
   {% for exp in include.list %}
   <li>{{ exp }}</li>
   {% endfor %}
