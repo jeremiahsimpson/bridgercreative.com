@@ -27,32 +27,39 @@
     </head>
     <body>
 
-	    <header id="header" class="site-header">
+	    <header id="header" class="navbar navbar-fixed-top" role="banner">
         <div class="container">
-					<nav class="navbar navbar-default" role="navigation">
 
-					  <div class="navbar-header">
-					    <a class="navbar-brand" href="/">Bridger</a>
-					  </div>
+				  <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+				    <a class="navbar-brand" href="/">Bridger</a>
+				  </div>
 
+          <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 						<ul class="nav navbar-nav navbar-right">
 				      <li><a href="/what-we-do/">What We Do</a></li>
-				      <li><a href="/our-work/">Our Work</a></li>
+				      <li><a href="/portfolio/">Our Work</a></li>
 				      <li><a href="/about-us/">About Us</a></li>
 				      <li><a href="/blog/">Blog</a></li>
 				    </ul>
-
 					</nav>
+					
         </div>
 			</header>
 
-   		<div id="About Us" class="container">
+      <div id="content">
+     		<div id="About Us" class="container">
   <h1 id="About Us-title">About Us</h1>
   <p class="lead">Hi, we’re Bridger, a design agency that collaborates with you to create smart and meaningful experiences that connect with your customers.</p>
 	
 	<div class="row">
   
-    <div class="col-md-4 profile" style="background-image:url('')">
+    <div class="col-md-4 profile" style="background-image:url(')">
       <h3>Jeremiah Simpson</h3>
       <h5>Founding Partner, Creative Director</h5>
       <div class="profile-description">
@@ -67,7 +74,7 @@
       </div>
     </div>
   
-    <div class="col-md-4 profile" style="background-image:url('')">
+    <div class="col-md-4 profile" style="background-image:url(')">
       <h3>Matt Simpson</h3>
       <h5>Founding Partner, Creative Director</h5>
       <div class="profile-description">
@@ -82,7 +89,7 @@
       </div>
     </div>
   
-    <div class="col-md-4 profile" style="background-image:url('')">
+    <div class="col-md-4 profile" style="background-image:url(')">
       <h3>Russell Parrish</h3>
       <h5>Designer</h5>
       <div class="profile-description">
@@ -104,12 +111,13 @@ You’ll never know when it hits.”
 LaNola Stone Photography
 
 </div>
+      </div>
 
 	    <footer id="footer" class="footer">
 	      <div class="container">
 		
 					<div id="footer_nav">
-						<ul class="nav nav-pills">
+						<ul class="nav nav-pills flat-list">
 				      <li><a href="/jobs/">Jobs</a></li>
 				      <li><a href="/contact/">Contact</a></li>
 				      <li><a href="/press/">Press</a></li>
@@ -117,7 +125,7 @@ LaNola Stone Photography
 					</div>
 					
 					<div id="addresses">
-						<ul class="">
+						<ul class="flat-list">
 				      <li>hello@bridgercreative.com</li>
 				      <li>646.652.6455</li>
 							<li>40 West 37th Street #806, New York NY 10018</li>
@@ -126,7 +134,7 @@ LaNola Stone Photography
 					</div>
 					
 					<div id="social_links">
-						<ul>
+						<ul class="flat-list">
 							<li>Facebook</li>
 							<li>Instagram</li>
 							<li>Twitter</li>
@@ -140,8 +148,8 @@ LaNola Stone Photography
 
 	    <!-- Javascript
 	    ================================================== -->
-	    <script src="js/jquery.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
+	    <script src="/js/jquery.js"></script>
+	    <script src="/js/bootstrap.min.js"></script>
 			<script type="text/javascript" charset="utf-8">
 				$(document).ready(function() {
 					// Behaviours go here

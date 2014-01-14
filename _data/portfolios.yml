@@ -1,7 +1,7 @@
 ---
 - published: true
   title: Turtle Power!
-  date: 2013-10-11 12:03:44.000000000 +02:00
+  date: 2013-10-11 12:03:44 +02:00
   categories:
   - .Visual Systems
   - Packaging
@@ -12,16 +12,14 @@
   - Pizza
   - Turtles
   description: |-
-
-    Heroes in a half shell... and bandages! Because this turtle gang isn''t complete
-    without all 4 ninja''s and each one has their own strength, we designed this as
+    Heroes in a half shell... and bandages! Because this turtle gang isn't complete
+    without all 4 ninja's and each one has their own strength, we designed this as
     a 4-piece set. Each turtle got their own carton. We even included a nice slice
     of pizza in every box. Turtle Power!
 
-'
 - published: true
   title: GoPro BombSquad
-  date: 2013-10-16 14:02:08.000000000 +02:00
+  date: 2013-10-16 14:02:08 +02:00
   categories:
   - Brand Identity
   - Video &amp; Motion
@@ -41,7 +39,7 @@
     
 - published: true
   title: Photographing Childhood
-  date: 2013-10-16 15:00:25.000000000 +02:00
+  date: 2013-10-16 15:00:25 +02:00
   categories:
   - Publication
   - .Visual Systems
@@ -61,7 +59,7 @@
     and start shooting.\n"
 - published: true
   title: BAND-AID® by Cynthia Rowley
-  date: 2013-10-31 17:40:04.000000000 +01:00
+  date: 2013-10-31 17:40:04 +01:00
   categories:
   - Brand Identity
   - .Visual Systems
@@ -79,7 +77,7 @@
     Museum](http://www.cooperhewitt.org/) in NYC. OUCH!\n"
 - published: true
   title: brinca dada
-  date: 2013-10-31 17:49:15.000000000 +01:00
+  date: 2013-10-31 17:49:15 +01:00
   categories:
   - Brand Identity
   - .UX/UI
@@ -95,7 +93,7 @@
 
 - published: true
   title: AIGA Bright Lights!
-  date: 2013-10-31 17:39:16.000000000 +01:00
+  date: 2013-10-31 17:39:16 +01:00
   categories:
   - Publication
   - .Visual Systems
@@ -103,11 +101,11 @@
   description: |-
     We had the privilege to design the AIGA Awards program where they highlighted
     the design greats of Steve Frykholm, John Maeda, and Jennifer Morla. What an honor
-    it was to design for those we''ve admired all our career. Congrats!
+    it was to design for those we've admired all our career. Congrats!
 
 - published: true
   title: PrePlay Football
-  date: 2013-10-31 17:33:36.000000000 +01:00
+  date: 2013-10-31 17:33:36 +01:00
   categories:
   - Brand Identity
   - User Interface Design
@@ -121,17 +119,17 @@
   description: |-
     Are you ready for some football? Are you ready to test your play-calling skills?
     Are you smarter than your buddies, or better yet, the coach on the team sideline?
-    Let''s see you prove yourself.
+    Let's see you prove yourself.
 
     CBS PrePlay is an app that allows you to predict the next play of any professional
     football game and a good number of college games. Even though our coaching skills
-    won''t get us a job as a football coach, we''re quite proud of the branding and
+    won't get us a job as a football coach, we're quite proud of the branding and
     UX/UI we created for the game.
 
-'
+
 - published: true
   title: Semiconductor Performance App
-  date: 2013-11-22 17:51:28.000000000 +01:00
+  date: 2013-11-22 17:51:28 +01:00
   categories:
   - User Interface Design
   - .UX/UI
@@ -140,7 +138,7 @@
 
 - published: true
   title: Credit card application
-  date: 2013-11-22 17:36:12.000000000 +01:00
+  date: 2013-11-22 17:36:12 +01:00
   categories:
   - .UX/UI
   tags: []
@@ -152,7 +150,7 @@
 
 - published: true
   title: Health Care App
-  date: 2013-11-22 17:22:37.000000000 +01:00
+  date: 2013-11-22 17:22:37 +01:00
   categories:
   - User Interface Design
   - .UX/UI
@@ -166,14 +164,14 @@
 
 - published: true
   title: ! 'Home: UXUI'
-  date: 2013-11-27 20:10:57.000000000 +01:00
+  date: 2013-11-27 20:10:57 +01:00
   categories: []
   tags: []
   description:  |-
 
 - published: true
   title: BAND-AID® Barbie™
-  date: 2013-11-27 21:05:33.000000000 +01:00
+  date: 2013-11-27 21:05:33 +01:00
   categories:
   - .Visual Systems
   - Packaging
@@ -188,7 +186,7 @@
 
 - published: true
   title: Account Opening App
-  date: 2013-11-27 17:27:25.000000000 +01:00
+  date: 2013-11-27 17:27:25 +01:00
   categories:
   - User Interface Design
   - .UX/UI
@@ -200,7 +198,7 @@
 
 - published: true
   title: Marriott Magazine Website
-  date: 2013-11-27 15:53:29.000000000 +01:00
+  date: 2013-11-27 15:53:29 +01:00
   categories:
   - User Interface Design
   - .UX/UI
@@ -215,7 +213,7 @@
 
 - published: true
   title: PrePlay Baseball
-  date: 2013-12-09 22:27:01.000000000 +01:00
+  date: 2013-12-09 22:27:01 +01:00
   categories:
   - Brand Identity
   - User Interface Design
@@ -233,12 +231,12 @@
     to read? Well, prove to yourself or your buddies that you can call the plays.
 
     MLB PrePlay is an app that allows you to predict every at-bat of every MLB game.
-    Even though our coaching skills won''t get us a job as a baseball manager, we''re
+    Even though our coaching skills won't get us a job as a baseball manager, we're
     quite proud of the branding and UX/UI we created for the game.
 
 - published: true
   title: PrePlay Ice Hockey
-  date: 2013-12-09 22:30:24.000000000 +01:00
+  date: 2013-12-09 22:30:24 +01:00
   categories:
   - Brand Identity
   - User Interface Design
@@ -250,17 +248,17 @@
   - Branding
   - Ice Hockey
   description:  |-
-    If you''re only watching ice hockey for the brawls, think again at what this game
+    If you're only watching ice hockey for the brawls, think again at what this game
     has in store. NHL games will be more exciting when you can predict the next play.
-    And you can prove to your buddies that you''re more than a fragile ice dancer.
+    And you can prove to your buddies that you're more than a fragile ice dancer.
 
     NHL PrePlay is an app that allows you to predict every play of every NHL game.
-    Even though our coaching skills won''t get us a job as a hockey coach, we''re
+    Even though our coaching skills won't get us a job as a hockey coach, we're
     quite proud of the branding and UX/UI we created for the game.
 
 - published: true
   title: Everyday Care
-  date: 2013-12-11 22:10:32.000000000 +01:00
+  date: 2013-12-11 22:10:32 +01:00
   categories:
   - Brand Identity
   - .Visual Systems
@@ -276,14 +274,14 @@
 
 - published: true
   title: ! 'Home: Christmas'
-  date: 2013-12-18 17:42:36.000000000 +01:00
+  date: 2013-12-18 17:42:36 +01:00
   categories: []
   tags: []
   description: |-
 
 - published: true
   title: PrePlay
-  date: 2013-12-19 21:08:37.000000000 +01:00
+  date: 2013-12-19 21:08:37 +01:00
   categories:
   - .UX/UI
   - .Visual Systems
@@ -294,14 +292,14 @@
   - Prediction
   - Sports
   description: |-
-    A question we constantly ask ourselves is... "what''s going to happen next?" PrePlay
+    A question we constantly ask ourselves is... "what's going to happen next?" PrePlay
     gives you the power to answer that as you watch your favorite football, baseball
     or ice hockey team... LIVE! Give it a shot next time your favorite team is playing.
-    I think you''ll get hooked.
+    I think you'll get hooked.
 
 - published: true
   title: Deseret Industries
-  date: 2014-01-10 18:41:57.000000000 +01:00
+  date: 2014-01-10 18:41:57 +01:00
   categories:
   - Brand Identity
   - .Visual Systems
@@ -316,11 +314,11 @@
     They asked us to explore new ideas for their brand to communicate their heritage
     (established in 1936) and mission of caring for the poor and needy and helping
     transform lives. We ended up on a nice refresh of their iconic worker bee, which
-    we were happy with since that''s the same busy bee we grew up with.
+    we were happy with since that's the same busy bee we grew up with.
 
 - published: true
   title: AIGA Ski/Ride
-  date: 2014-01-13 22:43:05.000000000 +01:00
+  date: 2014-01-13 22:43:05 +01:00
   categories:
   - Environmental
   tags:
@@ -334,14 +332,14 @@
 
 - published: true
   title: Brejer Photobooks
-  date: 2014-01-13 23:32:55.000000000 +01:00
+  date: 2014-01-13 23:32:55 +01:00
   categories: []
   tags: []
   description: |-
 
 - published: true
   title: tüb
-  date: 2014-01-14 21:33:44.000000000 +01:00
+  date: 2014-01-14 21:33:44 +01:00
   categories:
   - Brand Identity
   - .UX/UI
@@ -363,7 +361,7 @@
 
 - published: true
   title: Watkins Group
-  date: 2014-01-14 21:24:28.000000000 +01:00
+  date: 2014-01-14 21:24:28 +01:00
   categories:
   - Brand Identity
   tags:
@@ -373,12 +371,12 @@
   description: |-
     The Watkins Group is a team of brothers who believe that buying, selling or building
     ones home should be simple. They also believe that that homes should be clean
-    and well designed. They asked for a brand that reflected these beliefs, and that''s
+    and well designed. They asked for a brand that reflected these beliefs, and that's
     what they got. Simple, right?
 
 - published: true
   title: ! 'Home: Bridging'
-  date: 2014-01-15 20:29:00.000000000 +01:00
+  date: 2014-01-15 20:29:00 +01:00
   categories: []
   tags: []
   description:  |-

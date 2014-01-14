@@ -9,7 +9,7 @@ author_login: admin
 author_email: matt@studiobridger.com
 wordpress_id: 534
 wordpress_url: http://www.bridgercreative.com/?p=534
-date: 2014-01-07 16:34:41.000000000 +01:00
+date: 2014-01-07 16:34:41 +01:00
 categories:
 - .UX/UI
 - Infographics &amp; Data Visualization

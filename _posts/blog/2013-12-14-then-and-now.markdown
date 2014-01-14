@@ -9,7 +9,7 @@ author_login: admin
 author_email: matt@studiobridger.com
 wordpress_id: 386
 wordpress_url: http://www.bridgercreative.com/?p=386
-date: 2013-12-14 03:30:29.000000000 +01:00
+date: 2013-12-14 03:30:29 +01:00
 categories:
 - Brand Identity
 - .Visual Systems

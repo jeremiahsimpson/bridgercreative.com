@@ -9,7 +9,7 @@ author_login: admin
 author_email: matt@studiobridger.com
 wordpress_id: 394
 wordpress_url: http://www.bridgercreative.com/?p=394
-date: 2013-02-15 04:10:22.000000000 +01:00
+date: 2013-02-15 04:10:22 +01:00
 categories:
 - Information Architecture
 tags:

@@ -2,6 +2,7 @@ name: Bridger
 
 destination: public
 exclude: ["Rakefile", "README.md", "public", "Bridger Creative.tmproj", "Gemfile", "Gemfile.lock", "libs"]
+gems: [oembed]
 keep_files:  ['.git']
 timezone: America/New_York
 encoding: UTF-8
@@ -11,6 +12,8 @@ paginate_path: "blog/page:num"
 
 url: http://www.bridgercreative.com
 permalink: /blog/:categories/:year/:month/:day/:title/
+lsi: true
+future: false
 
 markdown: redcarpet
 redcarpet:

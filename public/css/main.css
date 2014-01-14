@@ -4,7 +4,49 @@
 /*
 /*****************************************************************************/
 
+body {
+    background-color: #efefef;
+}
 
+header.navbar {
+    background: white;
+    border-bottom: 1px solid #ccc;
+    height: 90px;
+}
+
+#content {
+    padding: 90px 0;
+    background-color: white;
+		
+}
+
+ul.flat-list {
+    list-style: none;
+}
+
+ul.flat-list li {
+    display: inline-block;
+    float: none;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    color: #999;
+    height: 250px;
+    padding-top: 15px;
+}
+
+#footer ul {
+    text-align: center;
+}
+
+#footer #addresses li:after {
+    content: ' • ';
+}
+
+#footer #addresses li:last-child:after {
+    content: '';
+}
 
 /*****************************************************************************/
 /*
@@ -13,29 +55,29 @@
 /*****************************************************************************/
 
 #twitter-container {
-	display: inline-block;
-	width: 32%;
-	float: right;
-	/*background: #000;*/
-	background-size: 6px 6px;
-  background-image: linear-gradient(
-		-45deg, 
-		rgba(0, 0, 0, 0.1) 25%, 
-		transparent 25%, 
-		transparent 50%, 
-		rgba(0, 0, 0, 0.1) 50%, 
-		rgba(0, 0, 0, 0.1) 75%, 
-		transparent 75%, 
-		transparent);
-	background-image: -moz-linear-gradient(
-		-45deg, 
-		rgba(0, 0, 0, 0.1) 25%, 
-		transparent 25%, 
-		transparent 50%, 
-		rgba(0, 0, 0, 0.1) 50%, 
-		rgba(0, 0, 0, 0.1) 76%, 
-		transparent 75%, 
-		transparent);
+    display: inline-block;
+    width: 32%;
+    float: right;
+    /*background: #000;*/
+    background-size: 6px 6px;
+    background-image: linear-gradient(
+    -45deg, 
+    rgba(0, 0, 0, 0.1) 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    rgba(0, 0, 0, 0.1) 50%, 
+    rgba(0, 0, 0, 0.1) 75%, 
+    transparent 75%, 
+    transparent);
+    background-image: -moz-linear-gradient(
+    -45deg, 
+    rgba(0, 0, 0, 0.1) 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    rgba(0, 0, 0, 0.1) 50%, 
+    rgba(0, 0, 0, 0.1) 76%, 
+    transparent 75%, 
+    transparent);
 }
 
 /*****************************************************************************/
@@ -67,5 +109,7 @@
 /* What We Do
 /*
 /*****************************************************************************/
+
+
 
 

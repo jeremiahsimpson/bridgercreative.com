@@ -1,0 +1,29 @@
+---
+layout: page
+---
+
+<div id="project" class="row">
+  <div id="project_body" class="col-md-4">
+    <div class="project-categories">
+      {{ page.categories | join:', '}}
+    </div>
+    <div class="project-descr">
+      {{ page.description | markdownify }}
+    </div>
+    <hr/>
+
+    <h3>Credits</h3>
+    <div class="project-credits">
+      <!-- TODO: Add credits -->
+    </div>
+
+    <h3>Tags</h3>
+    <div class="project-tags">
+      {{ page.tags | join:', ' }}
+    </div>
+    
+  </div>
+  <div id="project_media" class="col-md-8">
+    
+  </div>
+</div>
