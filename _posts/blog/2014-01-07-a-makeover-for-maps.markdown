@@ -15,6 +15,6 @@ categories:
 - Infographics &amp; Data Visualization
 tags: []
 comments: []
----
-New ways to express 
+description: |-
+  New ways to express 
 [information...](http://bits.blogs.nytimes.com/2014/01/06/a-makeover-for-maps/?hp&_r=0)

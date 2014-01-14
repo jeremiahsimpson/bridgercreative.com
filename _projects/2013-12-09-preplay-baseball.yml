@@ -1,6 +1,14 @@
 ---
+
+layout: project
+status: publish
 published: true
 title: PrePlay Baseball
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 325
+wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=325
 date: 2013-12-09 22:27:01.000000000 +01:00
 categories:
 - Brand Identity
@@ -12,19 +20,8 @@ tags:
 - Prediction
 - Sports
 - Baseball
-description: ! 'Take me out to the ball game. Or keep me in to watch my tube. Either
-  way, any
+comments: []
+description: |-
+  Take me out to the ball game. Or keep me in to watch my tube. Either way, any MLB baseball game will be more exciting when you can guess every at-bat of every game. Are those hand signals, brim swiping and crotch scratches too confusing to read? Well, prove to yourself or your buddies that you can call the plays.
 
-  MLB baseball game will be more exciting when you can guess every at-bat of every
-
-  game. Are those hand signals, brim swiping and crotch scratches too confusing
-
-  to read? Well, prove to yourself or your buddies that you can call the plays.
-
-
-  MLB PrePlay is an app that allows you to predict every at-bat of every MLB game.
-
-  Even though our coaching skills won''t get us a job as a baseball manager, we''re
-
-  quite proud of the branding and UX/UI we created for the game.'
-layout: project
+  MLB PrePlay is an app that allows you to predict every at-bat of every MLB game. Even though our coaching skills won't get us a job as a baseball manager, we're quite proud of the branding and UX/UI we created for the game.

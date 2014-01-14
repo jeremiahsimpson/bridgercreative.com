@@ -17,8 +17,8 @@ tags:
 - Street art
 - France
 comments: []
----
-
+description: |-
+  
 ![IMG_0264_blog](http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_0264_blog.jpg)
 
 

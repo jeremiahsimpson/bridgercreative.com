@@ -14,8 +14,8 @@ categories:
 - .UX/UI
 tags: []
 comments: []
----
-[![IMG_2947_blog](http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_2947_blog.jpg)](http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_2947_blog.jpg)
+description: |-
+  [![IMG_2947_blog](http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_2947_blog.jpg)](http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_2947_blog.jpg)
 
 
 [![IMG_0940_blog](http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_0940_blog.jpg)](http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_0940_blog.jpg)

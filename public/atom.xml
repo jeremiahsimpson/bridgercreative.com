@@ -4,7 +4,7 @@
   <title><![CDATA[Bridger]]></title>
   <link href="http://www.bridgercreative.com/atom.xml" rel="self"/>
   <link href="http://www.bridgercreative.com/"/>
-  <updated>2014-01-21T18:23:49-05:00</updated>
+  <updated>2014-01-21T18:47:38-05:00</updated>
   <id>http://www.bridgercreative.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -14,11 +14,29 @@
 
   
   <entry>
-    <title type="html"><![CDATA[A Makeover for Maps]]></title>
-    <link href="http://www.bridgercreative.com/blog/.ux/ui/infographics%20&amp;%20data%20visualization/2014/01/07/a-makeover-for-maps/"/>
-    <updated>2014-01-07T15:34:41Z</updated>
-    <id>http://www.bridgercreative.com/blog/.ux/ui/infographics%20&amp;%20data%20visualization/2014/01/07/a-makeover-for-maps</id>
-    <content type="html"><![CDATA[<p>New ways to express 
+    <title type="html"><![CDATA[A Makeover For Maps]]></title>
+    <link href="http://www.bridgercreative.com/blog/2014/01/07/a-makeover-for-maps/"/>
+    <updated>2014-01-07T00:00:00-05:00</updated>
+    <id>http://www.bridgercreative.com/blog/2014/01/07/a-makeover-for-maps</id>
+    <content type="html"><![CDATA[<hr>
+
+<p>layout: post
+status: publish
+published: true
+title: A Makeover for Maps
+author: admin
+author_login: admin
+author_email: <a href="mailto:matt@studiobridger.com">matt@studiobridger.com</a>
+wordpress_id: 534
+wordpress_url: <a href="http://www.bridgercreative.com/?p=534">http://www.bridgercreative.com/?p=534</a>
+date: 2014-01-07 16:34:41 +01:00
+categories:
+- .UX/UI
+- Infographics &amp; Data Visualization
+tags: []
+comments: []
+description: |-
+  New ways to express 
 <a href="http://bits.blogs.nytimes.com/2014/01/06/a-makeover-for-maps/?hp&amp;_r=0">information...</a></p>
 ]]></content>
   </entry>
@@ -35,22 +53,61 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Then and Now]]></title>
-    <link href="http://www.bridgercreative.com/blog/brand%20identity/.visual%20systems/2013/12/14/then-and-now/"/>
-    <updated>2013-12-14T02:30:29Z</updated>
-    <id>http://www.bridgercreative.com/blog/brand%20identity/.visual%20systems/2013/12/14/then-and-now</id>
-    <content type="html"><![CDATA[<p>Toys and packaging used to be so much cooler. Less is more. </p>
+    <title type="html"><![CDATA[Then And Now]]></title>
+    <link href="http://www.bridgercreative.com/blog/2013/12/14/then-and-now/"/>
+    <updated>2013-12-14T00:00:00-05:00</updated>
+    <id>http://www.bridgercreative.com/blog/2013/12/14/then-and-now</id>
+    <content type="html"><![CDATA[<hr>
+
+<p>layout: post
+status: publish
+published: true
+title: Then and Now
+author: admin
+author_login: admin
+author_email: <a href="mailto:matt@studiobridger.com">matt@studiobridger.com</a>
+wordpress_id: 386
+wordpress_url: <a href="http://www.bridgercreative.com/?p=386">http://www.bridgercreative.com/?p=386</a>
+date: 2013-12-14 03:30:29 +01:00
+categories:
+- Brand Identity
+- .Visual Systems
+tags:
+- Toys
+- Simple
+- Packaging
+- Retro
+comments: []
+description: |-
+  Toys and packaging used to be so much cooler. Less is more. </p>
 
 <p><a href="http://www.cnn.com/2013/12/13/living/gallery/toys-then-and-now/index.html?hpt=hp_c3">Then and Now</a></p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Good times in India!]]></title>
-    <link href="http://www.bridgercreative.com/blog/.ux/ui/2013/12/13/good-times-in-india/"/>
-    <updated>2013-12-13T02:10:08Z</updated>
-    <id>http://www.bridgercreative.com/blog/.ux/ui/2013/12/13/good-times-in-india</id>
-    <content type="html"><![CDATA[<p><a href="http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_2947_blog.jpg"><img src="http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_2947_blog.jpg" alt="IMG_2947_blog"></a></p>
+    <title type="html"><![CDATA[Good Times In India]]></title>
+    <link href="http://www.bridgercreative.com/blog/2013/12/13/good-times-in-india/"/>
+    <updated>2013-12-13T00:00:00-05:00</updated>
+    <id>http://www.bridgercreative.com/blog/2013/12/13/good-times-in-india</id>
+    <content type="html"><![CDATA[<hr>
+
+<p>layout: post
+status: publish
+published: true
+title: Good times in India!
+author: admin
+author_login: admin
+author_email: <a href="mailto:matt@studiobridger.com">matt@studiobridger.com</a>
+wordpress_id: 371
+wordpress_url: <a href="http://www.bridgercreative.com/?p=371">http://www.bridgercreative.com/?p=371</a>
+date: 2013-12-13 03:10:08 +01:00
+categories:
+- .UX/UI
+tags: []
+comments: []
+description: |-
+  <a href="http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_2947_blog.jpg"><img src="http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_2947_blog.jpg" alt="IMG_2947_blog"></a></p>
 
 <p><a href="http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_0940_blog.jpg"><img src="http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_0940_blog.jpg" alt="IMG_0940_blog"></a></p>
 
@@ -84,11 +141,32 @@ of pizza in every box. Turtle Power!</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[O pluperfect Paree]]></title>
-    <link href="http://www.bridgercreative.com/blog/information%20architecture/2013/02/15/oh-plueperfect-paree/"/>
-    <updated>2013-02-15T03:10:22Z</updated>
-    <id>http://www.bridgercreative.com/blog/information%20architecture/2013/02/15/oh-plueperfect-paree</id>
-    <content type="html"><![CDATA[<p><img src="http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_0264_blog.jpg" alt="IMG_0264_blog"></p>
+    <title type="html"><![CDATA[Oh Plueperfect Paree]]></title>
+    <link href="http://www.bridgercreative.com/blog/2013/02/15/oh-plueperfect-paree/"/>
+    <updated>2013-02-15T00:00:00-05:00</updated>
+    <id>http://www.bridgercreative.com/blog/2013/02/15/oh-plueperfect-paree</id>
+    <content type="html"><![CDATA[<hr>
+
+<p>layout: post
+status: publish
+published: true
+title: O pluperfect Paree
+author: admin
+author_login: admin
+author_email: <a href="mailto:matt@studiobridger.com">matt@studiobridger.com</a>
+wordpress_id: 394
+wordpress_url: <a href="http://www.bridgercreative.com/?p=394">http://www.bridgercreative.com/?p=394</a>
+date: 2013-02-15 04:10:22 +01:00
+categories:
+- Information Architecture
+tags:
+- Paris
+- Street art
+- France
+comments: []
+description: |-</p>
+
+<p><img src="http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_0264_blog.jpg" alt="IMG_0264_blog"></p>
 
 <p><img src="http://www.bridgercreative.com/wp-content/uploads/2013/12/IMG_0351_blog.jpg" alt="IMG_0351_blog"></p>
 

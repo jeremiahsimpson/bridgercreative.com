@@ -1,6 +1,14 @@
 ---
+
+layout: project
+status: publish
 published: true
 title: PrePlay Ice Hockey
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 335
+wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=335
 date: 2013-12-09 22:30:24.000000000 +01:00
 categories:
 - Brand Identity
@@ -12,17 +20,8 @@ tags:
 - Sports
 - Branding
 - Ice Hockey
-description: ! 'If you''re only watching ice hockey for the brawls, think again at
-  what this game
+comments: []
+description: |-
+  If you're only watching ice hockey for the brawls, think again at what this game has in store. NHL games will be more exciting when you can predict the next play. And you can prove to your buddies that you're more than a fragile ice dancer.
 
-  has in store. NHL games will be more exciting when you can predict the next play.
-
-  And you can prove to your buddies that you''re more than a fragile ice dancer.
-
-
-  NHL PrePlay is an app that allows you to predict every play of every NHL game.
-
-  Even though our coaching skills won''t get us a job as a hockey coach, we''re
-
-  quite proud of the branding and UX/UI we created for the game.'
-layout: project
+  NHL PrePlay is an app that allows you to predict every play of every NHL game. Even though our coaching skills won't get us a job as a hockey coach, we're quite proud of the branding and UX/UI we created for the game.
