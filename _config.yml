@@ -1,3 +1,41 @@
-name: Your New Jekyll Site
+name: Bridger
+
+destination: public
+exclude: ["CNAME", "Rakefile", "README.md", "public", "Bridger Creative.tmproj", "Gemfile", "Gemfile.lock"]
+keep_files:  ['.git']
+timezone: America/New_York
+encoding: UTF-8
+
+paginate: 5
+paginate_path: "blog/page:num"
+
+url: http://www.bridgercreative.com
+permalink: /:categories/:year/:month/:day/:title/
+
 markdown: redcarpet
-pygments: true
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+# Twitter
+twitter_user: bridgercreative
+twitter_tweet_button: true
+twitter_timeline: true
+
+# Pinboard
+pinboard_user:
+pinboard_count: 3
+
+# Disqus Comments
+disqus_short_name:
+disqus_show_comment_count: false
+
+# Google Analytics
+google_analytics_tracking_id:
+
+# Facebook Like
+facebook_user: studiobridger
+facebook_like: true

@@ -1,0 +1,32 @@
+---
+title: Blog
+layout: default
+---
+
+<div id="blog" class="container">
+  
+  <div class="row">
+    <div id="blog_content" class="col-md-8">
+	  {% for post in site.posts %}
+      <div id="{{ post.title | handleize }}" class="post">
+        <h3>{{ post.title }}</h3>
+        <div class="post-meta">
+          <span class="post-date">{{ post.date | date: "%M %d, %Y" }}</span>
+          {% if post.author %}
+          |
+          <span class="post-author">{{ post.author }}</span>
+          {% endif %}
+        </div>
+        <div class="post-content">
+          {{ post.excerpt | markdownify }}
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+
+    <div id="blog_sidebar" class="col-md-4">
+      
+    </div>
+
+  </div>
+</div>

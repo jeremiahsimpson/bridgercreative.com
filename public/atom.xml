@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Bridger]]></title>
+  <link href="http://www.bridgercreative.com/atom.xml" rel="self"/>
+  <link href="http://www.bridgercreative.com/"/>
+  <updated>2014-01-21T08:57:44-05:00</updated>
+  <id>http://www.bridgercreative.com/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>

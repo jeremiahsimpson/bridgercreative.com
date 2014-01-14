@@ -4,7 +4,7 @@
 	
 			<meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+      <title>Blog | Bridger</title>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta name="description" content="Kennedia Consulting: History around You.">
@@ -22,7 +22,7 @@
 			<link rel="stylesheet" href="/css/main.css">
 
 			<!-- Custom Page CSS -->
-			{{ page.custom_css }}
+			
 			
     </head>
     <body>
@@ -32,7 +32,7 @@
 					<nav class="navbar navbar-default" role="navigation">
 
 					  <div class="navbar-header">
-					    <a class="navbar-brand" href="/">{{ site.name }}</a>
+					    <a class="navbar-brand" href="/">Bridger</a>
 					  </div>
 
 						<ul class="nav navbar-nav navbar-right">
@@ -46,7 +46,20 @@
         </div>
 			</header>
 
-   		{{ content }}
+   		<div id="blog" class="container">
+  
+  <div class="row">
+    <div id="blog_content" class="col-md-8">
+	  
+    </div>
+
+    <div id="blog_sidebar" class="col-md-4">
+      
+    </div>
+
+  </div>
+</div>
+
 
 	    <footer id="footer" class="footer">
 	      <div class="container">
@@ -102,7 +115,7 @@
 			</script>
 
 			<!-- Custom Page JS -->
-			{{ page.custom_js }}
+			
 
     </body>
 </html>

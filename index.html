@@ -1,13 +1,102 @@
 ---
 layout: default
-title: Your New Jekyll Site
+blocks:
+  -
+    cols: 5
+    text: What We Do
+    bgimg: "/img/uploads/2013/10/what-we-do.jpg"
+    url: '#'
+  -
+    cols: 7
+    video: true
+    bgimg: "/img/uploads/2013/10/bomb-squad.jpg"
+    url: '#'
+  -
+    cols: 7
+    text: Kaise Ho
+    bgimg: "/img/uploads/2013/10/kaise-ho.jpg"
+    url: '#'
+  -
+    cols: 5
+    twitter: true
+    tweets: 10
+    bgimg: "/img/"
+
+we-believe:
+  -
+    img:  http://www.bridgercreative.com/wp-content/uploads/2013/11/we-believe-1.png
+    text: Joy is in the journey
+  -
+    img:  http://www.bridgercreative.com/wp-content/uploads/2014/01/weBelieve_clock2.png
+    text: Lost time is never found
+  -
+    img:  http://www.bridgercreative.com/wp-content/uploads/2014/01/weBelieve_collab.png
+    text: Collaboration leads to success
+  -
+    img:  http://www.bridgercreative.com/wp-content/uploads/2014/01/weBelieve_good.png
+    text: Doing good
+  -
+    img:  http://www.bridgercreative.com/wp-content/uploads/2013/10/we-believe-5.png
+    text: Data is the new soil
+  -
+    img:  http://www.bridgercreative.com/wp-content/uploads/2014/01/weBelieve_rocket.png
+    text: Being curious
+  -
+    img:  http://www.bridgercreative.com/wp-content/uploads/2014/01/weBelieve_rubix.png
+    text: Problem solving
+  -
+    img:  http://www.bridgercreative.com/wp-content/uploads/2013/10/we-believe-8.png
+    text: Work   ||   Life
+  -
+    img:  http://www.bridgercreative.com/wp-content/uploads/2014/01/weBelieve_speech.png
+    text: Design is the art of conversation
+    
+custom_js:
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  
+	<div class="jumbotron">
+	  <div class="container">
+	    <div class="row">
+			  <h1>Hello, world!</h1>
+			</div>
+		</div>
+	</div>
+
+  <div class="container">
+    <div class="row">
+			<p class="large">We are a creative agency that designs experiences to make a visual impact.</p>
+		</div>
+		
+		{% for block in page.blocks %}
+		  {% capture loop %}{% cycle 'odd', 'even' %}{% endcapture %}
+
+  		{% if loop == 'odd' %}<div class="row-fluid">{% endif %}
+      <div class="span{{ block.cols }}" style="background-image:url('{{ block.bgimg }}')">
+      {% if block.video %}
+        <!-- Video Markup Goes Here -->
+      {% elsif block.twitter %}
+        <!-- Twitter Markup Goes Here -->
+      {% else %}
+				<h3><a href="{{ block.url }}">{{ block.text }}</a></h3>
+			{% endif %}
+			</div>
+			
+  		{% if loop == 'even' or forloop.last %}</div>{% endif %}
+
     {% endfor %}
-  </ul>
+    
+    <div id="we-believe">
+      <h2>We Believe</h2>
+      <ul>
+        {% for wb in page.we-believe %}
+        <li>
+          <img src="{{ wb.img }}" data-toggle="tooltip" title="{{ wb.text | markdownify }}">
+        </li>
+        {% endfor %}
+      </ul>
+	  </div>
+
+	</div>
 </div>
