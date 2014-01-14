@@ -1,0 +1,16 @@
+---
+
+layout: nav_menu_item
+status: publish
+published: true
+title: What We Do
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 27
+wordpress_url: http://www.bridgercreative.com/?p=27
+date: 2013-10-08 14:50:12.000000000 +02:00
+categories: []
+tags: []
+comments: []
+---

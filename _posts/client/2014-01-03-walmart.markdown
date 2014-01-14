@@ -1,0 +1,16 @@
+---
+
+layout: client
+status: publish
+published: true
+title: Walmart
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 504
+wordpress_url: http://www.bridgercreative.com/?post_type=client&#038;p=504
+date: 2014-01-03 21:49:36.000000000 +01:00
+categories: []
+tags: []
+comments: []
+---

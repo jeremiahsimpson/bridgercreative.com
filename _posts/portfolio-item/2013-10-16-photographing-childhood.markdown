@@ -1,0 +1,28 @@
+---
+
+layout: portfolio-item
+status: publish
+published: true
+title: Photographing Childhood
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 115
+wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=115
+date: 2013-10-16 15:00:25.000000000 +02:00
+categories:
+- Publication
+- .Visual Systems
+tags:
+- Lorem
+- Book
+- Photography
+- Publication
+- Childhood
+comments: []
+---
+Have you ever wanted to know a little more about photography, especially when it comes to those special moments with your children? Photographing Childhood: the image & the memory offers you tools and inspiration to access the important elements of great childhood photography and visual storytelling and concludes with suggestions and solutions to preserve your photographic work.
+
+
+Pick up the 
+[book](http://www.amazon.com/Photographing-Childhood-The-Image-Memory/dp/0240818180) and start shooting.

@@ -1,0 +1,17 @@
+---
+
+layout: page
+status: publish
+published: true
+title: About Us
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 8
+wordpress_url: http://www.bridgercreative.com/?page_id=8
+date: 2013-10-08 14:42:00.000000000 +02:00
+categories: []
+tags: []
+comments: []
+---
+Hi, we’re Bridger, a design agency that collaborates with you to create smart and meaningful experiences that connect with your customers.

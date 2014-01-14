@@ -1,0 +1,16 @@
+---
+
+layout: we-believe
+status: publish
+published: true
+title: Rocket
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 160
+wordpress_url: http://www.bridgercreative.com/?post_type=we-believe&#038;p=160
+date: 2013-10-29 15:58:25.000000000 +01:00
+categories: []
+tags: []
+comments: []
+---

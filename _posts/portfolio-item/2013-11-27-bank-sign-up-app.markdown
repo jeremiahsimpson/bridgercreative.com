@@ -1,0 +1,19 @@
+---
+
+layout: portfolio-item
+status: publish
+published: true
+title: Account Opening App
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 275
+wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=275
+date: 2013-11-27 17:27:25.000000000 +01:00
+categories:
+- User Interface Design
+- .UX/UI
+tags: []
+comments: []
+---
+Designed to simplify the account opening process at a major African bank, Bridger delivered to market a mobile application which allows customers to join a bank with out stepping foot in a branch.

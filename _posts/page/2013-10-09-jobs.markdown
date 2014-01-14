@@ -1,0 +1,17 @@
+---
+
+layout: page
+status: publish
+published: true
+title: Jobs
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 40
+wordpress_url: http://www.bridgercreative.com/?page_id=40
+date: 2013-10-09 13:08:39.000000000 +02:00
+categories: []
+tags: []
+comments: []
+---
+We're always looking for creative geniuses who love to design and share their talents. If you're interested, click on the link that fits and let's chat.

@@ -1,0 +1,17 @@
+---
+
+layout: page
+status: publish
+published: true
+title: Our Work
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 4
+wordpress_url: http://www.bridgercreative.com/?page_id=4
+date: 2013-10-08 14:41:03.000000000 +02:00
+categories: []
+tags: []
+comments: []
+---
+Bridging the gap between data and design, we aim to bring your company's story to life.

@@ -1,0 +1,16 @@
+---
+
+layout: we-believe
+status: publish
+published: true
+title: Journey
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 133
+wordpress_url: http://www.bridgercreative.com/?post_type=we-believe&#038;p=133
+date: 2013-10-24 14:46:26.000000000 +02:00
+categories: []
+tags: []
+comments: []
+---

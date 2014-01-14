@@ -1,0 +1,19 @@
+---
+
+layout: portfolio-item
+status: publish
+published: true
+title: AIGA Bright Lights!
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 174
+wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=174
+date: 2013-10-31 17:39:16.000000000 +01:00
+categories:
+- Publication
+- .Visual Systems
+tags: []
+comments: []
+---
+We had the privilege to design the AIGA Awards program where they highlighted the design greats of Steve Frykholm, John Maeda, and Jennifer Morla. What an honor it was to design for those we've admired all our career. Congrats!

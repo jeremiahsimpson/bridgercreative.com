@@ -1,0 +1,16 @@
+---
+
+layout: client
+status: publish
+published: true
+title: Nike
+author: admin
+author_login: admin
+author_email: matt@studiobridger.com
+wordpress_id: 506
+wordpress_url: http://www.bridgercreative.com/?post_type=client&#038;p=506
+date: 2014-01-03 21:50:00.000000000 +01:00
+categories: []
+tags: []
+comments: []
+---
