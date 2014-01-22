@@ -1,100 +1,65 @@
-$(function(){
+$(function() {
 
+	var access_token = "753097420.39170cd.2d8908f704c24f34b24ca8666860e75d";
 
-var my_json_str = php_params.my_arr.replace(/&quot;/g, '"');
-var my_php_arr = $.parseJSON(my_json_str);
+	$(document).ready(function() {
+		$('.instagram-container').each(function(i, el) {
+			grabImagesFooter($(el))
+		})
+	});
 
-var INSTAGRAM_FOOTER_COUNT = 17;
-var INSTAGRAM_CONTACT_COUNT = 14;
-var INSTAGRAM_SIDEBAR_COUNT = 10;
-var INSTAGRAM_ACCESS_TOKEN = my_php_arr['accessToken'];
-var INSTAGRAM_USER_ID = my_php_arr['userID'];
+	function grabImagesFooter(target) {
 
-$(document).ready(function(){
-    var access_parameters = {access_token:INSTAGRAM_ACCESS_TOKEN};
-    grabImagesFooter(access_parameters, INSTAGRAM_FOOTER_COUNT, $("#instagram-target-footer"));
+		var count = parseInt(target.data('image-count'));
+		var cols = parseInt(target.data('cols-count'));
+		var user = target.data('user-id');
+		var size = target.data('photo-size');
+
+		var url = 'https://api.instagram.com/v1/users/' + user + '/media/recent/?callback=?';
+
+		$.getJSON(url, { count: count, access_token: access_token }, function(instagram_data) {
+			if (instagram_data.meta.code == 200) {
+				// create a variable that holds all returned payload
+				var photos = instagram_data.data;
+
+				//as long as that variable holds data (does not = ) then...
+				if (photos.length > 0) {
+					//since there are multiple objects in the payload we have
+					//to create a loop
+					for (var key in photos) {
+						//we create a variable for one object
+						var photo = photos[key];
+						//then we create and append to the DOM an  element in jQuery
+						//the source of which is the thumbnail of the photo
+						
+						var size_key = 'thumbnail';
+						if (size == 'large')  size_key = 'standard_resolution'
+						if (size == 'medium') size_key = 'low_resolution'
+						
+						var photo_url = photo.link;
+						var photo_src = photo.images[size_key].url
+						var col_class = "col-md-"+(12/cols)
+						// Build HTML for photo
+						target
+							.addClass('row')
+							.append($("<div>")
+								.addClass('instagram-photo')
+								.addClass(col_class)
+								.append($("<a>")
+									.attr('href',photo_url)
+									.append($("<img>")
+										.attr('src',photo_src))))
+					}
+				} else {
+					//if the photos variable doesn’t hold data
+					target.append("Hmm.  I couldn’t find anything!");
+				}
+			} else {
+				//if we didn’t get a 200 (success) request code from instagram
+				//then we display instagram’s error message instagram
+				var error = data.meta.error_message;
+				target.append('Something happened, Instagram said: ' + error);
+			}
+		});
+	}
 });
-
-$(document).ready(function(){
-    var access_parameters = {access_token:INSTAGRAM_ACCESS_TOKEN};
-    grabImagesFooter(access_parameters, INSTAGRAM_CONTACT_COUNT, $(".page-template-page-contact-php").find("#instagram-target"));
-});
-
-$(document).ready(function(){
-    var access_parameters = {access_token:INSTAGRAM_ACCESS_TOKEN};
-    grabImagesFooter(access_parameters, INSTAGRAM_SIDEBAR_COUNT, $("#sidebar").find("#instagram-target"));
-});
-
-function grabImagesFooter(access_parameters, count, targetID) {
-    var instagramUrl = 'https://api.instagram.com/v1/users/' + INSTAGRAM_USER_ID + 
-    '/media/recent/?callback=?&count=' + count + '&access_token=' + INSTAGRAM_ACCESS_TOKEN;
-    //?callback=?count=' + count;
-
-    $.getJSON(instagramUrl, access_parameters, function(instagram_data){
-        if(instagram_data.meta.code == 200) {
-        // create a variable that holds all returned payload
-        var photos = instagram_data.data;
-
-            //as long as that variable holds data (does not = ) then...
-
-            if(photos.length > 0) {
-              //since there are multiple objects in the payload we have
-              //to create a loop
-              for (var key in photos ){
-                //we create a variable for one object
-                var photo = photos[key];
-                //then we create and append to the DOM an  element in jQuery
-                //the source of which is the thumbnail of the photo
-                targetID.append('<div class="instagram-photo"><a href="' + photo.link + '"><img src="' + photo.images.thumbnail.url + '" /></a></div>');
-              }
-            }
-            else {
-              //if the photos variable doesn’t hold data
-              targetID.append("Hmm.  I couldn’t find anything!");
-            }
-        }
-        else  {
-          //if we didn’t get a 200 (success) request code from instagram
-          //then we display instagram’s error message instagram
-          var error = data.meta.error_message;
-          targetID.append('Something happened, Instagram said: ' + error);
-        }
-    });
-}
-function onDataLoaded(instagram_data) {
-  // instagram_data.meta is where the secret messages from Instagram live
-  // and instagram_data.meta.code holds the status code of the request
-  // 404 means nothing was found, and 200 means everything is all good so...
-
-  if(instagram_data.meta.code == 200) {
-    // create a variable that holds all returned payload
-    var photos = instagram_data.data;
-
-        //as long as that variable holds data (does not = ) then...
-
-        if(photos.length > 0) {
-          //since there are multiple objects in the payload we have
-          //to create a loop
-          for (var key in photos ){
-            //we create a variable for one object
-            var photo = photos[key];
-            //then we create and append to the DOM an  element in jQuery
-            //the source of which is the thumbnail of the photo
-            $('#instagram-target').append('<div class="instagram-photo"><a href="' + photo.link + '"><img src="' + photo.images.thumbnail.url + '" /></a></div>');
-          }
-        }
-        else {
-          //if the photos variable doesn’t hold data
-          $('#instagram-target').append("Hmm.  I couldn’t find anything!");
-        }
-    }
-    else  {
-      //if we didn’t get a 200 (success) request code from instagram
-      //then we display instagram’s error message instagram
-      var error = data.meta.error_message;
-      $('#instagram-target').append('Something happened, Instagram said: ' + error);
-    }
-  }
-
-
-  });
