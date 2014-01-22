@@ -8,10 +8,38 @@ body {
     background-color: #efefef;
 }
 
+a, a:link, a:visited, a:active {
+
+}
+
+h1 {
+	color: #f15a24;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 3.5em;
+}
+
 header.navbar {
     background: white;
     border-bottom: 1px solid #ccc;
     height: 90px;
+}
+
+header .nav {
+	margin-top: 35px;
+}
+
+header .nav a {
+	color: black;
+	font-weight: bold;
+	border-bottom: 7px solid transparent;
+	padding-bottom: 12px
+}
+
+header .nav a:hover {
+	background: none;
+	border-bottom-color: #f15a24;
 }
 
 #content {
@@ -43,12 +71,25 @@ footer {
     text-align: center;
 }
 
+#footer ul a {
+    font-weight: bold;
+	font-size: 1.2em;
+	color: black;
+}
+
 #footer #addresses li:after {
     content: ' • ';
 }
 
 #footer #addresses li:last-child:after {
     content: '';
+}
+
+.lead {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 2em;
+	color: #333;
+	line-height: 1.25em;
 }
 
 /*****************************************************************************/
@@ -141,3 +182,38 @@ footer {
     content: '';
 }
 
+/*****************************************************************************/
+/*
+/* Press
+/*
+/*****************************************************************************/
+
+.press-item {
+	text-align: center;
+}
+
+.press-img img {
+	width:100%;
+}
+
+.press-item a {
+	font-weight: bold;
+	font-size: 1.25em;
+	line-height: 3em;
+	color: #999;
+}
+
+#other_press {
+	color: #999;
+}
+
+#other_press h2 {
+	font-weight: bold;
+	line-height: 3em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1em;
+}
+
+.other-press-item {
+	margin-bottom: 0.7em;
+}
