@@ -1,14 +1,12 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: PrePlay
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 428
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=428
+name: preplay
+description: A question we constantly ask ourselves is... "what's going to happen
+  next?" PrePlay gives you the power to answer that as you watch your favorite football,
+  baseball or ice hockey team... LIVE! Give it a shot next time your favorite team
+  is playing. I think you'll get hooked.
 date: 2013-12-19 21:08:37.000000000 +01:00
 categories:
 - .UX/UI
@@ -19,6 +17,36 @@ tags:
 - User Interface Design
 - Prediction
 - Sports
-comments: []
-description: |-
-  A question we constantly ask ourselves is... "what's going to happen next?" PrePlay gives you the power to answer that as you watch your favorite football, baseball or ice hockey team... LIVE! Give it a shot next time your favorite team is playing. I think you'll get hooked.
+credits:
+- ! "PrePlay Football: \n[App Store](https://itunes.apple.com/us/app/cbs-sports-preplay/id391372543)
+  | \n[Google Play](https://play.google.com/store/apps/details?id=com.preplay.android.football&referrer=utm_source%3Dfootball.preplaysports.com)"
+- ! "MLB PrePlay: \n[App Store](https://itunes.apple.com/us/app/mlb-preplay/id542251211)
+  | \n[Google Play](https://play.google.com/store/apps/details?id=com.preplay.android.mlb&referrer=utm_source%3Dmlb.preplaysports.com)"
+- ! "NHL PrePlay: \n[App Store](https://itunes.apple.com/us/app/nhl-preplay/id519248561?mt=8)
+  | \n[Google Play](https://play.google.com/store/apps/details?id=com.preplay.android.nhl&referrer=utm_source%3Dnhl.preplaysports.com)"
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_office_1.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_office_3.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_pp_brand_1.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_pp_brand_2.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_pp_brand_3.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_pp_brand_4.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_pp_brand_5.gif
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_ppWeb_1.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_ppBrnd_1.jpg
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_ppBrand_1.jpg
+banner_color: 
+banner_bg_image: 
+repeat_background: false

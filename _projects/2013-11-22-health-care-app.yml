@@ -1,19 +1,34 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: Health Care App
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 214
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=214
+name: health-care-app
+description: Designed to support parents with a child in NICU, this mobile app provides
+  communication to a personal healthcare coach that will assist parents through this
+  difficult time. Parents can track the weight and feeding schedule of their child,
+  and seek support through a social network of like individuals. Empowering parents,
+  previously felt helpless through frantic times.
 date: 2013-11-22 17:22:37.000000000 +01:00
 categories:
 - User Interface Design
 - .UX/UI
 tags: []
-comments: []
-description: |-
-  Designed to support parents with a child in NICU, this mobile app provides communication to a personal healthcare coach that will assist parents through this difficult time. Parents can track the weight and feeding schedule of their child, and seek support through a social network of like individuals. Empowering parents, previously felt helpless through frantic times.
+credits: []
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Bank_0000_1.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Bank_0001_2.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Bank_0002_3.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/IMG_6781-copy.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/IMG_6782.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/gallery_nicu_1.jpg
+banner: 
+banner_color: ! '#999999'
+banner_bg_image: 
+repeat_background: false

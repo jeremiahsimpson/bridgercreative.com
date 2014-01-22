@@ -17,13 +17,14 @@ header.navbar {
 #content {
     padding: 90px 0;
     background-color: white;
-		
+
 }
 
+ul.no-bullet,
 ul.flat-list {
     list-style: none;
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul.flat-list li {
@@ -104,6 +105,26 @@ footer {
 /*
 /*****************************************************************************/
 
+#project_list li {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#project_list p {
+	height: 1em;
+}
+
+#project_banner_image {
+    height: 400px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.project-image img {
+	width:100%;
+}
 
 
 /*****************************************************************************/
@@ -119,5 +140,4 @@ footer {
 #experience .flat-list li:last-child:after {
     content: '';
 }
-
 

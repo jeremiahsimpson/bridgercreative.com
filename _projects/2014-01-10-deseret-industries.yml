@@ -1,14 +1,15 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: Deseret Industries
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 564
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=564
+name: deseret-industries
+description: ! "Deseret Industries is a nonprofit business enterprise owned and operated
+  by the Church of Jesus Christ of Latter-Day Saints, designed to provide employment
+  and to aid in the economic rehabilitation of disadvantaged persons. \r\n\r\nThey
+  asked us to explore new ideas for their brand to communicate their heritage (established
+  in 1936) and mission of caring for the poor and needy and helping transform lives.
+  We ended up on a nice refresh of their iconic worker bee, which we were happy with
+  since that's the same busy bee we grew up with."
 date: 2014-01-10 18:41:57.000000000 +01:00
 categories:
 - Brand Identity
@@ -16,8 +17,21 @@ categories:
 tags:
 - Branding
 - Thrift
-comments: []
-description: |-
-  Deseret Industries is a nonprofit business enterprise owned and operated by the Church of Jesus Christ of Latter-Day Saints, designed to provide employment and to aid in the economic rehabilitation of disadvantaged persons.
-
-  They asked us to explore new ideas for their brand to communicate their heritage (established in 1936) and mission of caring for the poor and needy and helping transform lives. We ended up on a nice refresh of their iconic worker bee, which we were happy with since that's the same busy bee we grew up with.
+credits:
+- ! "Alex Trebek: \n[What is Deseret?](http://www.ksl.com/?sid=27279151)"
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_di_2.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_di_sketch.gif
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_di.gif
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_di_1.jpg
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_1.jpg
+banner_color: ! '#999999'
+banner_bg_image: 
+repeat_background: false

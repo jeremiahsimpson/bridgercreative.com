@@ -5,15 +5,23 @@ excerpt: We are a creative agency that designs experiences to make a visual impa
 ---
 
 <div class="row">
-  <ul id="projects">
+  <ul id="project_list" class="no-bullet">
   {% for p in page.projects %}
     {% assign url = p[0] %}
     {% assign project = p[1] %}
     <li class="col-md-4">
-      <a href="/portfolio/{{ url }}">
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.categories | sort | join: ', ' }}</p>
-      </a>
+      <div class="project-image">
+        {% capture thumbnail_url %}
+        {% if project.thumbnail.url %}{{ project.thumbnail.url }}
+        {% elsif project.banner.url %}{{ project.banner.url }}
+        {% else %}{{ project.media[0].url }}{% endif %}
+        {% endcapture %}
+        <a href="/portfolio/{{ url }}">
+          <img src="{{ thumbnail_url }}">
+        </a>
+      </div>
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.categories | sort | join: ', ' }}</p>
     </li>
   {% endfor %}
   </ul>

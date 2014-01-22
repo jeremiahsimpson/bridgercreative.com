@@ -23,6 +23,4 @@ Dir.glob("#{input_dir}/*").each do |path|
   portfolios << front_matter
 end
 
-File.open("#{output_dir}/portfolios.yml", 'w') do |f|
-  f.puts YAML.dump(portfolios)
-end
+File.open("#{output_dir}/portfolios.yml", 'w') { |f| YAML.dump(portfolios, f) }

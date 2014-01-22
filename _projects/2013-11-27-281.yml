@@ -1,17 +1,20 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: ! 'Home: UXUI'
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 281
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=281
+name: '281'
+description: ''
 date: 2013-11-27 20:10:57.000000000 +01:00
 categories: []
 tags: []
-comments: []
-description: |-
-  
+credits: []
+media: []
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/gallery_ux_1.gif
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/home_ux2.gif
+banner_color: ! '#f2f2f2'
+banner_bg_image: 
+repeat_background: false

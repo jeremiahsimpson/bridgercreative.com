@@ -1,19 +1,35 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: AIGA Bright Lights!
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 174
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=174
+name: ninja-turtles
+description: We had the privilege to design the AIGA Awards program where they highlighted
+  the design greats of Steve Frykholm, John Maeda, and Jennifer Morla. What an honor
+  it was to design for those we've admired all our career. Congrats!
 date: 2013-10-31 17:39:16.000000000 +01:00
 categories:
 - Publication
 - .Visual Systems
 tags: []
-comments: []
-description: |-
-  We had the privilege to design the AIGA Awards program where they highlighted the design greats of Steve Frykholm, John Maeda, and Jennifer Morla. What an honor it was to design for those we've admired all our career. Congrats!
+credits:
+- ! "AIGA NYC: \n[website](http://aigany.org/)"
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_brtLts_1.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_brtLts_2.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_brtLts_3.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_brtLts_4.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_brtLts_5.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/gallery_aiga_1.jpg
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/feature_aigaBL_11.jpg
+banner_color: transparent
+banner_bg_image: 
+repeat_background: false

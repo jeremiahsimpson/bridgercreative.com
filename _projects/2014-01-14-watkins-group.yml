@@ -1,14 +1,12 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: Watkins Group
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 656
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=656
+name: watkins-group
+description: The Watkins Group is a team of brothers who believe that buying, selling
+  or building ones home should be simple. They also believe that that homes should
+  be clean and well designed. They asked for a brand that reflected these beliefs,
+  and that's what they got. Simple, right?
 date: 2014-01-14 21:24:28.000000000 +01:00
 categories:
 - Brand Identity
@@ -16,6 +14,21 @@ tags:
 - Brand Identity
 - Real estate
 - Utah
-comments: []
-description: |-
-  The Watkins Group is a team of brothers who believe that buying, selling or building ones home should be simple. They also believe that that homes should be clean and well designed. They asked for a brand that reflected these beliefs, and that's what they got. Simple, right?
+credits:
+- ! "Watkins Group: \n[site](https://www.facebook.com/watkinsgrouputah)"
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_wg_1.gif
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_wg_2.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_wg_3.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_wg_1.gif
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_11.jpg
+banner_color: 
+banner_bg_image: 
+repeat_background: false

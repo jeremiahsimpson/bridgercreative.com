@@ -1,4 +1,5 @@
 require 'yaml'
+require 'html2markdown';
 require 'awesome_print'
 
 input_file = File.join(File.dirname(__FILE__), '../_data/portfolios.yml')

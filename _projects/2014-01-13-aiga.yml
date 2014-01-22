@@ -1,14 +1,11 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: AIGA Ski/Ride
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 629
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=629
+name: aiga
+description: We love to design and we love to Ski. When AIGA approached us to design
+  the poster/invite for the AIGA SKi/Ride day with our special guests JDK Design,
+  we jumped at the opportunity. Ski Utah...the best snow on earth!
 date: 2014-01-13 22:43:05.000000000 +01:00
 categories:
 - Environmental
@@ -16,6 +13,17 @@ tags:
 - Poster
 - Ski
 - Snowboard
-comments: []
-description: |-
-  We love to design and we love to Ski. When AIGA approached us to design the poster/invite for the AIGA SKi/Ride day with our special guests JDK Design, we jumped at the opportunity. Ski Utah...the best snow on earth!
+credits:
+- ! "AIGA SLC: \n[website](http://saltlakecity.aiga.org/)"
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_brtLts_6.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_aiga_2.jpg
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_aigaBL_2.jpg
+banner_color: ! '#999999'
+banner_bg_image: 
+repeat_background: false

@@ -1,19 +1,30 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: Semiconductor Performance App
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 227
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=227
+name: '227'
+description: ''
 date: 2013-11-22 17:51:28.000000000 +01:00
 categories:
 - User Interface Design
 - .UX/UI
 tags: []
-comments: []
-description: |-
-  
+credits: []
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Asia_0000_1.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Asia_0001_2.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Asia_0002_3.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Asia_0003_4.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Asia_0004_5.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/icon-011.jpg
+banner: 
+banner_color: ! '#999999'
+banner_bg_image: 
+repeat_background: false

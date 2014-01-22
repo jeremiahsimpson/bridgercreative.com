@@ -1,17 +1,22 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: ! 'Home: Christmas'
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 404
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=404
+name: home-christmas
+description: ''
 date: 2013-12-18 17:42:36.000000000 +01:00
 categories: []
 tags: []
-comments: []
-description: |-
-  
+credits: []
+media: []
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/10/we-believe-4.png
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/card1_lo.gif
+banner_color: 
+banner_bg_image:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/stripes3.gif
+repeat_background: false

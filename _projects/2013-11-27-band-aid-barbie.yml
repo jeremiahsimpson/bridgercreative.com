@@ -1,14 +1,11 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: BAND-AID® Barbie™
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 284
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=284
+name: band-aid-barbie
+description: For all your girlies out there, you can now wear your BFF around town,
+  or secretly hide her under that business suit at your next business meeting. Barbie
+  is as stylish as ever!
 date: 2013-11-27 21:05:33.000000000 +01:00
 categories:
 - .Visual Systems
@@ -17,6 +14,21 @@ tags:
 - Barbie
 - Pink
 - Band-Aid
-comments: []
-description: |-
-  For all your girlies out there, you can now wear your BFF around town, or secretly hide her under that business suit at your next business meeting. Barbie is as stylish as ever!
+credits:
+- Barbie
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_barbie1.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_barbie2.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_barbie3.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/gallery_barbie_1.jpg
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/feature_barbie_1.jpg
+banner_color: ! '#ea4396'
+banner_bg_image: 
+repeat_background: false

@@ -1,14 +1,15 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: PrePlay Baseball
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 325
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=325
+name: preplay-baseball
+description: ! "Take me out to the ball game. Or keep me in to watch my tube. Either
+  way, any MLB baseball game will be more exciting when you can guess every at-bat
+  of every game. Are those hand signals, brim swiping and crotch scratches too confusing
+  to read? Well, prove to yourself or your buddies that you can call the plays.\r\n\r\nMLB
+  PrePlay is an app that allows you to predict every at-bat of every MLB game. Even
+  though our coaching skills won't get us a job as a baseball manager, we're quite
+  proud of the branding and UX/UI we created for the game."
 date: 2013-12-09 22:27:01.000000000 +01:00
 categories:
 - Brand Identity
@@ -20,8 +21,18 @@ tags:
 - Prediction
 - Sports
 - Baseball
-comments: []
-description: |-
-  Take me out to the ball game. Or keep me in to watch my tube. Either way, any MLB baseball game will be more exciting when you can guess every at-bat of every game. Are those hand signals, brim swiping and crotch scratches too confusing to read? Well, prove to yourself or your buddies that you can call the plays.
-
-  MLB PrePlay is an app that allows you to predict every at-bat of every MLB game. Even though our coaching skills won't get us a job as a baseball manager, we're quite proud of the branding and UX/UI we created for the game.
+credits:
+- ! "MLB PrePlay: \n[App Store](https://itunes.apple.com/us/app/mlb-preplay/id542251211)
+  | \n[Google Play](https://play.google.com/store/apps/details?id=com.preplay.android.mlb&referrer=utm_source%3Dmlb.preplaysports.com)"
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/mobile_pp_mlb.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_ppBB_1.jpg
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_ppMLB_1.jpg
+banner_color: ! '#999999'
+banner_bg_image: 
+repeat_background: false

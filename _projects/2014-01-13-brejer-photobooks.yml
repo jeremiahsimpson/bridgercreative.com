@@ -1,17 +1,26 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: Brejer Photobooks
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 640
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=640
+name: brejer-photobooks
+description: ''
 date: 2014-01-13 23:32:55.000000000 +01:00
 categories: []
 tags: []
-comments: []
-description: |-
-  
+credits: []
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/brejer_pb1.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/brejer_pb2.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/brejer_pb3.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_BrejerPB_1.jpg
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_BrejerPB_1.jpg
+banner_color: ! '#999999'
+banner_bg_image: 
+repeat_background: false

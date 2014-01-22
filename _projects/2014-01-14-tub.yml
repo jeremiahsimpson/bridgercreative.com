@@ -1,14 +1,14 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: tüb
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 657
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=657
+name: tub
+description: ! "From road to runway, the tüb trend is transforming bicycling and UPcycling
+  and taking it to the next level: FASHION. When you support the tüb trend, you are
+  keeping used inner tubes and old signs from the landfill. Plus, all of tübs products
+  are designed and sewn right here in our neighborhood in the USA, using locally sourced
+  materials! We love bikes and we love the earth. \r\n\r\nThese tübs are FLAT BUT
+  NOT FORGOTTEN!"
 date: 2014-01-14 21:33:44.000000000 +01:00
 categories:
 - Brand Identity
@@ -20,8 +20,29 @@ tags:
 - bags
 - wallets
 - recycle
-comments: []
-description: |-
-  From road to runway, the tüb trend is transforming bicycling and UPcycling and taking it to the next level: FASHION. When you support the tüb trend, you are keeping used inner tubes and old signs from the landfill. Plus, all of tübs products are designed and sewn right here in our neighborhood in the USA, using locally sourced materials! We love bikes and we love the earth.
-
-  These tübs are FLAT BUT NOT FORGOTTEN!
+credits:
+- ! "tüb: \n[website](http://www.tubpeople.com/)"
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_1.gif
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_2.gif
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_3.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_4.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_5.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_6.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_7.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_tub_1.jpg
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_12.jpg
+banner_color: ! '#999999'
+banner_bg_image: 
+repeat_background: false

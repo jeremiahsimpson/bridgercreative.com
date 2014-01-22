@@ -1,29 +1,64 @@
 ---
-layout: page
+layout: default
 ---
 
-<div id="project" class="row">
-  <div id="project_body" class="col-md-4">
-    <div class="project-categories">
-      {{ page.categories | join:', '}}
-    </div>
-    <div class="project-descr">
-      {{ page.description | markdownify }}
-    </div>
-    <hr/>
+{% if page.banner %}
+<div id="project_banner" style="background-color:{{ page.banner_color }}; background-image: url('{{ page.banner_bg_image.url }}')">
+  {% if page.banner.type == 'image' %}
+  
+  <div id="project_banner_image" class="container" style="background-image: url('{{ page.banner.url }}')"></div>
+  {% endif %}
+</div>
+{% endif %}
 
-    <h3>Credits</h3>
-    <div class="project-credits">
-      <!-- TODO: Add credits -->
-    </div>
 
-    <h3>Tags</h3>
-    <div class="project-tags">
-      {{ page.tags | join:', ' }}
+<div id="project" class="container">
+
+  <h1 id="{{ page.name }}-title">{{ page.title }}</h1>
+
+  <div class="row">
+    <div id="project_body" class="col-md-4">
+      <div class="project-categories">
+        {{ page.categories | join:', '}}
+      </div>
+      <div class="project-descr">
+        {{ page.description | markdownify }}
+      </div>
+      <hr/>
+
+      {% if page.credits.size > 0 %}
+      <h3>Credits</h3>
+      <div class="project-credits">
+        <ul class="no-bullet">
+        {% for credit in page.credits %}
+          <li>{{ credit | markdownify }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      
+      {% if page.tags.size > 0 %}
+      <h3>Tags</h3>
+      <div class="project-tags">
+        {{ page.tags | join:', ' }}
+      </div>
+      {% endif %}
+    
     </div>
-    
-  </div>
-  <div id="project_media" class="col-md-8">
-    
+    <div id="project_media" class="col-md-8">
+      <ul class="no-bullet">
+      {% for media in page.media %}
+        <li>
+        {% if media.type == 'image' %}
+          <div class="project-image">
+            <img src="{{ media.url }}">
+          </div>
+        {% elsif media.type == 'video' %}
+          {{ oembed media.url }}
+        {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
   </div>
 </div>

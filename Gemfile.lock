@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    RbYAML (0.2.0)
+    awesome_print (1.2.0)
     blankslate (2.1.2.4)
     classifier (1.3.4)
       fast-stemmer (>= 1.0.0)
@@ -11,6 +11,8 @@ GEM
     fast-stemmer (1.0.2)
     ffi (1.9.3)
     highline (1.6.20)
+    html2markdown (0.0.3)
+      nokogiri
     jekyll (1.4.3)
       classifier (~> 1.3)
       colorator (~> 0.1)
@@ -28,6 +30,8 @@ GEM
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
     maruku (0.7.0)
+    mysql2 (0.3.14)
+    nokogiri (1.5.10)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.8)
@@ -50,6 +54,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RbYAML
+  awesome_print
+  html2markdown
   jekyll (= 1.4.3)
+  mysql2
   ruby-oembed

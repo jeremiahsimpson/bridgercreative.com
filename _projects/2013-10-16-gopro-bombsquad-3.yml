@@ -1,14 +1,16 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: GoPro BombSquad
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 113
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=113
+name: gopro-bombsquad-3
+description: ! "We find our job to be really cool, but these guys' job is utterly
+  thrilling. Imagine hucking yourself off an endless cliff or speed flying through
+  an icy crevice. Well that's what the GoPro Bomb Squad does for their paycheck.\r\n\r\nWe
+  designed their branding to reflect who they are, a death-defying team that transforms
+  themselves into speeding falcons, the fastest birds in the sky blue air. We also
+  created a <a href=\"http://www.youtube.com/watch?v=O2LkQ8JXOUk\"target=\"_blank\">reel</a>
+  for them to introduce the stellar team. Next time you see a large bird in the air,
+  it may be the GoPro Bomb Squad. "
 date: 2013-10-16 14:02:08.000000000 +02:00
 categories:
 - Brand Identity
@@ -17,9 +19,31 @@ tags:
 - GoPro
 - Bomb Squad
 - BASE
-comments: []
-description: |-
-  We find our job to be really cool, but these guys' job is utterly thrilling. Imagine hucking yourself off an endless cliff or speed flying through an icy crevice. Well that's what the GoPro Bomb Squad does for their paycheck.
-
-  We designed their branding to reflect who they are, a death-defying team that transforms themselves into speeding falcons, the fastest birds in the sky blue air. We also created a 
-  [reel](http://www.youtube.com/watch?v=O2LkQ8JXOUk) for them to introduce the stellar team. Next time you see a large bird in the air, it may be the GoPro Bomb Squad.
+credits:
+- ! '[The Bomb Squad:](http://goprobombsquad.com) Marshall Miller / Neil Amonson /
+  Jesse Hall / JT Holmes'
+- ! "GoPro Bomb Squad: \n[Reel](http://www.youtube.com/watch?v=O2LkQ8JXOUk)"
+media:
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_bombSq_7.gif
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_goPro1.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_goPro2.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_goPro3.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_goPro4.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_goPro5.jpg
+- type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_goPro6.jpg
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_bombSq_1.jpg
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/ft_bombSq.jpg
+banner_color: 
+banner_bg_image: 
+repeat_background: false

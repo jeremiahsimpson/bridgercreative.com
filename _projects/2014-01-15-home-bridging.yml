@@ -1,17 +1,20 @@
 ---
-
 layout: project
-status: publish
 published: true
 title: ! 'Home: Bridging'
-author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 660
-wordpress_url: http://www.bridgercreative.com/?post_type=portfolio-item&#038;p=660
+name: home-bridging
+description: ''
 date: 2014-01-15 20:29:00.000000000 +01:00
 categories: []
 tags: []
-comments: []
-description: |-
-  
+credits: []
+media: []
+thumbnail:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2013/10/we-believe-8.png
+banner:
+  type: image
+  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/home_bridge2.gif
+banner_color: ! '#f15a24'
+banner_bg_image: 
+repeat_background: false
