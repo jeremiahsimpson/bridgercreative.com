@@ -361,6 +361,28 @@ a.twitter-timeline > span {
     min-height: 20px;
 }
 
+#testimonials {
+	background-color: rgb(51, 51, 51);
+	color: white;
+	text-align: center;
+	margin: 6em 0 -90px 0;
+}
+
+#testimonials .item {
+	height:200px;
+	line-height:200px;
+}
+
+#testimonials .testimonial {
+	line-height:normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#testimonials .lead {
+	color: white;
+}
+
 /*****************************************************************************/
 /*
 /* Press
