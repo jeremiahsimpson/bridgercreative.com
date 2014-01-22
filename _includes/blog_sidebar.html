@@ -1,0 +1,26 @@
+<div id="sidebar_categories">
+  <h3>Categories</h3>
+  <ul class="no-bullet">
+  {% for cat in site.categories %}
+    <li>
+      <a href="{{ site.category_dir }}{{ cat[0] | slug }}">{{ cat[0] }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+<div id="sidebar_facebook">
+  <h3>Facebook</h3>
+  <div class="fb-like-box" 
+       data-href="http://www.facebook.com/studiobridger" 
+       data-colorscheme="light" 
+       data-show-faces="true" 
+       data-header="false" 
+       data-stream="false" 
+       data-show-border="false"></div>
+</div>
+
+<div id="sidebar_twitter">
+  <h3>Twitter</h3>
+  {% include twitter_timeline.html %}
+</div>

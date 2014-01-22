@@ -1,9 +1,37 @@
 ---
 layout: default
+custom_js: |-
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=138503986173130";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div id="blog" class="container">
+  <div class="row">
+    <div id="blog_content" class="col-md-8">
+      {% include post.html post=page content=content %}
+
+      <div class="fb-like" 
+            data-href="{{ site.url}}{{ page.url }}" 
+            data-layout="button_count" 
+            data-action="like" 
+            data-show-faces="true" 
+            data-share="true"></div>
+      
+      <div id="post_comments">
+        {% include disqus.html post=page content=content %}
+      </div>
+    </div>
+
+    <div id="blog_sidebar" class="col-md-4">
+    {% include blog_sidebar.html %}
+    </div>
+
+  </div>
 </div>

@@ -94,19 +94,7 @@ custom_js: <script type="text/javascript">$(document).ready(function() { $("[dat
           {% oembed {{ block.url }} %}
 
         {% elsif block.twitter %}
-          <div id="twitter_container">
-            <div id="twitter_inner">
-              <a class="twitter-timeline" 
-                 href="https://twitter.com/BridgerCreative" 
-                 height="500"
-                 data-chrome="nofooter noheader noborders transparent"
-                  data-link-color="#f15a24"
-                 data-tweet-limit="10"
-                 data-widget-id="426050011072172032"
-                 ><span>Loading tweets...</span></a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
-          </div>
+          {% include twitter_timeline.html %}
 
         {% else %}
   				<h3><a href="{{ block.url }}"><span>{{ block.text }}</span></a></h3>

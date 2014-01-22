@@ -139,7 +139,7 @@ footer {
 }
 
 #home_banner .carousel .item img {
-	width:100%;
+	max-width:100%;
 }
 
 .home-block {
@@ -264,6 +264,15 @@ a.twitter-timeline > span {
 /*
 /*****************************************************************************/
 
+.post-content img {
+	max-width:100%;
+}
+
+#sidebar_twitter #twitter_inner {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
 
 
 /*****************************************************************************/
@@ -394,7 +403,7 @@ a.twitter-timeline > span {
 }
 
 .press-img img {
-    width: 100%;
+    max-width:100%;
 }
 
 .press-item a {
