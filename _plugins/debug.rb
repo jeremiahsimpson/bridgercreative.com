@@ -29,7 +29,7 @@ module Jekyll
     
     def debug(obj, stdout=false)
       puts obj.pretty_inspect if stdout
-      "<pre>#{obj.class}\n#{obj.pretty_inspect}</pre>"
+      "<pre>-> #{obj.class}\n#{obj.pretty_inspect}</pre>"
     end
 
   end # DebugFilter

@@ -19,7 +19,7 @@ layout: default
   <div class="row">
     <div id="project_body" class="col-md-4">
       <div class="project-categories">
-        {{ page.categories | join:', '}}
+        {% include project_categories.html list=page.categories dir="categories" %}
       </div>
       <div class="project-descr">
         {{ page.description | markdownify }}
@@ -40,7 +40,7 @@ layout: default
       {% if page.tags.size > 0 %}
       <h3>Tags</h3>
       <div class="project-tags">
-        {{ page.tags | join:', ' }}
+        {% include project_categories.html list=page.tags dir="tags" %}
       </div>
       {% endif %}
     

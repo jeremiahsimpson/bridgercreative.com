@@ -1,0 +1,5 @@
+<ul class="flat-list">
+  {% for cat in include.list %}
+    <li><a href="/portfolio/{{ include.dir }}/{{ cat | slug }}">{{ cat }}</a></li>
+  {% endfor %}
+</ul>

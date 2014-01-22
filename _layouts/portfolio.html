@@ -5,6 +5,46 @@ excerpt: We are a creative agency that designs experiences to make a visual impa
 ---
 
 <div class="row">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#portfolio_filter">
+            Filter By:
+            {% if page.category %} {{ page.category }}
+            {% elsif page.tag %} {{ page.tag }}
+            {% else %} All Projects
+            {% endif %}
+            
+          </a>
+        </h4>
+      </div>
+      <div id="portfolio_filter" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="col-md-6">
+            <ul class="no-bullet">
+              <li class="col-md-6">
+                <a href="/portfolio/">All Projects</a>
+              </li>
+            {% for category in page.categories %}
+              <li class="col-md-6">
+                <a href="{{ category.url }}">{{ category.name }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="flat-list">
+            {% for tag in page.tags %}
+              <li><a href="{{ tag.url }}">{{ tag.name }}</a></li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <ul id="project_list" class="no-bullet">
   {% for p in page.projects %}
     {% assign url = p[0] %}
@@ -21,7 +61,7 @@ excerpt: We are a creative agency that designs experiences to make a visual impa
         </a>
       </div>
       <h3>{{ project.title }}</h3>
-      <p>{{ project.categories | sort | join: ', ' }}</p>
+      {% include project_categories.html list=project.categories dir="categories" %}
     </li>
   {% endfor %}
   </ul>

@@ -6,6 +6,7 @@ gems: [oembed]
 keep_files:  ['.git']
 timezone: America/New_York
 encoding: UTF-8
+safe: false
 
 paginate: 5
 paginate_path: "blog/page:num"
