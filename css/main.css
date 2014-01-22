@@ -66,7 +66,6 @@ ul.flat-list li:last-child:after {
     content: '';
 }
 
-
 footer {
     border-top: 1px solid #ccc;
     color: #999;
@@ -109,30 +108,43 @@ footer {
 /*
 /*****************************************************************************/
 
-#twitter-container {
-    display: inline-block;
-    width: 32%;
-    float: right;
-    /*background: #000;*/
-    background-size: 6px 6px;
+.home-block {
+	min-height: 20px;
+}
+
+#twitter_container {
+	display: inline-block;
+	
+    background-size: 8px 8px;
     background-image: linear-gradient(
-    -45deg, 
-    rgba(0, 0, 0, 0.1) 25%, 
-    transparent 25%, 
-    transparent 50%, 
-    rgba(0, 0, 0, 0.1) 50%, 
-    rgba(0, 0, 0, 0.1) 75%, 
-    transparent 75%, 
-    transparent);
+		-45deg,
+		rgba(0, 0, 0, 0.1) 25%, 
+		transparent 25%, 
+		transparent 50%, 
+		rgba(0, 0, 0, 0.1) 50%, 
+		rgba(0, 0, 0, 0.1) 75%, 
+		transparent 75%, 
+		transparent
+		);
     background-image: -moz-linear-gradient(
-    -45deg, 
-    rgba(0, 0, 0, 0.1) 25%, 
-    transparent 25%, 
-    transparent 50%, 
-    rgba(0, 0, 0, 0.1) 50%, 
-    rgba(0, 0, 0, 0.1) 76%, 
-    transparent 75%, 
-    transparent);
+		-45deg, 
+		rgba(0, 0, 0, 0.1) 25%, 
+		transparent 25%, 
+		transparent 50%, 
+		rgba(0, 0, 0, 0.1) 50%, 
+		rgba(0, 0, 0, 0.1) 76%, 
+		transparent 75%, 
+		transparent
+		);
+	width:100%;
+}
+
+#twitter_inner {
+	margin:15px;
+	padding: 5px 15px;
+	background:white;
+	height: 300px;
+	overflow: scroll;
 }
 
 /*****************************************************************************/
@@ -151,7 +163,7 @@ footer {
 
 
 .instagram-container img {
-	width:  100%;
+    width: 100%;
 }
 
 /*****************************************************************************/

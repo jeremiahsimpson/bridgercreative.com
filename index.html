@@ -71,11 +71,22 @@ custom_js:
       </div>
 		
 		{% for block in page.blocks %}
-      <div class="col-md-{{ block.cols }}" style="background-image:url('{{ block.bgimg }}')">
+      <div class="col-md-{{ block.cols }} home-block" style="background-image:url('{{ block.bgimg }}')">
       {% if block.video %}
         <!-- Video Markup Goes Here -->
       {% elsif block.twitter %}
-        <!-- Twitter Markup Goes Here -->
+        <div id="twitter_container">
+          <div id="twitter_inner">
+            <a class="twitter-timeline" 
+               href="https://twitter.com/BridgerCreative" 
+               height="500"
+               data-chrome="nofooter noheader noborders transparent"
+               data-tweet-limit="10"
+               data-widget-id="426050011072172032"
+               >Tweets by @BridgerCreative</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </div>
       {% else %}
 				<h3><a href="{{ block.url }}">{{ block.text }}</a></h3>
 			{% endif %}
@@ -85,8 +96,8 @@ custom_js:
     
     <div id="we-believe" class="row">
       <div class="col-md-12">
-        <h2>We Believe</h2>
-        <ul>
+        <h2 class="pull-left">We Believe</h2>
+        <ul class="flat-list">
           {% for wb in page.we-believe %}
           <li>
             <img src="{{ wb.img }}" data-toggle="tooltip" title="{{ wb.text | markdownify }}">
