@@ -1,6 +1,5 @@
 name: Bridger
 
-destination: public
 exclude: ["Rakefile", "README.md", "public", "Bridger Creative.tmproj", "Gemfile", "Gemfile.lock", "libs"]
 gems: [oembed]
 keep_files:  ['.git']

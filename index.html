@@ -1,5 +1,13 @@
 ---
 layout: default
+banners:
+  - img: "/img/home_bridge2.gif"
+    url: "/about-us/"
+    bgcolor: '#f15a24'
+  - img: "/img/card1_lo.gif"
+    url: "/what-we-do/"
+    bgimg: "/img/bomb-squad.jpg"
+    
 blocks:
   -
     cols: 5
@@ -55,12 +63,22 @@ custom_js: <script type="text/javascript">$(document).ready(function() { $("[dat
 
 <div id="home">
   
-	<div class="jumbotron">
-	  <div class="container">
-	    <div class="row">
-			  <h1>Hello, world!</h1>
-			</div>
-		</div>
+	<div id="home_banner">
+    <div id="home_carousel" class="carousel fading slide" data-ride="carousel">
+      <div class="carousel-inner">
+        {% for banner in page.banners %}
+        {% capture bg_img_style   %}{% if banner.bgimg %}background-image:url('{{banner.bgimg}}');{% endif %}{% endcapture %}
+        {% capture bg_size_style  %}{% if banner.full_width %}background-size:cover;{% endif %}{% endcapture %}
+        {% capture bg_color_style %}{% if banner.bgcolor %}background-color:{{banner.bgcolor}};{% endif %}{% endcapture %}
+        <div class="item {% if forloop.first%}active{% endif %}" style="{{bg_size_style}}{{bg_img_style}}{{bg_color_style}}">
+          <div class="container">
+            {% capture img_src %}{% if banner.full_width %}/img/blank.gif{% else %}{{ banner.img }}{% endif %}{% endcapture %}
+            <a href="{{ banner.url }}"><img src="{{ img_src }}" alt="Slide {{ forloop.index }}"></a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
 	</div>
 
   <div class="container">
@@ -112,6 +130,5 @@ custom_js: <script type="text/javascript">$(document).ready(function() { $("[dat
         </ul>
   	  </div>
 	  </div>
-
 	</div>
 </div>
