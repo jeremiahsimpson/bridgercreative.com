@@ -38,9 +38,6 @@ module Jekyll
       url = Liquid::Template.parse(@text).render context
       url.strip!
 
-      $stdout.puts "url: #{url}"
-      $stderr.puts "url: #{url}"
-      
       # oembed look up
       result = ::OEmbed::Providers.get(url, :format => :xml)
       

@@ -4,23 +4,22 @@ blocks:
   -
     cols: 5
     text: What We Do
-    bgimg: "/img/uploads/2013/10/what-we-do.jpg"
+    bgimg: "/img/what-we-do.jpg"
     url: '#'
   -
     cols: 7
     video: true
-    bgimg: "/img/uploads/2013/10/bomb-squad.jpg"
-    url: '#'
+    bgimg: "/img/bomb-squad.jpg"
+    url: 'http://www.youtube.com/watch?v=O2LkQ8JXOUk'
   -
-    cols: 7
+    cols: 8
     text: Kaise Ho
-    bgimg: "/img/uploads/2013/10/kaise-ho.jpg"
+    bgimg: "/img/kaise-ho.jpg"
     url: '#'
   -
-    cols: 5
+    cols: 4
     twitter: true
     tweets: 10
-    bgimg: "/img/"
 
 we-believe:
   -
@@ -51,7 +50,7 @@ we-believe:
     img:  http://www.bridgercreative.com/wp-content/uploads/2014/01/weBelieve_speech.png
     text: Design is the art of conversation
     
-custom_js:
+custom_js: <script type="text/javascript">$(document).ready(function() { $("[data-toggle='tooltip']").tooltip(); });</script>
 ---
 
 <div id="home">
@@ -71,36 +70,43 @@ custom_js:
       </div>
 		
 		{% for block in page.blocks %}
-      <div class="col-md-{{ block.cols }} home-block" style="background-image:url('{{ block.bgimg }}')">
-      {% if block.video %}
-        <!-- Video Markup Goes Here -->
-      {% elsif block.twitter %}
-        <div id="twitter_container">
-          <div id="twitter_inner">
-            <a class="twitter-timeline" 
-               href="https://twitter.com/BridgerCreative" 
-               height="500"
-               data-chrome="nofooter noheader noborders transparent"
-               data-tweet-limit="10"
-               data-widget-id="426050011072172032"
-               >Tweets by @BridgerCreative</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <div class="col-md-{{ block.cols }}">
+        <div class="home-block" style="background-image:url('{{ block.bgimg }}')">
+        {% if block.video %}
+          {% oembed {{ block.url }} %}
+
+        {% elsif block.twitter %}
+          <div id="twitter_container">
+            <div id="twitter_inner">
+              <a class="twitter-timeline" 
+                 href="https://twitter.com/BridgerCreative" 
+                 height="500"
+                 data-chrome="nofooter noheader noborders transparent"
+                  data-link-color="#f15a24"
+                 data-tweet-limit="10"
+                 data-widget-id="426050011072172032"
+                 ><span>Loading tweets...</span></a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
           </div>
+
+        {% else %}
+  				<h3><a href="{{ block.url }}"><span>{{ block.text }}</span></a></h3>
+  			{% endif %}
         </div>
-      {% else %}
-				<h3><a href="{{ block.url }}">{{ block.text }}</a></h3>
-			{% endif %}
 			</div>
     {% endfor %}
     </div>
     
-    <div id="we-believe" class="row">
+    <div id="we_believe" class="row">
       <div class="col-md-12">
         <h2 class="pull-left">We Believe</h2>
         <ul class="flat-list">
           {% for wb in page.we-believe %}
           <li>
-            <img src="{{ wb.img }}" data-toggle="tooltip" title="{{ wb.text | markdownify }}">
+            <a href="#" data-toggle="tooltip" data-html="true" data-placement="bottom" title="{{ wb.text | markdownify }}">
+              <img src="{{ wb.img }}" />
+            </a>
           </li>
           {% endfor %}
         </ul>
