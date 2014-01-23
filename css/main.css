@@ -221,10 +221,17 @@ footer {
 
 #home_banner .carousel .item {
     height: 450px;
+	line-height: 450px;
+	background-position: 50% 50%;
+	text-align: center;
 }
 
 #home_banner .carousel .item img {
     max-width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+	line-height: normal;
+	vertical-align: middle;
 }
 
 .home-block {
