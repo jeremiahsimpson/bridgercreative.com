@@ -13,6 +13,12 @@ module Jekyll
     def category_link(input)
       "<a href='#{site.config['category_dir']}#{slug(input)}'>#{input}</a>"
     end
+    
+    def random(array)
+      return array unless array.is_a?(Array)
+      array[rand(array.size)]
+    end
+    
 
     private
     
