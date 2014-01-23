@@ -8,7 +8,13 @@ body {
     background-color: #efefef;
 }
 
-a, a:link, a:visited, a:active {}
+a, a:link, a:visited, a:active {
+	color: #999;
+}
+
+a:hover {
+    color: #f15a24;
+}
 
 h1 {
     color: #f15a24;
@@ -25,14 +31,15 @@ header.navbar {
 }
 
 header .nav {
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 header .nav a {
     color: black;
     font-weight: bold;
+	font-size: 1.2em;
     border-bottom: 7px solid transparent;
-    padding-bottom: 12px
+    padding-bottom: 17px;
 }
 
 header .nav a:hover {
@@ -47,16 +54,16 @@ header .navbar-brand {
     width: 158px;
     height: 46px;
     background: transparent url('/img/logo.png') 0 0 no-repeat;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 #logo_overlay {
 	position: absolute;
     overflow: hidden;
-    width: 158px;
+    width: 168px;
     height: 46px;
 	background:#f15a24;
-	margin: -15px 0 0 -7px;
+	margin: -15px 0 0 -12px;
 	line-height: 38px;
 	color: white;
 	text-transform: uppercase;
@@ -64,8 +71,10 @@ header .navbar-brand {
 	text-indent: 0;
 	font-weight: bold;
 	font-size: 2em;
-	clip: rect(0 56px 46px 52px);
+	clip: rect(0 61px 46px 57px);
+    -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 #logo_overlay span {
@@ -73,11 +82,13 @@ header .navbar-brand {
     vertical-align: middle;
 	line-height: normal;
 	opacity: 0;
+    -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .navbar-brand:hover #logo_overlay {
-	clip: rect(0 158px 46px 0);
+	clip: rect(0 168px 46px 0);
 }
 
 .navbar-brand:hover #logo_overlay span {
@@ -326,8 +337,82 @@ a.twitter-timeline > span {
 /*
 /*****************************************************************************/
 
+.post {
+	clear:both;
+	margin-bottom: 8em;
+}
+
+.post h1 a {
+	color: #f15a24;
+	text-transform: none;
+    font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: normal;
+	font-size: 2em;
+}
+
+.post-meta {
+	color:#999;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.post-date {
+	padding-right: 0.5em;
+}
+
+.post-author {
+	padding-left: 0.5em;
+}
+
+.post-content {
+	margin:2.5em 0;
+    font-family: Georgia, Times, "Times New Roman", serif;
+	font-size:1.2em;
+	line-height: 1.66em;
+}
+
 .post-content img {
     max-width: 100%;
+}
+
+.post-baseline {
+	border: 2px dotted #ccc;
+	border-width: 2px 0;
+	min-height: 60px;
+	padding: 17px 0;
+	font-size: 1.1em
+}
+
+.comment-link {
+	font-weight: bold;
+}
+
+.comment-link .comment-count {
+	color:white;
+	background: transparent url('/img/comment-count-bg.png') 50% 50% no-repeat;
+	display: inline-block;
+	width:26px;
+	height:24px;
+	text-align: center;
+}
+
+#blog_sidebar {
+	margin-top: 4em;
+}
+
+.sidebar-block {
+	margin-bottom:6em;
+}
+
+.sidebar-block h3 {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#sidebar_categories li {
+	color:#999;
+	line-height: 1.75em;
 }
 
 #sidebar_facebook .fb-like-box,
@@ -344,7 +429,7 @@ a.twitter-timeline > span {
 
 .post-share-widgets {
     min-height: 25px;
-    min-width: 200px;
+    min-width: 160px;
 }
 
 .post-share-widgets .share-widget {
@@ -358,10 +443,98 @@ a.twitter-timeline > span {
 /*
 /*****************************************************************************/
 
+.profile {
+	margin-top:3em;
+	overflow: hidden;
+}
+
+.profile-content {
+	position: absolute;
+	height:433px;
+	background-color: rgba(241, 90, 36, 0.8);
+	color:white;
+	padding: 10px 20px;
+	margin-top: 433px;
+    -moz-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.profile:hover .profile-content {
+	margin-top: 0;
+}
+
+.profile-content h3 {
+	font-size: 3.5em;
+	font-weight: bold;
+	line-height: 1em;
+	margin: 0.25em 10px;
+}
+
+.profile-content h5 {
+	background: white;
+	color:  rgba(241, 90, 36, 0.8);
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1em;
+	margin: 0;
+	padding: 10px;
+}
+
+.profile-description {
+	padding: 10px;
+	overflow-y: scroll;
+	height:180px;
+}
+
+.profile-contact {
+	padding: 10px;
+	border-top: 1px solid white;
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+.profile-contact span {
+	margin-right:0.75em;
+	line-height: 1.75em;
+}
+
+.profile-img img {
+	width:100%;
+}
+
+#about-us .quote-container {
+	text-align: center;
+	margin: 3em 0;
+	color: #f15a24;
+	font-size: 1.2em;
+}
+
+#about-us .quote-content {
+	color: #f15a24;
+	width:83%;
+	line-height: 1.5em;
+	margin: 0 auto;
+}
+
+#about-us .quoted {
+}
+
 
 .instagram-container img {
     width: 100%;
 }
+
+#about-us .instagram-container {
+	margin-top: 6em;
+}
+
+#about-us .instagram-photo img {
+	border:2px solid black;
+	margin-bottom: 15px;
+}
+
 
 /*****************************************************************************/
 /*
@@ -395,6 +568,23 @@ a.twitter-timeline > span {
 /* What We Do
 /*
 /*****************************************************************************/
+
+#work_categories h3,
+#experience h3 {
+	font-weight: bold;
+	font-size:0.9em;
+	text-transform: uppercase;
+}
+
+#work_categories li,
+#experience li {
+	line-height:2em;
+}
+
+#industry_experience li {
+	line-height:2.3em;
+	border-bottom: 1px solid #ccc;
+}
 
 #how_we_work {
     margin: 6em 0 10em 0;
@@ -471,6 +661,77 @@ a.twitter-timeline > span {
 
 /*****************************************************************************/
 /*
+/* Jobs
+/*
+/*****************************************************************************/
+
+.job {
+	margin-bottom: 4em;
+}
+
+.job h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.job ul a {
+	font-weight: bold;
+	font-size: 4.5em;
+	color: black;
+	line-height: 1.25em;
+	text-decoration: none;
+}
+
+.job ul a:hover {
+    color: #f15a24;
+}
+
+
+/*****************************************************************************/
+/*
+/* Contact
+/*
+/*****************************************************************************/
+
+#contact .lead {
+	margin-bottom: 2em;
+}
+
+.contact-type,
+.contact-type a {
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+#telephone.contact-type {
+	font-size: 12.5em;
+}
+
+#email.contact-type {
+	font-size: 6.25em;
+}
+
+#address.contact-type {
+	font-size: 2.9em;
+}
+
+#contact hr:last-child {
+	border: none;
+}
+
+#contact .instagram-container {
+	margin-top: 10em;
+}
+
+#contact .instagram-photo img {
+	border: 5px solid black;
+}
+
+/*****************************************************************************/
+/*
 /* Press
 /*
 /*****************************************************************************/
@@ -502,6 +763,6 @@ a.twitter-timeline > span {
 }
 
 .other-press-item {
-    margin-bottom: 0.7em;
+	font-size:1.2em;
+    margin-bottom: 0.1em;
 }
-

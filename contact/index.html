@@ -1,10 +1,10 @@
 ---
 title: Contact
 layout: page
-excerpt: Drop us a line. Say hello. Let's get to know each other.
+excerpt: As Fran Lebowitz put it, “You’re only as good as your last haircut”. We’re here to help you look your best. Please get in touch.
 contacts:
   - id:   telephone
-    text: 646-652-6455
+    text: 917-825-2803
   - id:   email
     text: hello@bridgercreative.com
     url:  mailto:hello@bridgercreative.com
@@ -22,7 +22,7 @@ custom_js: '<script type="text/javascript" src="/js/instagram.js"></script>'
     {{ contact.text }}
   {% endif %}
   </p>
-  <hr/>
+  {% unless forloop.last %}<hr/>{% endunless %}
 {% endfor %}
 
 <div class="instagram-container" data-image-count="3" data-cols-count="3" data-user-id="753097420" data-photo-size="medium"></div>

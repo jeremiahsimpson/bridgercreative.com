@@ -96,9 +96,9 @@ testimonials:
     name: GoPro Bomb Squad
 ---
 
-<div id="{{ page.title | handleize }}" class="container">
+<div id="{{ page.title | slug }}" class="container">
 
-  <h1 id="{{ page.title | handleize }}-title">{{ page.title }}</h1>
+  <h1 id="{{ page.title | slug }}-title">{{ page.title }}</h1>
   <p class="lead">{{ page.excerpt }}</p>
 
   <div id="work_categories" class="row">
