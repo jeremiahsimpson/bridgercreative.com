@@ -268,12 +268,27 @@ a.twitter-timeline > span {
 	max-width:100%;
 }
 
+#sidebar_facebook .fb-like-box,
 #sidebar_twitter #twitter_inner {
     margin: 0;
     padding: 0;
     height: auto;
+	min-height: 247px;
 }
 
+#sidebar_twitter #twitter_inner {
+	min-height: 1300px;
+}
+
+.post-share-widgets {
+	min-height:25px;
+	min-width: 200px;
+}
+
+.post-share-widgets .share-widget {
+	float:right;
+	margin-left:15px;
+}
 
 /*****************************************************************************/
 /*

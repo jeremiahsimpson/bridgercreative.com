@@ -1,26 +1,15 @@
+require 'pry'
+
 module Jekyll
-  class PortfolioIndex < Page
-    def initialize(site, base, dir)
-      @site = site
-      @base = base
-      @dir  = dir
-      @name = "index.html"
-
-      self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'portfolio.html')
-      self.data['all_projects'] = self.get_projects(site)
-      self.data['projects'] = self.data['all_projects']
-
-      set_taxonomy('categories')
-      set_taxonomy('tags')
-
-    end
+  
+  module ProjectsData
 
     def get_projects(site, taxonomy_singular = nil, taxonomy_plural = nil)
       {}.tap do |projects|
-        Dir['_projects/*.yml'].reverse.each do |path|
+        dir = File.join(@base, './_projects/*.yml')
+        Dir[dir].reverse.each do |path|
           name   = File.basename(path, '.yml')
-          config = YAML.load(File.read(File.join(@base, path)))
+          config = YAML.load(File.read(path))
           if config['published']
             if taxonomy_plural.nil? || config_has_taxonomy(config, taxonomy_singular, taxonomy_plural)
               projects[name] = config
@@ -28,18 +17,6 @@ module Jekyll
           end
         end
       end
-    end
-    
-    def set_taxonomy(key)
-      # Get uniq sorted list of matching terms
-      collection = self.data['all_projects'].values.map{|p| p[key] }.flatten.uniq.sort
-      # Format into nice name/url hashes for use in views
-      self.data[key] = collection.map{ |t|
-        {
-          'name' => t,
-          'url'  => taxonomy_dir('/portfolio', key, t)
-        }
-      }
     end
     
     def slug(input)
@@ -54,9 +31,45 @@ module Jekyll
       term = self.data[singular]
       config[plural] && config[plural].include?(term)
     end
+    
+  end
+  
+  class PortfolioIndex < Page
+    
+    include ProjectsData
+    
+    def initialize(site, base, dir)
+      @site = site
+      @base = base
+      @dir  = dir
+      @name = "index.html"
+
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), 'portfolio.html')
+      self.data['all_projects'] = get_projects(site)
+      self.data['projects'] = self.data['all_projects']
+
+      set_taxonomy('categories')
+      set_taxonomy('tags')
+
+    end
+
+    def set_taxonomy(key)
+      # Get uniq sorted list of matching terms
+      collection = self.data['all_projects'].values.map{|p| p[key] }.flatten.uniq.sort
+      # Format into nice name/url hashes for use in views
+      self.data[key] = collection.map{ |t|
+        {
+          'name' => t,
+          'url'  => taxonomy_dir('/portfolio', key, t)
+        }
+      }
+    end
+    
   end
 
   class PortfolioCategoryIndex < PortfolioIndex
+
     def initialize(site, base, dir, category)
       @site     = site
       @base     = base
@@ -68,8 +81,8 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'project_category.html')
 
       self.data['category'] = category
-      self.data['all_projects'] = self.get_projects(site)
-      self.data['projects'] = self.get_projects(site, 'category', 'categories')
+      self.data['all_projects'] = get_projects(site)
+      self.data['projects'] = get_projects(site, 'category', 'categories')
 
       set_taxonomy('categories')
       set_taxonomy('tags')
@@ -90,8 +103,8 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'project_category.html')
 
       self.data['tag'] = tag
-      self.data['all_projects'] = self.get_projects(site)
-      self.data['projects'] = self.get_projects(site, 'tag', 'tags')
+      self.data['all_projects'] = get_projects(site)
+      self.data['projects'] = get_projects(site, 'tag', 'tags')
 
       set_taxonomy('categories')
       set_taxonomy('tags')
@@ -99,7 +112,10 @@ module Jekyll
     end
   end
   
-  class ProjectIndex < Page
+  class Project < Page
+
+    include ProjectsData
+    
     def initialize(site, base, dir, path)
       @site     = site
       @base     = base
@@ -107,8 +123,53 @@ module Jekyll
       @name     = "index.html"
       self.data = YAML.load(File.read(File.join(@base, path)))
 
+      # Merge in related projects
+      self.data['related_projects'] = related_projects
       self.process(@name) if self.data['published']
     end
+    
+    def related_projects
+      
+      projects = get_projects(@site)
+      tags = self.data['tags'] || []
+      
+      tag_freq = projects_tag_freq(projects)
+      highest_freq = tag_freq.values.max
+      
+      related_scores = {}
+      projects.each do |name, project|
+        project['tags'].each do |tag|
+          if tags.include?(tag) && project['title'] != self.data['title']
+            cat_freq = tag_freq[tag]
+            related_scores[name] = related_scores[name].to_i + (1+highest_freq-cat_freq)
+          end
+        end
+      end
+      
+      sort_related_projects(related_scores, projects)
+      
+    end
+    
+    # Calculate the frequency of each tag.
+    #
+    # Returns {tag => freq, tag => freq, ...}
+    def projects_tag_freq(projects)
+      @tag_freq ||= begin
+        @tag_freq = {}
+        projects.each do |name, project|
+          project['tags'].each {|tag| @tag_freq[tag] = @tag_freq[tag].to_i + 1}
+        end
+        @tag_freq
+      end
+    end
+
+    # Sort the related projects in order of their score and date
+    # and return just the projects
+    def sort_related_projects(related_scores, projects)
+      sorted_names = related_scores.sort_by { |name, score| score }.reverse
+      sorted_names.map {|proj| projects[proj.first] }
+    end
+    
   end
 
   class GeneratePortfolio < Generator
@@ -158,7 +219,7 @@ module Jekyll
     end
     
     def write_project_index(site, path, name)
-      project = ProjectIndex.new(site, site.source, "/portfolio/#{name}", path)
+      project = Project.new(site, site.source, "/portfolio/#{name}", path)
 
       if project.data['published']
         project.render(site.layouts, site.site_payload)

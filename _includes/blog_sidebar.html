@@ -3,7 +3,7 @@
   <ul class="no-bullet">
   {% for cat in site.categories %}
     <li>
-      <a href="{{ site.category_dir }}{{ cat[0] | slug }}">{{ cat[0] }}</a>
+      {{ cat[0] | category_link }}
     </li>
   {% endfor %}
   </ul>

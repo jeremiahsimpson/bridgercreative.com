@@ -5,10 +5,7 @@ status: publish
 published: true
 title: Reinventing the bicycle wheel
 author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 388
-wordpress_url: http://www.bridgercreative.com/?p=388
+comments: true
 date: 2013-12-15 03:46:27 +01:00
 categories:
 - blog

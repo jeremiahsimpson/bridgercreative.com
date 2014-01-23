@@ -61,4 +61,15 @@ layout: default
       </ul>
     </div>
   </div>
+  
+  <div id="similar_projects" class="row">
+    <h2>Similar Projects</h2>
+    <div id="project_list" class="row">
+    {% for p in page.related_projects %}
+      {% capture url %}/portfolio/{{ p.title | slug }}{% endcapture %}
+      {% include project.html url=url project=p %}
+    {% endfor %}
+    </div>
+    
+  </div>
 </div>

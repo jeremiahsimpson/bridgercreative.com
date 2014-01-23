@@ -34,12 +34,13 @@ pinboard_user:
 pinboard_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: bridgercreative
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id:
 
 # Facebook Like
 facebook_user: studiobridger
-facebook_like: true
+facebook_like_button: true
+facebook_facepile: true

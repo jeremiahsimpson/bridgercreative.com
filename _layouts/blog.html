@@ -1,0 +1,53 @@
+---
+title: Blog
+layout: default
+---
+
+{% if page.posts.size > 0 %}
+{% assign posts_collection = page.posts %}
+{% elsif paginator.posts.size > 0 %}
+{% assign posts_collection = paginator.posts %}
+{% endif %}
+
+<div id="blog" class="container">
+  
+  <div class="row">
+    <div id="blog_content" class="col-md-8">
+	  {% for post in posts_collection %}
+	    {% include post.html post=post %}
+    {% endfor %}
+
+    <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      {% else %}
+        <span>&laquo; Prev</span>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <em>{{ page }}</em>
+        {% elsif page == 1 %}
+          <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      {% else %}
+        <span>Next &raquo;</span>
+      {% endif %}
+    </div>
+    {% endif %}
+    </div>
+
+    <div id="blog_sidebar" class="col-md-4">
+    {% include blog_sidebar.html %}
+    </div>
+
+  </div>
+</div>

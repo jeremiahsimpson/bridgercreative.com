@@ -5,10 +5,7 @@ status: publish
 published: true
 title: O pluperfect Paree
 author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 394
-wordpress_url: http://www.bridgercreative.com/?p=394
+comments: true
 date: 2013-02-15 04:10:22 +01:00
 categories:
 - Information Architecture
@@ -16,7 +13,6 @@ tags:
 - Paris
 - Street art
 - France
-comments: []
 
 ---
 

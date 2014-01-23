@@ -5,15 +5,12 @@ status: publish
 published: true
 title: Good times in India!
 author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 371
-wordpress_url: http://www.bridgercreative.com/?p=371
+comments: true
 date: 2013-12-13 03:10:08 +01:00
 categories:
 - .UX/UI
 tags: []
-comments: []
+
 
 ---
 

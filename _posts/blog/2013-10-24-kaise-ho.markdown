@@ -5,10 +5,7 @@ status: publish
 published: true
 title: Kaise Ho
 author: admin
-author_login: admin
-author_email: matt@studiobridger.com
-wordpress_id: 129
-wordpress_url: http://www.bridgercreative.com/?p=129
+comments: true
 date: 2013-10-24 12:55:25 +02:00
 categories:
 - Publication
