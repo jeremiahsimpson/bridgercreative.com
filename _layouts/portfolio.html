@@ -2,32 +2,45 @@
 title: Our Work
 layout: page
 excerpt: We are a creative agency that designs experiences to make a visual impact.
+custom_js: |-
+  <script type="text/javascript">
+    $('#categories_list').
+    on('show.bs.collapse', function () {
+      $('#project_filter').addClass('open')
+    }).
+    on('hide.bs.collapse', function () {
+      $('#project_filter').removeClass('open')
+    })
+  </script>
 ---
-
+{% capture current_filter %}
+{% if page.category %} {{ page.category }}
+{% elsif page.tag %} {{ page.tag }}
+{% else %} All Projects
+{% endif %}
+{% endcapture %}
 <div class="row">
-  <div class="panel-group" id="accordion">
+  <div class="panel-group" id="project_filter">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#portfolio_filter">
-            Filter By:
-            {% if page.category %} {{ page.category }}
-            {% elsif page.tag %} {{ page.tag }}
-            {% else %} All Projects
-            {% endif %}
-            
+          <a data-toggle="collapse" data-parent="#project_filter" href="#categories_list">
+            Filter by
+            <span>{{ current_filter | strip }}</span>
           </a>
         </h4>
       </div>
-      <div id="portfolio_filter" class="panel-collapse collapse">
+      <div id="categories_list" class="panel-collapse collapse">
         <div class="panel-body">
           <div class="col-md-6">
             <ul class="no-bullet">
-              <li class="col-md-6">
-                <a href="/portfolio/">All Projects</a>
+              {% capture css_class %}{% if current_filter contains 'All Projects' %}active{% endif %}{% endcapture %}
+              <li class="col-md-6 {{css_class}}">
+                <a href="/our-work/">All Projects</a>
               </li>
             {% for category in page.categories %}
-              <li class="col-md-6">
+              {% capture css_class %}{% if current_filter contains category.name %}active{% endif %}{% endcapture %}
+              <li class="col-md-6 {{css_class}}">
                 <a href="{{ category.url }}">{{ category.name }}</a>
               </li>
             {% endfor %}

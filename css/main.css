@@ -9,7 +9,7 @@ body {
 }
 
 a, a:link, a:visited, a:active {
-	color: #999;
+    color: #999;
 }
 
 a:hover {
@@ -37,12 +37,19 @@ header .nav {
 header .nav a {
     color: black;
     font-weight: bold;
-	font-size: 1.2em;
+    font-size: 1.2em;
     border-bottom: 7px solid transparent;
     padding-bottom: 17px;
 }
 
-header .nav a:hover {
+header .nav:hover .active a {
+    background: none;
+    border-bottom-color: rgba(241, 90, 36, 0.5);
+}
+
+header .nav a:hover,
+header .nav .active a,
+header .nav .active a:hover {
     background: none;
     border-bottom-color: #f15a24;
 }
@@ -58,20 +65,22 @@ header .navbar-brand {
 }
 
 #logo_overlay {
-	position: absolute;
+    position: absolute;
     overflow: hidden;
     width: 168px;
     height: 46px;
-	background:#f15a24;
-	margin: -15px 0 0 -12px;
-	line-height: 38px;
-	color: white;
-	text-transform: uppercase;
-	text-align: center;
-	text-indent: 0;
-	font-weight: bold;
-	font-size: 2em;
-	clip: rect(0 61px 46px 57px);
+    background: #f15a24;
+    margin: -15px 0 0 -12px;
+    line-height: 38px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-indent: 0;
+    font-weight: bold;
+    font-size: 2em;
+    clip: rect(0 61px 46px 57px);
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -80,19 +89,21 @@ header .navbar-brand {
 #logo_overlay span {
     display: inline-block;
     vertical-align: middle;
-	line-height: normal;
-	opacity: 0;
+    line-height: normal;
+    opacity: 0;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
 .navbar-brand:hover #logo_overlay {
-	clip: rect(0 168px 46px 0);
+    clip: rect(0 168px 46px 0);
 }
 
 .navbar-brand:hover #logo_overlay span {
-	opacity: 1;
+    opacity: 1;
 }
 
 #content {
@@ -265,6 +276,16 @@ footer {
     transparent 75%, 
     transparent
     );
+    background-image: -webkit-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.1) 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    rgba(0, 0, 0, 0.1) 50%, 
+    rgba(0, 0, 0, 0.1) 75%, 
+    transparent 75%, 
+    transparent
+    );
     background-image: -moz-linear-gradient(
     -45deg, 
     rgba(0, 0, 0, 0.1) 25%, 
@@ -290,7 +311,6 @@ a.twitter-timeline {
     height: 300px;
     line-height: 250px;
     display: block;
-    vertical-align: absmiddle;
     text-align: center;
     color: #ccc;
 }
@@ -338,37 +358,37 @@ a.twitter-timeline > span {
 /*****************************************************************************/
 
 .post {
-	clear:both;
-	margin-bottom: 8em;
+    clear: both;
+    margin-bottom: 8em;
 }
 
 .post h1 a {
-	color: #f15a24;
-	text-transform: none;
+    color: #f15a24;
+    text-transform: none;
     font-family: Georgia, Times, "Times New Roman", serif;
-	font-weight: normal;
-	font-size: 2em;
+    font-weight: normal;
+    font-size: 2em;
 }
 
 .post-meta {
-	color:#999;
-	font-weight: bold;
-	text-transform: uppercase;
+    color: #999;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .post-date {
-	padding-right: 0.5em;
+    padding-right: 0.5em;
 }
 
 .post-author {
-	padding-left: 0.5em;
+    padding-left: 0.5em;
 }
 
 .post-content {
-	margin:2.5em 0;
+    margin: 2.5em 0;
     font-family: Georgia, Times, "Times New Roman", serif;
-	font-size:1.2em;
-	line-height: 1.66em;
+    font-size: 1.2em;
+    line-height: 1.66em;
 }
 
 .post-content img {
@@ -376,43 +396,43 @@ a.twitter-timeline > span {
 }
 
 .post-baseline {
-	border: 2px dotted #ccc;
-	border-width: 2px 0;
-	min-height: 60px;
-	padding: 17px 0;
-	font-size: 1.1em
+    border: 2px dotted #ccc;
+    border-width: 2px 0;
+    min-height: 60px;
+    padding: 17px 0;
+    font-size: 1.1em
 }
 
 .comment-link {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .comment-link .comment-count {
-	color:white;
-	background: transparent url('/img/comment-count-bg.png') 50% 50% no-repeat;
-	display: inline-block;
-	width:26px;
-	height:24px;
-	text-align: center;
+    color: white;
+    background: transparent url('/img/comment-count-bg.png') 50% 50% no-repeat;
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    text-align: center;
 }
 
 #blog_sidebar {
-	margin-top: 4em;
+    margin-top: 4em;
 }
 
 .sidebar-block {
-	margin-bottom:6em;
+    margin-bottom: 6em;
 }
 
 .sidebar-block h3 {
-	text-transform: uppercase;
-	font-size: 1.2em;
-	font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 #sidebar_categories li {
-	color:#999;
-	line-height: 1.75em;
+    color: #999;
+    line-height: 1.75em;
 }
 
 #sidebar_facebook .fb-like-box,
@@ -444,97 +464,96 @@ a.twitter-timeline > span {
 /*****************************************************************************/
 
 .profile {
-	margin-top:3em;
-	overflow: hidden;
+    margin-top: 3em;
+    overflow: hidden;
 }
 
 .profile-content {
-	position: absolute;
-	height:433px;
-	background-color: rgba(241, 90, 36, 0.8);
-	color:white;
-	padding: 10px 20px;
-	margin-top: 433px;
+    position: absolute;
+    height: 433px;
+    background-color: rgba(241, 90, 36, 0.8);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 433px;
     -moz-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 
 .profile:hover .profile-content {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 .profile-content h3 {
-	font-size: 3.5em;
-	font-weight: bold;
-	line-height: 1em;
-	margin: 0.25em 10px;
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 0.25em 10px;
 }
 
 .profile-content h5 {
-	background: white;
-	color:  rgba(241, 90, 36, 0.8);
-	font-size: 1.5em;
-	font-weight: bold;
-	line-height: 1em;
-	margin: 0;
-	padding: 10px;
+    background: white;
+    color: rgba(241, 90, 36, 0.8);
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 0;
+    padding: 10px;
 }
 
 .profile-description {
-	padding: 10px;
-	overflow-y: scroll;
-	height:180px;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 180px;
 }
 
 .profile-contact {
-	padding: 10px;
-	border-top: 1px solid white;
-	font-weight: bold;
-	font-size: 1.2em;
-	line-height: 1.5em;
+    padding: 10px;
+    border-top: 1px solid white;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .profile-contact span {
-	margin-right:0.75em;
-	line-height: 1.75em;
+    margin-right: 0.75em;
+    line-height: 1.75em;
 }
 
 .profile-img img {
-	width:100%;
+    width: 100%;
 }
 
 #about-us .quote-container {
-	text-align: center;
-	margin: 3em 0;
-	color: #f15a24;
-	font-size: 1.2em;
+    text-align: center;
+    margin: 3em 0;
+    color: #f15a24;
+    font-size: 1.2em;
 }
 
 #about-us .quote-content {
-	color: #f15a24;
-	width:83%;
-	line-height: 1.5em;
-	margin: 0 auto;
+    color: #f15a24;
+    width: 83%;
+    line-height: 1.5em;
+    margin: 0 auto;
 }
 
-#about-us .quoted {
-}
-
+#about-us .quoted {}
 
 .instagram-container img {
     width: 100%;
 }
 
 #about-us .instagram-container {
-	margin-top: 6em;
+    margin-top: 6em;
 }
 
 #about-us .instagram-photo img {
-	border:2px solid black;
-	margin-bottom: 15px;
+    border: 2px solid black;
+    margin-bottom: 15px;
 }
-
 
 /*****************************************************************************/
 /*
@@ -542,13 +561,126 @@ a.twitter-timeline > span {
 /*
 /*****************************************************************************/
 
-#project_list li {
+#project_filter .panel,
+#project_filter .panel-heading,
+#project_filter .panel-body {
+    background: none;
+    border: none;
+    border-radius: none;
+}
+
+#project_filter .panel {
+    padding: 5px;
+}
+
+#project_filter .panel-heading,
+#project_filter .panel-body {
+    padding: 10px 0;
+}
+
+#project_filter .panel-body li {
+    line-height: 2em;
+}
+
+#project_filter .panel-body li.active:before,
+#project_filter .panel-title a span:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e072";
+    font-weight: bold;
+    font-size: 0.8em;
+    line-height: 2.5em;
+    position: absolute;
+    margin-left: -1.5em;
+}
+
+#project_filter .panel-body a {
+    color: black;
+}
+
+#project_filter .panel-title a {
+    color: black;
+    text-decoration: none;
+}
+
+#project_filter .panel-body a:hover,
+#project_filter .panel-title a span {
+    color: #f15a24;
+}
+
+#project_filter .panel-title a span {
+    padding-left: 1.25em;
+}
+
+#project_filter .panel-title a span:before {
+    color: black;
+    font-size: 0.66em;
+    line-height: 1.66em;
+    margin-left: -1.75em;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#project_filter.open .panel-title a span:before {
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#project_filter .panel-body {
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+}
+
+#project_list {
+    margin-top: 2em;
+}
+
+.project {
     text-align: center;
     margin-bottom: 2em;
 }
 
-#project_list p {
-    height: 1em;
+.project h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.project ul {
+    min-height: 3em;
+}
+
+.project li a {
+    color: #f15a24;
+}
+
+.project-image {
+    height: 300px;
+    line-height: 300px;
+    background-color: #eee;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+.project-image a {
+    display: block;
+    height: 100%;
+}
+
+.project-image img {
+    width: 100%;
+    display: none;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.project-image a:hover {
+    border: 4px solid #f15a24;
 }
 
 #project_banner_image {
@@ -559,10 +691,6 @@ a.twitter-timeline > span {
     background-size: cover;
 }
 
-.project-image img {
-    width: 100%;
-}
-
 /*****************************************************************************/
 /*
 /* What We Do
@@ -571,19 +699,19 @@ a.twitter-timeline > span {
 
 #work_categories h3,
 #experience h3 {
-	font-weight: bold;
-	font-size:0.9em;
-	text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
 }
 
 #work_categories li,
 #experience li {
-	line-height:2em;
+    line-height: 2em;
 }
 
 #industry_experience li {
-	line-height:2.3em;
-	border-bottom: 1px solid #ccc;
+    line-height: 2.3em;
+    border-bottom: 1px solid #ccc;
 }
 
 #how_we_work {
@@ -666,27 +794,26 @@ a.twitter-timeline > span {
 /*****************************************************************************/
 
 .job {
-	margin-bottom: 4em;
+    margin-bottom: 4em;
 }
 
 .job h3 {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .job ul a {
-	font-weight: bold;
-	font-size: 4.5em;
-	color: black;
-	line-height: 1.25em;
-	text-decoration: none;
+    font-weight: bold;
+    font-size: 4.5em;
+    color: black;
+    line-height: 1.25em;
+    text-decoration: none;
 }
 
 .job ul a:hover {
     color: #f15a24;
 }
-
 
 /*****************************************************************************/
 /*
@@ -695,39 +822,39 @@ a.twitter-timeline > span {
 /*****************************************************************************/
 
 #contact .lead {
-	margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .contact-type,
 .contact-type a {
-	text-align: center;
-	color: black;
-	font-weight: bold;
-	line-height: 1em;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    line-height: 1em;
 }
 
 #telephone.contact-type {
-	font-size: 12.5em;
+    font-size: 12.5em;
 }
 
 #email.contact-type {
-	font-size: 6.25em;
+    font-size: 6.25em;
 }
 
 #address.contact-type {
-	font-size: 2.9em;
+    font-size: 2.9em;
 }
 
 #contact hr:last-child {
-	border: none;
+    border: none;
 }
 
 #contact .instagram-container {
-	margin-top: 10em;
+    margin-top: 10em;
 }
 
 #contact .instagram-photo img {
-	border: 5px solid black;
+    border: 5px solid black;
 }
 
 /*****************************************************************************/
@@ -763,6 +890,7 @@ a.twitter-timeline > span {
 }
 
 .other-press-item {
-	font-size:1.2em;
+    font-size: 1.2em;
     margin-bottom: 0.1em;
 }
+

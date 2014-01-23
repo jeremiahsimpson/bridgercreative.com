@@ -19,6 +19,9 @@ module Jekyll
       array[rand(array.size)]
     end
     
+    def strip(input)
+      input.to_s.strip
+    end
 
     private
     

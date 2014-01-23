@@ -61,7 +61,7 @@ module Jekyll
       self.data[key] = collection.map{ |t|
         {
           'name' => t,
-          'url'  => taxonomy_dir('/portfolio', key, t)
+          'url'  => taxonomy_dir('/our-work', key, t)
         }
       }
     end
@@ -196,7 +196,7 @@ module Jekyll
     end
 
     def write_portfolio_index(site)
-      portfolio = PortfolioIndex.new(site, site.source, "/portfolio")
+      portfolio = PortfolioIndex.new(site, site.source, "/our-work")
       portfolio.render(site.layouts, site.site_payload)
       portfolio.write(site.dest)
 
@@ -210,7 +210,7 @@ module Jekyll
 
     def write_portfolio_taxonomy_indexes(site, collection, klass)
       collection.each do |term|
-        index = klass.new(site, site.source, "/portfolio", term['name'])
+        index = klass.new(site, site.source, "/our-work", term['name'])
         index.render(site.layouts, site.site_payload)
         index.write(site.dest)
         site.pages << index
@@ -219,7 +219,7 @@ module Jekyll
     end
     
     def write_project_index(site, path, name)
-      project = Project.new(site, site.source, "/portfolio/#{name}", path)
+      project = Project.new(site, site.source, "/our-work/#{name}", path)
 
       if project.data['published']
         project.render(site.layouts, site.site_payload)

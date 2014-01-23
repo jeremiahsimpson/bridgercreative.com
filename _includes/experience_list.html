@@ -1,4 +1,11 @@
-<h3>{{ include.title }}</h3>
+{% capture title %}
+  {% if include.link_title %}
+    <a href="/our-work/categories/{{include.title | slug}}">{{ include.title  }}</a>
+  {% else %}
+    {{ include.title  }}
+  {% endif %}
+{% endcapture %}
+<h3>{{ title }}</h3>
 <ul class="no-bullet {{ include.list_class }}">
   {% for exp in include.list %}
   <li>{{ exp }}</li>

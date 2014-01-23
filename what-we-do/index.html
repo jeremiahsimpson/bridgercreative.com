@@ -4,6 +4,7 @@ layout: default
 excerpt: We’re a creative agency that tells visual stories through user experience, data visualization and digital interfaces.
 categories:
   - name: UX/UI
+    link_title: true
     examples:
       - Information Architecture
       - Interaction Design
@@ -12,6 +13,7 @@ categories:
       - Video & Motion
 
   - name: Visual Strategy
+    link_title: true
     examples:
       - Brand Architecture
       - Redesign Consultation
@@ -19,6 +21,7 @@ categories:
       - Brand Positioning
 
   - name: Visual Systems
+    link_title: true
     examples:
       - Brand Identity
       - Packaging
@@ -104,7 +107,7 @@ testimonials:
   <div id="work_categories" class="row">
     {% for category in page.categories %}
     <div class="col-md-3">
-      {% include experience_list.html title=category.name list=category.examples %}
+      {% include experience_list.html title=category.name list=category.examples link_title=category.link_title %}
     </div>
     {% endfor %}
   </div>
@@ -113,7 +116,7 @@ testimonials:
 <div id="how_we_work">
   <a data-toggle="collapse" href="#zigzag_inner">
     How We Work
-    <span>&#8595;</span>
+    <span class="glyphicon glyphicon-arrow-down"></span>
   </a>
   <div id="zigzag_top"></div>
   <div id="zigzag_outer">

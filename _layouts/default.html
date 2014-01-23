@@ -4,6 +4,12 @@ logo_words:
 - Create
 - Visual
 - Data
+nav_links:
+- What We Do
+- Our Work
+- About Us
+- Blog
+
 ---
 <!DOCTYPE html>
 <html>
@@ -54,10 +60,11 @@ logo_words:
 
           <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 						<ul class="nav navbar-nav navbar-right">
-				      <li><a href="/what-we-do/">What We Do</a></li>
-				      <li><a href="/portfolio/">Our Work</a></li>
-				      <li><a href="/about-us/">About Us</a></li>
-				      <li><a href="/blog/">Blog</a></li>
+						{% for link in page.nav_links %}
+						  {% capture url %}{{ link | slug }}{% endcapture %}
+						  {% capture css_class %}{% if page.url contains url %}active{% endif %}{% endcapture %}
+				      <li class="{{ css_class }}"><a href="/{{ url }}">{{ link }}</a></li>
+				    {% endfor %}  
 				    </ul>
 					</nav>
 					
