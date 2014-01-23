@@ -673,10 +673,7 @@ a.twitter-timeline > span {
 }
 
 .project-image img {
-    width: 100%;
     display: none;
-    vertical-align: middle;
-    line-height: normal;
 }
 
 .project-image a:hover {
@@ -689,6 +686,52 @@ a.twitter-timeline > span {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+}
+
+#project h1 {
+    color: black;
+    text-transform: none;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 2em;
+    margin-top: 1.5em;
+}
+
+#project .flat-list a {
+    font-style: italic;
+    color: black;
+}
+
+.project-descr {
+    margin: 1em 0;
+}
+
+.project-meta {
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    margin: 3em 0;
+    padding: 0.5em 0 1.5em 0;
+}
+
+.project-meta h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.project-media {
+    margin-bottom: 15px;
+}
+
+.project-media img {
+    width: 100%;
+}
+
+#similar_projects h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em 0;
 }
 
 /*****************************************************************************/

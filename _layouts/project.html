@@ -24,25 +24,26 @@ layout: default
       <div class="project-descr">
         {{ page.description | markdownify }}
       </div>
-      <hr/>
 
-      {% if page.credits.size > 0 %}
-      <h3>Credits</h3>
-      <div class="project-credits">
-        <ul class="no-bullet">
-        {% for credit in page.credits %}
-          <li>{{ credit | markdownify }}</li>
-        {% endfor %}
-        </ul>
+      <div class="project-meta">
+        {% if page.credits.size > 0 %}
+        <h3>Credits</h3>
+        <div class="project-credits">
+          <ul class="no-bullet">
+          {% for credit in page.credits %}
+            <li>{{ credit | markdownify }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if page.tags.size > 0 %}
+        <h3>Tags</h3>
+        <div class="project-tags">
+          {% include project_categories.html list=page.tags dir="tags" %}
+        </div>
+        {% endif %}
       </div>
-      {% endif %}
-      
-      {% if page.tags.size > 0 %}
-      <h3>Tags</h3>
-      <div class="project-tags">
-        {% include project_categories.html list=page.tags dir="tags" %}
-      </div>
-      {% endif %}
     
     </div>
     <div id="project_media" class="col-md-8">
@@ -50,7 +51,7 @@ layout: default
       {% for media in page.media %}
         <li>
         {% if media.type == 'image' %}
-          <div class="project-image">
+          <div class="project-media">
             <img src="{{ media.url }}">
           </div>
         {% elsif media.type == 'video' %}
@@ -66,8 +67,7 @@ layout: default
     <h2>Similar Projects</h2>
     <div id="project_list" class="row">
     {% for p in page.related_projects %}
-      {% capture url %}/our-work/{{ p.title | slug }}{% endcapture %}
-      {% include project.html url=url project=p %}
+      {% include project.html url=p.path project=p %}
     {% endfor %}
     </div>
     

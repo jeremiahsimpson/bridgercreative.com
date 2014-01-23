@@ -167,7 +167,10 @@ module Jekyll
     # and return just the projects
     def sort_related_projects(related_scores, projects)
       sorted_names = related_scores.sort_by { |name, score| score }.reverse
-      sorted_names.map {|proj| projects[proj.first] }
+      sorted_names.map {|proj| 
+        projects[proj.first]['path'] = proj.first # Insert the name/slug/path into the project hash
+        projects[proj.first] 
+      }
     end
     
   end
