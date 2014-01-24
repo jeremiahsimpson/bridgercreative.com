@@ -25,19 +25,19 @@ credits:
 - ! "Photographing Childhood: \n[book](http://www.amazon.com/Photographing-Childhood-The-Image-Memory/dp/0240818180)"
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_phtChild_1.jpg
+  url: /portfolio/list_phtChild_1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_phtChild_2.jpg
+  url: /portfolio/list_phtChild_2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_phtChild_4.jpg
+  url: /portfolio/list_phtChild_4.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_phtChild_3.jpg
+  url: /portfolio/list_phtChild_3.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_phtChild_1.jpg
+  url: /portfolio/gallery_phtChild_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_phtChild_1.jpg
+  url: /portfolio/feature_phtChild_1.jpg
 banner_color: ! '#000'
 banner_bg_image: 
 repeat_background: false

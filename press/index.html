@@ -4,16 +4,16 @@ layout: page
 excerpt: We’re proud of our client work popping up in primetime spots.
 big_press:
   - url:  "http://www.ksl.com/?sid=27279151"
-    img:  http://www.bridgercreative.com/wp-content/uploads/2013/12/jeopardy_2.gif
+    img:  /press/jeopardy_2.gif
     name: What is Deseret?
   - url:  "http://abcnews.go.com/Technology/gopro-bomb-squad-death-defying-jumps-day-office/story?id=20956026"
-    img:  http://www.bridgercreative.com/wp-content/uploads/2013/12/gp_abcNews.gif
+    img:  /press/gp_abcNews.gif
     name: Daredevil Dad
   - url:  http://s709.photobucket.com/user/MLBNetwork/media/mlb_tonight-preplay_app-2012-10-11.mp4.html
-    img:  http://www.bridgercreative.com/wp-content/uploads/2013/12/press_PPmlb.jpg
+    img:  /press/press_PPmlb.jpg
     name: MLB Network
   - url:  http://www.dwell.com/dwell-design/article/floor-brinca-dada
-    img:  http://www.bridgercreative.com/wp-content/uploads/2014/01/bd_dwell.gif
+    img:  /press/bd_dwell.gif
     name: "dwell: brinca dada"
 other_press:
   - "New York ADDY Award, Gold Interactive"
@@ -33,8 +33,8 @@ other_press:
   <div class="col-md-{{ 12 | divided_by: forloop.length }}">
     <div id="{{ item.name | handle }}" class="press-item">
       <a href="{{ item.url }}">
-        <div class="press-img" style="background-image:url('{{ item.img }}');">
-          <img src="{{ item.img }}" alt="{{ item.name }}">
+        <div class="press-img">
+          {% image 274xAUTO {{ item.img }} alt="{{ item.name }}" %}
         </div>
         <p>{{ item.name }}</p>
       </a>

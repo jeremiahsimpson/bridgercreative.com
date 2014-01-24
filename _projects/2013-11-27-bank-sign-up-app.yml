@@ -14,12 +14,12 @@ tags: []
 credits: []
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/device_mockup_web.jpg
+  url: /portfolio/device_mockup_web.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/wireframes2.jpg
+  url: /portfolio/wireframes2.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/gallery_abcBank_1.jpg
+  url: /portfolio/gallery_abcBank_1.jpg
 banner: 
 banner_color: ! '#999999'
 banner_bg_image: 

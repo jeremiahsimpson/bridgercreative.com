@@ -17,15 +17,15 @@ tags: []
 credits: []
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_everyday_1-01.jpg
+  url: /portfolio/list_everyday_1-01.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_everyday_1-02.jpg
+  url: /portfolio/list_everyday_1-02.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_everyday_1.jpg
+  url: /portfolio/gallery_everyday_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_everyday_1.jpg
+  url: /portfolio/feature_everyday_1.jpg
 banner_color: ! '#999999'
 banner_bg_image: 
 repeat_background: false

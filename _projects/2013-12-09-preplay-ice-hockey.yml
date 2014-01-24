@@ -25,13 +25,13 @@ credits:
   | \n[Google Play](https://play.google.com/store/apps/details?id=com.preplay.android.nhl&referrer=utm_source%3Dnhl.preplaysports.com)"
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/mobile_pp_nhl.jpg
+  url: /portfolio/mobile_pp_nhl.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_ppICE_1.jpg
+  url: /portfolio/gallery_ppICE_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_ppNHL_1.jpg
+  url: /portfolio/feature_ppNHL_1.jpg
 banner_color: ! '#999999'
 banner_bg_image: 
 repeat_background: false

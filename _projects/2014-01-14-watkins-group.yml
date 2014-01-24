@@ -18,17 +18,17 @@ credits:
 - ! "Watkins Group: \n[site](https://www.facebook.com/watkinsgrouputah)"
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_wg_1.gif
+  url: /portfolio/list_wg_1.gif
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_wg_2.jpg
+  url: /portfolio/list_wg_2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_wg_3.jpg
+  url: /portfolio/list_wg_3.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_wg_1.gif
+  url: /portfolio/gallery_wg_1.gif
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_11.jpg
+  url: /portfolio/feature_11.jpg
 banner_color: 
 banner_bg_image: 
 repeat_background: false

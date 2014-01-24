@@ -17,13 +17,13 @@ credits:
 - ! "AIGA SLC: \n[website](http://saltlakecity.aiga.org/)"
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_brtLts_6.jpg
+  url: /portfolio/list_brtLts_6.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_aiga_2.jpg
+  url: /portfolio/gallery_aiga_2.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_aigaBL_2.jpg
+  url: /portfolio/feature_aigaBL_2.jpg
 banner_color: ! '#999999'
 banner_bg_image: 
 repeat_background: false

@@ -18,17 +18,17 @@ credits:
 - Barbie
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_barbie1.jpg
+  url: /portfolio/list_barbie1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_barbie2.jpg
+  url: /portfolio/list_barbie2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_barbie3.jpg
+  url: /portfolio/list_barbie3.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/gallery_barbie_1.jpg
+  url: /portfolio/gallery_barbie_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/feature_barbie_1.jpg
+  url: /portfolio/feature_barbie_1.jpg
 banner_color: ! '#ea4396'
 banner_bg_image: 
 repeat_background: false

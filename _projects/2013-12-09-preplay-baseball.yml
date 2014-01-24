@@ -26,13 +26,13 @@ credits:
   | \n[Google Play](https://play.google.com/store/apps/details?id=com.preplay.android.mlb&referrer=utm_source%3Dmlb.preplaysports.com)"
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/mobile_pp_mlb.jpg
+  url: /portfolio/mobile_pp_mlb.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_ppBB_1.jpg
+  url: /portfolio/gallery_ppBB_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_ppMLB_1.jpg
+  url: /portfolio/feature_ppMLB_1.jpg
 banner_color: ! '#999999'
 banner_bg_image: 
 repeat_background: false

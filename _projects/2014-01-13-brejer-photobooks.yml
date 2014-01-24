@@ -10,17 +10,17 @@ tags: []
 credits: []
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/brejer_pb1.jpg
+  url: /portfolio/brejer_pb1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/brejer_pb2.jpg
+  url: /portfolio/brejer_pb2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/brejer_pb3.jpg
+  url: /portfolio/brejer_pb3.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_BrejerPB_1.jpg
+  url: /portfolio/gallery_BrejerPB_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_BrejerPB_1.jpg
+  url: /portfolio/feature_BrejerPB_1.jpg
 banner_color: ! '#999999'
 banner_bg_image: 
 repeat_background: false

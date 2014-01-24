@@ -19,21 +19,21 @@ credits:
 - ! '[brincadada.com](http://www.brincadada.com/)'
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_bdWeb_1.jpg
+  url: /portfolio/list_bdWeb_1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_bdWeb_2.jpg
+  url: /portfolio/list_bdWeb_2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_brinca1.gif
+  url: /portfolio/list_brinca1.gif
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_brinca4.jpg
+  url: /portfolio/list_brinca4.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_brinca5.jpg
+  url: /portfolio/list_brinca5.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_brinca_1.jpg
+  url: /portfolio/gallery_brinca_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_brinca_1.jpg
+  url: /portfolio/feature_brinca_1.jpg
 banner_color: transparent
 banner_bg_image: 
 repeat_background: false

@@ -14,17 +14,17 @@ tags: []
 credits: []
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/amsBank_full1.jpg
+  url: /portfolio/amsBank_full1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_bankAMS_1.jpg
+  url: /portfolio/list_bankAMS_1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_bankAMS_2.jpg
+  url: /portfolio/list_bankAMS_2.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/gallery_bankAMS_1.jpg
+  url: /portfolio/gallery_bankAMS_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/feature_bankAMS_1.jpg
+  url: /portfolio/feature_bankAMS_1.jpg
 banner_color: ! '#999999'
 banner_bg_image: 
 repeat_background: false

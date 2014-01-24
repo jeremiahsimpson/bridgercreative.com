@@ -11,10 +11,10 @@ credits: []
 media: []
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/gallery_ux_1.gif
+  url: /portfolio/gallery_ux_1.gif
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/home_ux2.gif
+  url: /portfolio/home_ux2.gif
 banner_color: ! '#f2f2f2'
 banner_bg_image: 
 repeat_background: false

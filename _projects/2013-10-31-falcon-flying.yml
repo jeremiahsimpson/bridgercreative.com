@@ -23,23 +23,23 @@ credits:
 - ! '[Cooper Hewitt Design Museum](http://www.cooperhewitt.org/)'
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_cr_1.jpg
+  url: /portfolio/list_cr_1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_cr_2.jpg
+  url: /portfolio/list_cr_2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_cr_3.jpg
+  url: /portfolio/list_cr_3.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_cr_4.jpg
+  url: /portfolio/list_cr_4.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_cr_5.jpg
+  url: /portfolio/list_cr_5.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_cr_6.jpg
+  url: /portfolio/list_cr_6.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_cr_1.jpg
+  url: /portfolio/gallery_cr_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_cr.jpg
+  url: /portfolio/feature_cr.jpg
 banner_color: tansparent
 banner_bg_image: 
 repeat_background: false

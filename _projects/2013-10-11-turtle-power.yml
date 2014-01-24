@@ -21,19 +21,19 @@ credits:
 - Master Splinter
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tmnt_1.jpg
+  url: /portfolio/list_tmnt_1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tmnt_2.jpg
+  url: /portfolio/list_tmnt_2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tmnt_3.jpg
+  url: /portfolio/list_tmnt_3.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/tmnt_strips.jpg
+  url: /portfolio/tmnt_strips.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_tmnt_1.jpg
+  url: /portfolio/gallery_tmnt_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_tmnt_1.jpg
+  url: /portfolio/feature_tmnt_1.jpg
 banner_color: 
 banner_bg_image: 
 repeat_background: false

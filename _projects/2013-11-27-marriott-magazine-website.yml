@@ -18,19 +18,19 @@ credits:
 - ! '[Marriott Magazine](http://marriottschool.byu.edu/marriottmag/)'
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Home_Mac1.jpg
+  url: /portfolio/Home_Mac1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/iPad1.jpg
+  url: /portfolio/iPad1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/iPad2.jpg
+  url: /portfolio/iPad2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/wireframes.jpg
+  url: /portfolio/wireframes.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/gallery_marriott_1.gif
+  url: /portfolio/gallery_marriott_1.gif
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Banner2.jpg
+  url: /portfolio/Banner2.jpg
 banner_color: 
 banner_bg_image: 
 repeat_background: false

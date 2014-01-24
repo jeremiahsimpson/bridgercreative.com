@@ -21,17 +21,17 @@ credits:
 - ! "Alex Trebek: \n[What is Deseret?](http://www.ksl.com/?sid=27279151)"
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_di_2.jpg
+  url: /portfolio/list_di_2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_di_sketch.gif
+  url: /portfolio/list_di_sketch.gif
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_di.gif
+  url: /portfolio/list_di.gif
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_di_1.jpg
+  url: /portfolio/gallery_di_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_1.jpg
+  url: /portfolio/feature_1.jpg
 banner_color: ! '#999999'
 banner_bg_image: 
 repeat_background: false

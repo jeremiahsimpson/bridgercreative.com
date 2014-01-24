@@ -4,28 +4,28 @@ layout: page
 excerpt: Hi, we’re Bridger, a design agency that collaborates with you to create smart and meaningful experiences that connect with your customers.
 people:
   -
-    name: Jeremiah Simpson
-    img: /img/jeremiah@2x.jpg
+    name:  Jeremiah Simpson
+    img:   about-us/jeremiah@2x.jpg
     email: jeremiah@bridgercreative.com
-    tel: 646.652.6455
+    tel:   646.652.6455
     position: Founder & Creative Director
     description: |-
       Jeremiah has been in the creative industry nearly 15 years and leads the vision for Bridger. He has had the opportunity to collaborate with a variety of talented teams, both large and small, including R/GA, MRM and leading business consulting firms.
     
   -
-    name: Matt Simpson
-    img: /img/matt@2x.jpg
+    name:  Matt Simpson
+    img:   about-us/matt@2x.jpg
     email: matt@bridgercreative.com
-    tel: 646.652.6455
+    tel:   646.652.6455
     position: Founder & Creative Director
     description: |-
       After starting a neighborhood T-shirt business with his brother at the age of 10 (painting custom designs at $5 a pop), Matt was hooked on seeing how people interacted with design.
 
   -
-    name: Russell Parrish
-    img: /img/russell@2x.jpg
+    name:  Russell Parrish
+    img:   about-us/russell@2x.jpg
     email: russell@bridgercreative.com
-    tel: 646.652.6455
+    tel:   646.652.6455
     position: Designer
     description: |-
       A lifelong learner, Russell brings to Bridger a variety of diverse skills such as human interface design, branding, packaging, motion graphics, and cinematography.
@@ -48,7 +48,7 @@ custom_js: '<script type="text/javascript" src="/js/instagram.js"></script>'
         </div>
       </div>
       <div class="profile-img">
-        <img src="{{ person.img }}">
+        {% image 385xAUTO {{ person.img }} alt="{{ person.name }}" %}
       </div>
     </div>
   {% endfor %}

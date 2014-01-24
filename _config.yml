@@ -43,3 +43,9 @@ google_analytics_tracking_id: UA-195847-4
 facebook_user: studiobridger
 facebook_like_button: true
 facebook_facepile: true
+
+# Image thumbnail generator
+image:
+  source: assets/site_images/
+  output: img
+  presets: # Predefined sizes go here

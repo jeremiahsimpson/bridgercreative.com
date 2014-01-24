@@ -25,13 +25,13 @@ credits:
   | \n[Google Play](https://play.google.com/store/apps/details?id=com.preplay.android.football&referrer=utm_source%3Dfootball.preplaysports.com)"
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/mobile_pp_nfl.jpg
+  url: /portfolio/mobile_pp_nfl.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_ppNFL_1.jpg
+  url: /portfolio/gallery_ppNFL_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_ppNFL_1.jpg
+  url: /portfolio/feature_ppNFL_1.jpg
 banner_color: ! '#202020'
 banner_bg_image: 
 repeat_background: false

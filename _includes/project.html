@@ -6,9 +6,9 @@
   {% elsif project.banner.url %}{{ project.banner.url }}
   {% else %}{{ project.media[0].url }}{% endif %}
   {% endcapture %}
-  <div class="project-image" style="background-image:url('{{ thumbnail_url | strip }}')">
+  <div class="project-image" style="background-image:url('{{ thumbnail_url | strip | image_url: '280xAUTO' }}')">
     <a href="/our-work/{{ url }}">
-      <img src="{{ thumbnail_url | strip }}">
+      {% image 280xAUTO {{ thumbnail_url | strip }} alt="{{ project.title }}" %}
     </a>
   </div>
   <h3>{{ project.title }}</h3>

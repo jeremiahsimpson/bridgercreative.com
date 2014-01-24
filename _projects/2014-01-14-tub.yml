@@ -24,25 +24,25 @@ credits:
 - ! "tüb: \n[website](http://www.tubpeople.com/)"
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_1.gif
+  url: /portfolio/list_tub_1.gif
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_2.gif
+  url: /portfolio/list_tub_2.gif
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_3.jpg
+  url: /portfolio/list_tub_3.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_4.jpg
+  url: /portfolio/list_tub_4.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_5.jpg
+  url: /portfolio/list_tub_5.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_6.jpg
+  url: /portfolio/list_tub_6.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/list_tub_7.jpg
+  url: /portfolio/list_tub_7.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/gallery_tub_1.jpg
+  url: /portfolio/gallery_tub_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2014/01/feature_12.jpg
+  url: /portfolio/feature_12.jpg
 banner_color: ! '#999999'
 banner_bg_image: 
 repeat_background: false

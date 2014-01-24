@@ -16,18 +16,18 @@ tags: []
 credits: []
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Bank_0000_1.jpg
+  url: /portfolio/Bank_0000_1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Bank_0001_2.jpg
+  url: /portfolio/Bank_0001_2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Bank_0002_3.jpg
+  url: /portfolio/Bank_0002_3.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/IMG_6781-copy.jpg
+  url: /portfolio/IMG_6781-copy.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/IMG_6782.jpg
+  url: /portfolio/IMG_6782.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/gallery_nicu_1.jpg
+  url: /portfolio/gallery_nicu_1.jpg
 banner: 
 banner_color: ! '#999999'
 banner_bg_image: 

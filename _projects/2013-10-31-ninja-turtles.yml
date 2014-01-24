@@ -15,21 +15,21 @@ credits:
 - ! "AIGA NYC: \n[website](http://aigany.org/)"
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_brtLts_1.jpg
+  url: /portfolio/list_brtLts_1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_brtLts_2.jpg
+  url: /portfolio/list_brtLts_2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_brtLts_3.jpg
+  url: /portfolio/list_brtLts_3.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_brtLts_4.jpg
+  url: /portfolio/list_brtLts_4.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/list_brtLts_5.jpg
+  url: /portfolio/list_brtLts_5.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/gallery_aiga_1.jpg
+  url: /portfolio/gallery_aiga_1.jpg
 banner:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/12/feature_aigaBL_11.jpg
+  url: /portfolio/feature_aigaBL_11.jpg
 banner_color: transparent
 banner_bg_image: 
 repeat_background: false

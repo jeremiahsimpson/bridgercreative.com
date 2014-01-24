@@ -12,18 +12,18 @@ tags: []
 credits: []
 media:
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Asia_0000_1.jpg
+  url: /portfolio/Asia_0000_1.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Asia_0001_2.jpg
+  url: /portfolio/Asia_0001_2.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Asia_0002_3.jpg
+  url: /portfolio/Asia_0002_3.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Asia_0003_4.jpg
+  url: /portfolio/Asia_0003_4.jpg
 - type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/Asia_0004_5.jpg
+  url: /portfolio/Asia_0004_5.jpg
 thumbnail:
   type: image
-  url: http://www.bridgercreative.com/wp-content/uploads/2013/11/icon-011.jpg
+  url: /portfolio/icon-011.jpg
 banner: 
 banner_color: ! '#999999'
 banner_bg_image: 
