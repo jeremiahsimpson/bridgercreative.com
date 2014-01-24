@@ -37,9 +37,10 @@ header .nav {
 header .nav a {
     color: black;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
     border-bottom: 7px solid transparent;
     padding-bottom: 17px;
+    margin-left: 10px;
 }
 
 header .nav:hover .active a {
@@ -61,6 +62,7 @@ header .navbar-brand {
     width: 158px;
     height: 46px;
     background: transparent url('/img/logo.png') 0 0 no-repeat;
+    background-size: 158px auto;
     margin-top: 25px;
 }
 
@@ -68,9 +70,9 @@ header .navbar-brand {
     position: absolute;
     overflow: hidden;
     width: 168px;
-    height: 46px;
+    height: 40px;
     background: #f15a24;
-    margin: -15px 0 0 -12px;
+    margin: -12px 0 0 -13px;
     line-height: 38px;
     color: white;
     text-transform: uppercase;
@@ -78,7 +80,7 @@ header .navbar-brand {
     text-indent: 0;
     font-weight: bold;
     font-size: 2em;
-    clip: rect(0 61px 46px 57px);
+    clip: rect(0 63px 46px 57px);
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -88,8 +90,6 @@ header .navbar-brand {
 
 #logo_overlay span {
     display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
     opacity: 0;
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -145,8 +145,13 @@ footer {
 
 #footer ul a {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
     color: black;
+}
+
+#footer #addresses {
+    font-size: 0.9em;
+    margin: 10px 0;
 }
 
 #footer #addresses li:after {
@@ -168,6 +173,7 @@ footer {
     text-indent: -999px;
     overflow: hidden;
     background: transparent url('/img/social-icons.png') 0 0 no-repeat;
+    background-size: 200px auto;
 }
 
 .social-icon a:hover {
@@ -180,6 +186,14 @@ footer {
 
 .social-icon.youtube a {
     background-position-x: -80px;
+}
+
+.social-icon.instagram a {
+    background-position-x: -120px;
+}
+
+.social-icon.pinterest a {
+    background-position-x: -160px;
 }
 
 .lead {
@@ -221,17 +235,17 @@ footer {
 
 #home_banner .carousel .item {
     height: 450px;
-	line-height: 450px;
-	background-position: 50% 50%;
-	text-align: center;
+    line-height: 450px;
+    background-position: 50% 50%;
+    text-align: center;
 }
 
 #home_banner .carousel .item img {
     max-width: 100%;
-	display: inline-block;
-	margin: 0 auto;
-	line-height: normal;
-	vertical-align: middle;
+    display: inline-block;
+    margin: 0 auto;
+    line-height: normal;
+    vertical-align: middle;
 }
 
 .home-block {
@@ -410,6 +424,10 @@ a.twitter-timeline > span {
     font-size: 1.1em
 }
 
+.post-categories {
+	font-style: italic;
+}
+
 .comment-link {
     font-weight: bold;
 }
@@ -440,6 +458,7 @@ a.twitter-timeline > span {
 #sidebar_categories li {
     color: #999;
     line-height: 1.75em;
+	text-transform: capitalize;
 }
 
 #sidebar_facebook .fb-like-box,
@@ -844,20 +863,20 @@ a.twitter-timeline > span {
 /*****************************************************************************/
 
 .job {
-    margin-bottom: 4em;
+    margin: 4em 0;
 }
 
 .job h3 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .job ul a {
     font-weight: bold;
-    font-size: 4.5em;
+    font-size: 4em;
     color: black;
-    line-height: 1.25em;
+    line-height: 1.2em;
     text-decoration: none;
 }
 
@@ -884,15 +903,19 @@ a.twitter-timeline > span {
 }
 
 #telephone.contact-type {
-    font-size: 12.5em;
+    font-size: 10.5em;
 }
 
 #email.contact-type {
-    font-size: 6.25em;
+    font-size: 5.3em;
 }
 
 #address.contact-type {
-    font-size: 2.9em;
+    font-size: 2.4em;
+}
+
+#contact hr {
+    border-color: #ccc;
 }
 
 #contact hr:last-child {
@@ -900,7 +923,7 @@ a.twitter-timeline > span {
 }
 
 #contact .instagram-container {
-    margin-top: 10em;
+    margin-top: 8em;
 }
 
 #contact .instagram-photo img {
@@ -923,7 +946,7 @@ a.twitter-timeline > span {
 
 .press-item a {
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1.1em;
     line-height: 3em;
     color: #999;
 }
@@ -933,6 +956,7 @@ a.twitter-timeline > span {
 }
 
 #other_press h2 {
+    font-size: 2em;
     font-weight: bold;
     line-height: 3em;
     border-bottom: 1px solid #ccc;
@@ -940,7 +964,29 @@ a.twitter-timeline > span {
 }
 
 .other-press-item {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 0.1em;
 }
 
+/*****************************************************************************/
+/*
+/* Retina Images
+/*
+/*****************************************************************************/
+@media print, screen,
+(-webkit-min-device-pixel-ratio: 1.25),
+(~`"-o-min-device-pixel-ratio: 1.25/1"`),
+(min--moz-device-pixel-ratio: 1.25),
+(-moz-min-device-pixel-ratio: 1.25),
+(-ms-min-device-pixel-ratio: 1.25),
+(min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi),
+(min-resolution: 1.25dppx) {
+    header .navbar-brand {
+        background-image: url('/img/logo@2x.png');
+    }
+
+    .social-icon a {
+        background-image: url('/img/social-icons@2x.png');
+    }
+}
