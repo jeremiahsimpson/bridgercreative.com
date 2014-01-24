@@ -54,7 +54,15 @@ layout: default
             {% image 756xAUTO {{ media.url }} %}
           </div>
         {% elsif media.type == 'video' %}
-          {{ oembed media.url }}
+          <div id="{{ media.url | slug }}" 
+               {% unless media.poster %}data-src="{{ media.url }}"{% endunless %}
+               class="project-media video-embed embed">
+          {% if media.poster %}
+            <a href="#{{ media.url | slug }}" class="embed-play" data-src="{{ media.url }}">
+              {% image 756xAUTO {{ media.poster }} %}
+            </a>
+          {% endif %}
+          </div>
         {% endif %}
         </li>
       {% endfor %}

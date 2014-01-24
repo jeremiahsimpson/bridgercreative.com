@@ -223,6 +223,61 @@ footer {
     z-index: 1;
 }
 
+.embed,
+.embed a.embed-play,
+.embed iframe {
+    display: block;
+    width: 100%;
+}
+
+.embed.loaded {
+    background: black !important;
+}
+
+.embed-play {
+    background: transparent url('/img/video-play.png') 50% 50% no-repeat;
+    background-size: 93px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.embed-play:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: 1;
+    background: transparent url('/img/video-play.png') 50% 50% no-repeat;
+}
+
+.embed-play.loading:before {
+    background-color: rgba(1, 1, 1, 0.25);
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
 /*****************************************************************************/
 /*
 /* Home
@@ -231,7 +286,7 @@ footer {
 
 #home_banner {
     margin-bottom: 1.5em;
-	border-bottom: 3px solid #f15a24;
+    border-bottom: 3px solid #f15a24;
 }
 
 #home_banner .carousel .item {
@@ -281,79 +336,47 @@ footer {
 .home-block .embed,
 .home-block .embed a.embed-play,
 .home-block .embed iframe {
-	display:block;
-    width: 100%;
     height: 100%;
 }
-
-.home-block .embed.loaded {
-	background: black !important;
-}
-
-.embed-play {
-	background: transparent url('/img/video-play.png') 50% 50% no-repeat;
-	background-size: 93px auto;
-	position: relative;
-	overflow: hidden;
-}
-
-.embed-play.loading:before
-{
-	content: "";
-	position: absolute;
-	width: 200%;
-	height: 200%;
-	top: -50%;
-	left: -50%;
-	z-index: 1;
-	background: rgba(1,1,1,0.25) url('/img/video-play.png') 50% 50% no-repeat;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-}
-
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 #twitter_container {
     display: inline-block;
     background-image: -webkit-linear-gradient(
-		-45deg,
-		lightgray   0%, 
-		lightgray   25%, 
-		transparent 25%, 
-		transparent 50%, 
-		lightgray   50%, 
-		lightgray   75%, 
-		transparent 75%, 
-		transparent 100%
+    -45deg,
+    lightgray 0%, 
+    lightgray 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    lightgray 50%, 
+    lightgray 75%, 
+    transparent 75%, 
+    transparent 100%
     );
     background-image: -moz-linear-gradient(
-		-45deg,
-		lightgray   0%, 
-		lightgray   25%, 
-		transparent 25%, 
-		transparent 50%, 
-		lightgray   50%, 
-		lightgray   75%, 
-		transparent 75%, 
-		transparent 100%
+    -45deg,
+    lightgray 0%, 
+    lightgray 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    lightgray 50%, 
+    lightgray 75%, 
+    transparent 75%, 
+    transparent 100%
     );
 
-	background-image: linear-gradient(
-		-45deg,
-		lightgray   0%, 
-		lightgray   25%, 
-		transparent 25%, 
-		transparent 50%, 
-		lightgray   50%, 
-		lightgray   75%, 
-		transparent 75%, 
-		transparent 100%
+    background-image: linear-gradient(
+    -45deg,
+    lightgray 0%, 
+    lightgray 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    lightgray 50%, 
+    lightgray 75%, 
+    transparent 75%, 
+    transparent 100%
     );
-	
-	background-size: 8px 8px;
+
+    background-size: 8px 8px;
     width: 100%;
 }
 
@@ -462,7 +485,7 @@ a.twitter-timeline > span {
 }
 
 .post-categories {
-	font-style: italic;
+    font-style: italic;
 }
 
 .comment-link {
@@ -472,13 +495,13 @@ a.twitter-timeline > span {
 .comment-link .comment-count {
     color: white;
     background: transparent url('/img/comment-count-bg.png') 50% 50% no-repeat;
-	background-size: 24px auto;
+    background-size: 24px auto;
     display: inline-block;
     width: 24px;
     height: 24px;
-	line-height: 22px;
+    line-height: 22px;
     text-align: center;
-	font-size: 0.8em;
+    font-size: 0.8em;
 }
 
 #blog_sidebar {
@@ -498,7 +521,7 @@ a.twitter-timeline > span {
 #sidebar_categories li {
     color: #999;
     line-height: 1.75em;
-	text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 #sidebar_facebook .fb-like-box,
@@ -545,8 +568,8 @@ a.twitter-timeline > span {
     -ms-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
-	height: 100%;
-	overflow-y: hidden;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 .profile:hover .profile-content {
@@ -558,7 +581,7 @@ a.twitter-timeline > span {
     font-weight: bold;
     line-height: 1em;
     margin: 0.25em 10px;
-	width:70%;
+    width: 70%;
 }
 
 .profile-content h5 {
@@ -575,7 +598,7 @@ a.twitter-timeline > span {
     padding: 10px;
     overflow-y: scroll;
     height: 40%;
-	font-size:0.9em;
+    font-size: 0.9em;
 }
 
 .profile-contact {
@@ -587,18 +610,18 @@ a.twitter-timeline > span {
 }
 
 .profile-contact span.icon {
-	position: relative;
-	top: 0.25em;
-	margin-right:0.5em;
-	display: inline-block;
-	width:16px;
-	height:16px;
-	background: transparent url('/img/profile-contact-icons.png') 0 0 no-repeat;
-	background-size: 16px auto;
+    position: relative;
+    top: 0.25em;
+    margin-right: 0.5em;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: transparent url('/img/profile-contact-icons.png') 0 0 no-repeat;
+    background-size: 16px auto;
 }
 
 .profile-contact span.icon.telephone {
-	background-position-y: -18px;
+    background-position-y: -18px;
 }
 
 .profile-img img {
@@ -650,8 +673,8 @@ a.twitter-timeline > span {
 
 #project_filter .panel {
     padding: 5px;
-	box-shadow:none;
-	
+    box-shadow: none;
+
 }
 
 #project_filter .panel-heading,
@@ -671,7 +694,7 @@ a.twitter-timeline > span {
 }
 
 #project_filter .panel-title {
-	font-size:1em;
+    font-size: 1em;
 }
 
 #project_filter .panel-title a {
@@ -713,7 +736,7 @@ a.twitter-timeline > span {
 }
 
 #project_filter .panel-body li {
-	font-size: 0.9em;
+    font-size: 0.9em;
     line-height: 2.2em;
 }
 
@@ -733,7 +756,7 @@ a.twitter-timeline > span {
 .project h3 {
     font-size: 1em;
     font-weight: bold;
-	margin-bottom: 0.33em;
+    margin-bottom: 0.33em;
 }
 
 .project ul {
@@ -743,7 +766,7 @@ a.twitter-timeline > span {
 .project li a, 
 .project li:after {
     color: #f15a24;
-	font-style: italic;
+    font-style: italic;
 }
 
 .project-image {
@@ -1057,14 +1080,14 @@ a.twitter-timeline > span {
         background-image: url('/img/social-icons@2x.png');
     }
 
-	.embed-play.loading {
-		background-image: url('/img/video-play@2x.png');
-	}
+    .embed-play.loading {
+        background-image: url('/img/video-play@2x.png');
+    }
 
-	.comment-link .comment-count {
-		background-image: url('/img/comment-count-bg@2x.png');
-	}
+    .comment-link .comment-count {
+        background-image: url('/img/comment-count-bg@2x.png');
+    }
 
-	.profile-contact span.icon {
-		background-image: url('/img/profile-contact-icons@2x.png');
-	}
+    .profile-contact span.icon {
+        background-image: url('/img/profile-contact-icons@2x.png');
+    }

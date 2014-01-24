@@ -1,5 +1,8 @@
 ---
 layout: default
+include_twitter: true
+include_facebook: true
+include_embeds: true
 banners:
   - img: "/img/home_bridge2.gif"
     url: "/about-us/"
@@ -62,21 +65,9 @@ we-believe:
     text: Design is the art of conversation
     
 custom_js: |-
-  <script type="text/javascript" src="/js/jquery.embedly.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() { 
       $("[data-toggle='tooltip']").tooltip(); 
-      $('a.embed-play').on('click', function(){
-        $(this).addClass('loading');
-        $.embedly
-          .extract($(this).data('src'), {
-            key:'29005326497c4f8e82cfd8645d77aaf9',
-            query: { autoplay: true } 
-          })
-          .done(function(results) {
-            $('a.embed-play').parent('.embed').html(results[0].media.html)
-          });
-      })
     });
   </script>
 ---
