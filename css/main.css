@@ -1091,3 +1091,55 @@ a.twitter-timeline > span {
     .profile-contact span.icon {
         background-image: url('/img/profile-contact-icons@2x.png');
     }
+
+    /*****************************************************************************/
+    /*
+        /* Responsive Styles
+        /*
+        /*****************************************************************************/
+    @media(max-width:767px){
+        header.navbar-fixed-top {
+            position: static;
+            margin: 0;
+        }
+
+        header .navbar-brand {
+            display: block;
+            margin: 8px auto;
+            float: none;
+        }
+
+        header .nav {
+            margin: 0;
+        }
+
+        header .nav {
+            margin: 0;
+            text-align: center;
+        }
+
+        header .nav > li {
+            display: inline-block;
+        }
+
+        header .nav a {
+            margin: 0 5px;
+            padding: 0;
+        }
+
+        #content {
+            padding: 0;
+        }
+
+        #home_banner .carousel .item {
+            height: 230px;
+            line-height: 230px;
+        }
+}
+
+    @media(min-width:768px) and (max-width:991px){}
+
+    @media(min-width:992px) and (max-width:1199px){}
+
+    @media(min-width:1200px){}
+

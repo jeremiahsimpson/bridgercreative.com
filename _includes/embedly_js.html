@@ -1,0 +1,30 @@
+{% if page.include_embeds %}
+<script type="text/javascript" src="/js/jquery.embedly.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { 
+    $.embedly.defaults.key = "{{ site.embedly_api_key }}"
+    // Embed w Poster Image
+    $('.embed .embed-play[data-src]').on('click', function(){
+      $(this).parent('.embed').addClass('loading');
+      $.embedly
+        .extract($(this).data('src'), { query: { autoplay: true } })
+        .done(function(results) {
+          $('a.embed-play').parent('.embed').addClass('loaded');
+          $('a.embed-play').parent('.embed').html(results[0].media.html)
+        });
+    })
+
+    // Embed w/o Poster Image
+    $('.embed[data-src]').each(function(i, el){
+      $(el).addClass('loading');
+      $.embedly
+        .extract($(this).data('src'))
+        .done(function(results) {
+          $(el).addClass('loaded');
+          $(el).html(results[0].media.html)
+        });
+    })
+
+  });
+</script>
+{% endif %}
