@@ -44,6 +44,8 @@ facebook_user: studiobridger
 facebook_like_button: true
 facebook_facepile: true
 
+embedly_api_key: 29005326497c4f8e82cfd8645d77aaf9
+
 # Image thumbnail generator
 image:
   source: assets/site_images/

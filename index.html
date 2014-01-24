@@ -61,7 +61,24 @@ we-believe:
     img:  /img/we-believe-9.png
     text: Design is the art of conversation
     
-custom_js: <script type="text/javascript">$(document).ready(function() { $("[data-toggle='tooltip']").tooltip(); });</script>
+custom_js: |-
+  <script type="text/javascript" src="/js/jquery.embedly.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() { 
+      $("[data-toggle='tooltip']").tooltip(); 
+      $('a.embed-play').on('click', function(){
+        $(this).addClass('loading');
+        $.embedly
+          .extract($(this).data('src'), {
+            key:'29005326497c4f8e82cfd8645d77aaf9',
+            query: { autoplay: true } 
+          })
+          .done(function(results) {
+            $('a.embed-play').parent('.embed').html(results[0].media.html)
+          });
+      })
+    });
+  </script>
 ---
 
 <div id="home">
@@ -94,8 +111,9 @@ custom_js: <script type="text/javascript">$(document).ready(function() { $("[dat
       <div class="col-md-{{ block.cols }}">
         <div class="home-block" style="background-image:url('{{ block.bgimg }}')">
         {% if block.video %}
-          {% oembed {{ block.url }} %}
-
+          <div id="{{ block.url | slug }}" class="video-embed embed">
+            <a href="#{{ block.url | slug }}" class="embed-play" data-src="{{ block.url }}"></a>
+          </div>
         {% elsif block.twitter %}
           {% include twitter_timeline.html %}
 

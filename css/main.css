@@ -278,11 +278,43 @@ footer {
     padding: 10%;
 }
 
+.home-block .embed,
+.home-block .embed a.embed-play,
 .home-block .embed iframe {
-    background: black;
+	display:block;
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
+
+.home-block .embed.loaded {
+	background: black !important;
+}
+
+.embed-play {
+	background: transparent url('/img/video-play.png') 50% 50% no-repeat;
+	background-size: 93px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.embed-play.loading:before
+{
+	content: "";
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: -50%;
+	left: -50%;
+	z-index: 1;
+	background: rgba(1,1,1,0.25) url('/img/video-play.png') 50% 50% no-repeat;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 #twitter_container {
     display: inline-block;
@@ -791,6 +823,10 @@ a.twitter-timeline > span {
     margin: 1em 0;
 }
 
+#similar_projects .project li:after {
+    color: black;
+}
+
 /*****************************************************************************/
 /*
 /* What We Do
@@ -1020,6 +1056,10 @@ a.twitter-timeline > span {
     .social-icon a {
         background-image: url('/img/social-icons@2x.png');
     }
+
+	.embed-play.loading {
+		background-image: url('/img/video-play@2x.png');
+	}
 
 	.comment-link .comment-count {
 		background-image: url('/img/comment-count-bg@2x.png');
