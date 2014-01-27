@@ -485,7 +485,9 @@ a.twitter-timeline > span {
 }
 
 .post-categories {
+    text-align: right;
     font-style: italic;
+    padding-right: 10px;
 }
 
 .comment-link {
@@ -538,12 +540,11 @@ a.twitter-timeline > span {
 
 .post-share-widgets {
     min-height: 25px;
-    min-width: 160px;
 }
 
 .post-share-widgets .share-widget {
     float: right;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 /*****************************************************************************/
@@ -856,6 +857,10 @@ a.twitter-timeline > span {
 /*
 /*****************************************************************************/
 
+#what-we-do {
+	margin-bottom: 6em;
+}
+
 #work_categories h3,
 #experience h3 {
     font-weight: bold;
@@ -874,7 +879,6 @@ a.twitter-timeline > span {
 }
 
 #how_we_work {
-    margin: 6em 0 10em 0;
     text-align: center;
 }
 
@@ -922,6 +926,14 @@ a.twitter-timeline > span {
     background: transparent url('/img/zigzag-bottom.png') 50% 100% repeat-x;
     background-size: 20px auto;
     min-height: 20px;
+}
+
+#zigzag_inner img {
+    width: 100%;
+}
+
+#experience {
+	margin-top:6em;
 }
 
 #testimonials {
@@ -1048,14 +1060,16 @@ a.twitter-timeline > span {
 #other_press h2 {
     font-size: 2em;
     font-weight: bold;
-    line-height: 3em;
+    line-height: 1.1em;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 .other-press-item {
     font-size: 1em;
-    margin-bottom: 0.1em;
+    line-height: 1.1em;
+    margin-bottom: 0.8em;
 }
 
 /*****************************************************************************/
@@ -1091,55 +1105,149 @@ a.twitter-timeline > span {
     .profile-contact span.icon {
         background-image: url('/img/profile-contact-icons@2x.png');
     }
-
-    /*****************************************************************************/
-    /*
-        /* Responsive Styles
-        /*
-        /*****************************************************************************/
-    @media(max-width:767px){
-        header.navbar-fixed-top {
-            position: static;
-            margin: 0;
-        }
-
-        header .navbar-brand {
-            display: block;
-            margin: 8px auto;
-            float: none;
-        }
-
-        header .nav {
-            margin: 0;
-        }
-
-        header .nav {
-            margin: 0;
-            text-align: center;
-        }
-
-        header .nav > li {
-            display: inline-block;
-        }
-
-        header .nav a {
-            margin: 0 5px;
-            padding: 0;
-        }
-
-        #content {
-            padding: 0;
-        }
-
-        #home_banner .carousel .item {
-            height: 230px;
-            line-height: 230px;
-        }
 }
 
-    @media(min-width:768px) and (max-width:991px){}
+/*****************************************************************************/
+/*
+/* Responsive Styles
+/*
+/*****************************************************************************/
+@media(max-width:767px){
+    header.navbar-fixed-top {
+        position: static;
+        margin: 0;
+    }
 
-    @media(min-width:992px) and (max-width:1199px){}
+    header .navbar-brand {
+        display: block;
+        margin: 8px auto;
+        float: none;
+    }
 
-    @media(min-width:1200px){}
+    header .nav {
+        margin: 0;
+    }
+
+    header .nav {
+        margin: 0;
+        text-align: center;
+    }
+
+    header .nav > li {
+        display: inline-block;
+    }
+
+    header .nav a {
+        margin: 0 5px;
+        padding: 0;
+    }
+
+    .lead {
+        font-size: 1.5em;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+    #home_banner .carousel .item,
+    #project_banner_image {
+        height: 230px;
+        line-height: 230px;
+    }
+
+    #we_believe {
+        display: none;
+    }
+
+    .contact-type,
+    .contact-type a {
+        line-height: 0.6em;
+    }
+
+    #telephone.contact-type {
+        font-size: 3.4em;
+    }
+
+    #email.contact-type {
+        font-size: 1.7em;
+    }
+
+    #address.contact-type {
+        font-size: 0.8em;
+    }
+
+    #contact .instagram-photo img {
+        border: 2px solid black;
+    }
+
+    #about-us .instagram-photo img {
+        border: 1px solid black;
+        margin-bottom: 15px;
+    }
+
+    .post {
+        margin-bottom: 4em;
+    }
+
+    .post-share-widgets {
+        float: left !important;
+    }
+
+    .post-share-widgets .share-widget {
+        margin: 5px 5px 5px 0;
+    }
+
+    .post-categories {
+        clear: left;
+        text-align: left;
+    }
+
+    .post-categories ul:before {
+        content: 'Categories: ';
+        color: #999;
+    }
+
+    .project-image {
+        height: 190px;
+        line-height: 190px;
+    }
+
+    .project h3 {
+        height: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .project ul {
+        font-size: 0.7em;
+        min-height: 2.9em;
+    }
+
+	#how_we_work a {
+		margin-top: -50px;
+		margin-left: -61px;
+	}
+	
+	#zigzag_inner {
+		padding: 10px 0;
+	}
+
+	#testimonials {
+		margin-bottom: 0;
+		padding: 20px;
+		padding-bottom: 0;
+	}
+
+	#testimonials .lead {
+		color: white;
+	}
+
+
+}
+
+@media(min-width:768px) and (max-width:991px){}
+
+@media(min-width:992px) and (max-width:1199px){}
+
+@media(min-width:1200px){}
 

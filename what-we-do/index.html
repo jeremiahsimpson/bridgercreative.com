@@ -12,14 +12,6 @@ categories:
       - Dashboard UI
       - Video & Motion
 
-  - name: Visual Strategy
-    link_title: true
-    examples:
-      - Brand Architecture
-      - Redesign Consultation
-      - Brand Audit
-      - Brand Positioning
-
   - name: Visual Systems
     link_title: true
     examples:
@@ -29,6 +21,14 @@ categories:
       - Infographics
       - Print/Publication
       - Environmental
+
+  - name: Visual Strategy
+    link_title: true
+    examples:
+      - Brand Architecture
+      - Redesign Consultation
+      - Brand Audit
+      - Brand Positioning
 
   - name: Partner Services
     examples:
@@ -106,7 +106,7 @@ testimonials:
 
   <div id="work_categories" class="row">
     {% for category in page.categories %}
-    <div class="col-md-3">
+    <div class="col-md-3 col-xs-6">
       {% include experience_list.html title=category.name list=category.examples link_title=category.link_title %}
     </div>
     {% endfor %}
@@ -124,20 +124,19 @@ testimonials:
       <img src="/img/process_1_sm.png">
     </div>
   </div>
-  
 </div>
 
 <div class="container">  
   <div id="experience" class="row">
     <div class="col-md-9">
-      <div id="brand_experience">
+      <div id="brand_experience" class="col-xs-6">
         {% include experience_list.html title="Brand Experience" list=page.experience.brands list_class="flat-list comma-list" %}
       </div>
-      <div id="agency_experience">
+      <div id="agency_experience" class="col-xs-6">
         {% include experience_list.html title="Agency & Design Firm Experience" list=page.experience.agencies list_class="flat-list comma-list" %}
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-xs-6">
       <div id="industry_experience">
         {% include experience_list.html title="Industry Experience" list=page.experience.industries %}
       </div>

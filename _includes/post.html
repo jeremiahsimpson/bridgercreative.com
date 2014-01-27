@@ -23,40 +23,42 @@
     {{ post.excerpt | markdownify }}
   {% endif %}
   </div>
-  <div class="post-baseline">
+  <div class="post-baseline row">
     {% if post.comments == true and page.comments != true %}
-    <div class="comment-link pull-left">
+    <div class="comment-link col-md-4">
       <a href="{{ post.url }}" data-disqus-identifier="{{ post.title | slug }}" class="comment-count">0</a>
       <a href="{{ post.url }}">Leave A Comment</a>
     </div>
     {% endif %}
     
-    <div class="post-share-widgets pull-right">
-      <div class="facebook share-widget">
-        <div class="fb-like" 
-              data-href="{{ site.url}}{{ page.url }}" 
-              data-layout="button_count" 
-              data-action="like"
-              data-show-faces="false"
-              data-share="false"></div>
-      </div>
-      
-      <div class="twitter share-widget">
-        <a href="https://twitter.com/share" 
-           class="twitter-share-button" 
-           data-related="BridgerCreative" 
-           data-lang="en"
-           data-size="medium" 
-           data-count="none">Tweet</a>
-      </div>
-    </div>
+    <div class="col-md-8">
+      <div class="post-share-widgets pull-right">
+        <div class="facebook share-widget">
+          <div class="fb-like" 
+                data-href="{{ site.url}}{{ page.url }}" 
+                data-layout="button_count" 
+                data-action="like"
+                data-show-faces="false"
+                data-share="false"></div>
+        </div>
 
-    <div class="post-categories pull-right">
-      <ul class="flat-list comma-list">
-      {% for cat in post.categories %}
-        <li>{{ cat | category_link }}</li>
-      {% endfor %}
-      </ul>
+        <div class="twitter share-widget">
+          <a href="https://twitter.com/share" 
+             class="twitter-share-button" 
+             data-related="BridgerCreative" 
+             data-lang="en"
+             data-size="medium" 
+             data-count="none">Tweet</a>
+        </div>
+      </div>
+
+      <div class="post-categories">
+        <ul class="flat-list comma-list">
+        {% for cat in post.categories %}
+          <li>{{ cat | category_link }}</li>
+        {% endfor %}
+        </ul>
+      </div>
     </div>
 
   </div>

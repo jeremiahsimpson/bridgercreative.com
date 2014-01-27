@@ -38,7 +38,7 @@ $(function() {
 						
 						var photo_url = photo.link;
 						var photo_src = photo.images[size_key].url
-						var col_class = "col-md-"+(12/cols)
+						var col_class = "col-xs-"+(12/cols)
 						// Build HTML for photo
 						target
 							.addClass('row')

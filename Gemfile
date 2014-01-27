@@ -11,4 +11,5 @@ group :development do
   gem 'awesome_print'
   gem 'mysql2'
   gem 'html2markdown'
+  gem 's3_website'
 end

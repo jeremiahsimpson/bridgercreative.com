@@ -69,14 +69,17 @@ layout: default
       </ul>
     </div>
   </div>
-  
+
   <div id="similar_projects" class="row">
-    <h2>Similar Projects</h2>
-    <div id="project_list" class="row">
+    <div class="col-md-12">
+      <h2>Similar Projects</h2>
+    </div>
+    <div id="project_list">
     {% for p in page.related_projects %}
       {% include project.html url=p.path project=p %}
     {% endfor %}
     </div>
-    
   </div>
+  
 </div>
+
