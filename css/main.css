@@ -66,6 +66,17 @@ header .navbar-brand {
     margin-top: 25px;
 }
 
+header .navbar-toggle {
+	top:6px;
+	right:-5px;
+}
+
+header .navbar-toggle .icon-bar {
+	background:#ddd;
+	height:5px;
+	width:30px;
+}
+
 #logo_overlay {
     position: absolute;
     overflow: hidden;
@@ -91,9 +102,9 @@ header .navbar-brand {
 #logo_overlay span {
     display: block;
     background: transparent url('/img/logo_overlay@2x.png') 0 0 no-repeat;
-	background-size: 168px auto;
-	width:168px;
-	height:50px;
+    background-size: 168px auto;
+    width: 168px;
+    height: 50px;
     opacity: 0;
     -ms-transition: opacity 1s ease;
     -o-transition: opacity 1s ease;
@@ -167,11 +178,10 @@ footer {
 }
 
 #addresses ul a {
-	color: #999;
-	text-decoration: none;
-	border-bottom: 1px dotted #999;
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
 }
-
 
 .social-icon {
     margin-top: 1em;
@@ -427,13 +437,13 @@ a.twitter-timeline > span {
 }
 
 #we_believe .tooltip {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 .tooltip-inner {
     background: #f15a24;
     padding: 5px;
-	border-radius: 0;
+    border-radius: 0;
 }
 
 .tooltip.bottom .tooltip-arrow {
@@ -624,11 +634,11 @@ a.twitter-timeline > span {
 }
 
 .profile-contact a {
-	color:white;
+    color: white;
 }
 
 .profile-contact a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .profile-contact span.icon {
@@ -666,7 +676,7 @@ a.twitter-timeline > span {
 }
 
 #about-us .quote-container {
-	height:225px;
+    height: 225px;
     text-align: center;
     margin: 3em 0;
     color: #f15a24;
@@ -806,30 +816,29 @@ a.twitter-timeline > span {
 }
 
 .project-image {
-	background: #eee;
-	background-repeat: none;
-	background-size: cover;
+    background: #eee;
+    background-repeat: none;
+    background-size: cover;
 }
 
 .project-image a {
-	width: 100%;
-	height: 100%;
-    display:block;
+    width: 100%;
+    height: 100%;
+    display: block;
     border: 4px solid transparent;
 }
 
 .project-image img {
-	opacity: 0;
-	width:100%;
-	display: block;
+    opacity: 0;
+    width: 100%;
+    display: block;
 }
 
 .project-image a:hover {
     border: 4px solid #f15a24;
 }
 
-.project-image a:hover img {
-}
+.project-image a:hover img {}
 
 #project_banner_image {
     height: 400px;
@@ -891,7 +900,7 @@ a.twitter-timeline > span {
 /*****************************************************************************/
 
 #what-we-do {
-	margin-bottom: 6em;
+    margin-bottom: 6em;
 }
 
 #work_categories h3,
@@ -931,11 +940,11 @@ a.twitter-timeline > span {
 }
 
 #how_we_work a span {
-	position:relative;
+    position: relative;
     display: block;
     color: white;
     background: #f15a24 url('/img/how_we_work_arrow.png') 50% 50% no-repeat;
-	background-size: 24px auto;
+    background-size: 24px auto;
     width: 70px;
     height: 70px;
     line-height: 75px;
@@ -951,11 +960,11 @@ a.twitter-timeline > span {
 }
 
 #how_we_work.open a span {
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-	transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 #zigzag_top {
@@ -981,7 +990,7 @@ a.twitter-timeline > span {
 }
 
 #experience {
-	margin-top:6em;
+    margin-top: 6em;
 }
 
 #testimonials {
@@ -1052,6 +1061,11 @@ a.twitter-timeline > span {
     line-height: 1em;
 }
 
+.contact-type a:hover {
+    color: #f15a24;
+    text-decoration: none;
+}
+
 #telephone.contact-type {
     font-size: 10.5em;
 }
@@ -1072,12 +1086,13 @@ a.twitter-timeline > span {
     border: none;
 }
 
-#contact .instagram-container {
+#contact .contact-photos {
     margin-top: 8em;
 }
 
-#contact .instagram-photo img {
+#contact .contact-photos img {
     border: 5px solid black;
+    width: 100%;
 }
 
 /*****************************************************************************/
@@ -1101,15 +1116,7 @@ a.twitter-timeline > span {
     color: #999;
 }
 
-#other_press {
-    color: #999;
-}
-
-#other_press h2 {
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 1.1em;
-    border-bottom: 1px solid #ccc;
+#other_press h1 {
     margin-bottom: 1em;
     padding-bottom: 1em;
 }
@@ -1138,9 +1145,9 @@ a.twitter-timeline > span {
         background-image: url('/img/logo@2x.png');
     }
 
-	#logo_overlay span {
-    	background-image: url('/img/logo_overlay@2x.png');
-	}
+    #logo_overlay span {
+        background-image: url('/img/logo_overlay@2x.png');
+    }
 
     .social-icon a {
         background-image: url('/img/social-icons@2x.png');
@@ -1158,10 +1165,9 @@ a.twitter-timeline > span {
         background-image: url('/img/profile-contact-icons@2x.png');
     }
 
-	#how_we_work a span {
-		background-image: url('/img/how_we_work_arrow.png');
-	}
-
+    #how_we_work a span {
+        background-image: url('/img/how_we_work_arrow.png');
+    }
 }
 
 /*****************************************************************************/
@@ -1170,34 +1176,41 @@ a.twitter-timeline > span {
 /*
 /*****************************************************************************/
 @media(max-width:767px){
-    header.navbar-fixed-top {
+
+	header.navbar-fixed-top {
         position: static;
         margin: 0;
+		height:70px;
     }
 
-    header .navbar-brand {
-        display: block;
-        margin: 8px auto;
-        float: none;
-    }
+	header .navbar-brand {
+		margin: 13px 0 0 10px;
+	}
 
-    header .nav {
-        margin: 0;
-    }
+	header .navbar-collapse {
+		background: rgba(1,1,1,0.75);
+		margin-top:8px;
+		z-index: 9;
+		position: relative;
+	}
 
-    header .nav {
-        margin: 0;
-        text-align: center;
-    }
+	header .nav {
+		margin: 15px 0;
+	}
 
-    header .nav > li {
-        display: inline-block;
-    }
+	header .nav li {
+		font-size: 1.5em;
+	}
 
-    header .nav a {
-        margin: 0 5px;
-        padding: 0;
-    }
+	header .nav li a {
+		color: white;
+		border:none;
+		padding-left: 0;
+	}
+
+	header .nav li.active a {
+		color: #f15a24;
+	}
 
     .lead {
         font-size: 1.5em;
@@ -1234,12 +1247,16 @@ a.twitter-timeline > span {
         font-size: 0.8em;
     }
 
-    #contact .instagram-photo img {
-        border: 2px solid black;
+	#contact .contact-photos {
+		margin:50px 0;
+	}
+
+    #contact .contact-photos img {
+        border-width: 2px;
     }
 
     #about-us .instagram-photo img {
-        border: 1px solid black;
+        border-width: 1px;
         margin-bottom: 15px;
     }
 
@@ -1247,7 +1264,7 @@ a.twitter-timeline > span {
         margin-bottom: 4em;
     }
 
-    .post-share-widgets {
+	.post-share-widgets {
         float: left !important;
     }
 
@@ -1265,8 +1282,7 @@ a.twitter-timeline > span {
         color: #999;
     }
 
-    .project-image {
-    }
+    .project-image {}
 
     .project h3 {
         height: 2em;
@@ -1278,39 +1294,40 @@ a.twitter-timeline > span {
         min-height: 2.9em;
     }
 
-	#how_we_work a {
-		margin-top: -50px;
-		margin-left: -61px;
+	.job ul a {
+		font-size: 2em;
 	}
 
-	#how_we_work a span {
-		
-	}
+    #how_we_work a {
+        margin-top: -50px;
+        margin-left: -61px;
+    }
 
-	#zigzag_inner {
-		padding: 10px 0;
-	}
+    #zigzag_inner {
+        padding: 10px 0;
+    }
 
-	#testimonials {
-		margin-bottom: 0;
-		padding: 20px;
-		padding-bottom: 0;
-	}
+    #testimonials {
+        margin-bottom: 0;
+        padding: 20px;
+        padding-bottom: 0;
+    }
 
-	#testimonials .lead {
-		color: white;
-	}
-
-
+    #testimonials .lead {
+        color: white;
+    }
 }
 
 @media(min-width:768px) and (max-width:991px){
-	#we_believe li {
-		width: 7.9%;
-	}
+    #we_believe li {
+        width: 7.9%;
+    }
 }
 
-@media(min-width:992px) and (max-width:1199px){}
+@media(min-width:992px) and (max-width:1199px){
+	
+}
 
-@media(min-width:1200px){}
-
+@media(min-width:1200px){
+	
+}

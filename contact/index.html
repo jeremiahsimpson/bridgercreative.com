@@ -11,13 +11,17 @@ contacts:
   - id:   address
     text: 40 West 37th Street, Suite 806, New York, New York 10018
     url:  "https://www.google.com/maps/preview#!q=40+West+37th+Street%2C+Suite+806%2C+New+York%2C+New+York+10018&data=!1m4!1m3!1d3932!2d-73.9853848!3d40.751027!4m15!2m14!1m13!1s0x89c259aa2f9abed5%3A0x639ae5873bb8823a!3m8!1m3!1d387191!2d-73.979681!3d40.697488!3m2!1i1024!2i768!4f13.1!4m2!3d40.751027!4d-73.9853848"
+photos:
+  - http://distilleryimage11.s3.amazonaws.com/d09002b485f011e3817b0a5cc91d3fd3_6.jpg
+  - http://distilleryimage3.s3.amazonaws.com/9e4e92ee850e11e3bf70122d16cbb6a3_6.jpg
+  - http://distilleryimage4.s3.amazonaws.com/751becf0850e11e3993512a9708bb9e4_6.jpg
 custom_js: '<script type="text/javascript" src="/js/instagram.js"></script>'
 ---
 
 {% for contact in page.contacts %}
   <p id="{{ contact.id }}" class="contact-type">
   {% if contact.url %}
-    <a href="{{ contact.url }}">{{ contact.text }}</a>
+    <a href="{{ contact.url }}" target="_blank">{{ contact.text }}</a>
   {% else %}
     {{ contact.text }}
   {% endif %}
@@ -25,4 +29,10 @@ custom_js: '<script type="text/javascript" src="/js/instagram.js"></script>'
   {% unless forloop.last %}<hr/>{% endunless %}
 {% endfor %}
 
-<div class="instagram-container" data-image-count="3" data-cols-count="3" data-user-id="753097420" data-photo-size="medium"></div>
+<div class="contact-photos row">
+  {% for photo in page.photos %}
+  <div class="col-xs-4">
+    <img src="{{ photo }}">
+  </div>
+  {% endfor %}
+</div>

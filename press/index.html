@@ -30,9 +30,9 @@ other_press:
 ---
 <div id="big_press" class="row">
   {% for item in page.big_press %}
-  <div class="col-md-{{ 12 | divided_by: forloop.length }}">
+  <div class="col-sm-{{ 12 | divided_by: forloop.length }}">
     <div id="{{ item.name | handle }}" class="press-item">
-      <a href="{{ item.url }}">
+      <a href="{{ item.url }}" target="_blank">
         <div class="press-img">
           {% image 274xAUTO {{ item.img }} alt="{{ item.name }}" %}
         </div>
@@ -45,7 +45,7 @@ other_press:
 
 <div id="other_press" class="row">
   <div class="col-md-12">
-    <h2>Other Honorable Mentions</h2>
+    <h1>Other Honorable Mentions</h1>
   </div>
   {% for item in page.other_press %}
   <div class="col-xs-6 col-md-4 other-press-item">{{ item }}</div>
