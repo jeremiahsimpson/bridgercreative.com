@@ -8,7 +8,7 @@ author: admin
 comments: true
 date: 2014-01-07 16:34:41 +01:00
 categories:
-- .UX/UI
+- UX/UI
 - Infographics &amp; Data Visualization
 tags: []
 

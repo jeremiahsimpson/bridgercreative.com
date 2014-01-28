@@ -94,12 +94,12 @@ custom_js: |-
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-sm-12">
   			<p class="lead">We are a creative agency that designs experiences to make a visual impact.</p>
       </div>
 		
 		{% for block in page.blocks %}
-      <div class="col-md-{{ block.cols }}">
+      <div class="col-sm-{{ block.cols }}">
         <div class="home-block" style="background-image:url('{{ block.bgimg }}')">
         {% if block.video %}
           <div id="{{ block.url | slug }}" class="video-embed embed">
@@ -117,7 +117,7 @@ custom_js: |-
     </div>
     
     <div id="we_believe" class="row">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <h2 class="pull-left">We Believe</h2>
         <ul class="flat-list">
           {% for wb in page.we-believe %}

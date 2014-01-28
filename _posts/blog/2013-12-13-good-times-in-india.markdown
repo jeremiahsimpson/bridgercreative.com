@@ -8,7 +8,7 @@ author: admin
 comments: true
 date: 2013-12-13 03:10:08 +01:00
 categories:
-- .UX/UI
+- UX/UI
 tags: []
 
 

@@ -9,7 +9,7 @@ comments: true
 date: 2013-12-14 03:30:29 +01:00
 categories:
 - Brand Identity
-- .Visual Systems
+- Visual Systems
 tags:
 - Toys
 - Simple

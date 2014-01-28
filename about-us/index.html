@@ -30,12 +30,20 @@ people:
     description: |-
       A lifelong learner, Russell brings to Bridger a variety of diverse skills such as human interface design, branding, packaging, motion graphics, and cinematography.
   
+testimonials:
+  - quote: I am really in love with everything you've done. You ROCK!
+    name: LaNola Stone Photography
+  - quote: Bridger was very professional and responsive. We were impressed with their knowledge and strategy skills. We will continue to work with them in the future as new opportunities arrive.
+    name: Watkins Group
+  - quote: This is exciting stuff and it's been a huge help having a pro like you to work with!
+    name: GoPro Bomb Squad
+
 custom_js: '<script type="text/javascript" src="/js/instagram.js"></script>'
 ---
 
 <div class="row">
   {% for person in page.people %}
-    <div class="col-md-4 profile">
+    <div class="col-sm-4 profile">
       <div class="profile-content">
         <h3>{{ person.name }}</h3>
         <h5>{{ person.position }}</h5>
@@ -43,7 +51,7 @@ custom_js: '<script type="text/javascript" src="/js/instagram.js"></script>'
           {{ person.description | markdownify }}
         </div>
         <div class="profile-contact">
-          <div class="profile-email"><span class="icon envelope"></span>{{ person.email }}</div>
+          <div class="profile-email"><span class="icon envelope"></span><a href="mailto:{{ person.email }}">{{ person.email }}</a></div>
           <div class="profile-tel"><span class="icon telephone"></span>{{ person.tel }}</div>
         </div>
       </div>
@@ -55,13 +63,7 @@ custom_js: '<script type="text/javascript" src="/js/instagram.js"></script>'
 </div>
 
 <div class="quote-container row">
-  <div class="quote-content lead">
-    “Quote about inspiration coming from everywhere.
-    You’ll never know when it hits.”
-  </div>
-  <div class="quoted">
-    LaNola Stone Photography
-  </div>
+  {% include testimonials.html list=page.testimonials %}
 </div>
 
 <div class="instagram-container" data-image-count="12" data-cols-count="6" data-user-id="753097420" data-photo-size="small"></div>

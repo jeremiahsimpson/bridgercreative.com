@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>s3_website.yml</string>
+	<string>_projects/2013-10-11-turtle-power.yml</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -49,6 +49,8 @@
 			<string>_plugins</string>
 		</dict>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>_posts</string>
 			<key>regexFolderFilter</key>
@@ -57,6 +59,8 @@
 			<string>_posts</string>
 		</dict>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>_projects</string>
 			<key>regexFolderFilter</key>
@@ -172,7 +176,7 @@
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2014-01-27T11:17:27Z</date>
+			<date>2014-01-27T15:31:23Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -184,13 +188,85 @@
 			<key>filename</key>
 			<string>s3_website.yml</string>
 			<key>lastUsed</key>
-			<date>2014-01-27T15:23:28Z</date>
+			<date>2014-01-27T16:19:48Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>254</integer>
+	<integer>441</integer>
 	<key>metaData</key>
 	<dict>
+		<key>_includes/post.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>10</integer>
+				<key>line</key>
+				<integer>30</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>19</integer>
+		</dict>
+		<key>_layouts/project.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>18</integer>
+				<key>line</key>
+				<integer>65</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>21</integer>
+		</dict>
+		<key>_projects/2013-10-11-turtle-power.yml</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>11</integer>
+				<key>line</key>
+				<integer>12</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>_projects/2013-10-16-gopro-bombsquad-3.yml</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>15</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>15</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
 		<key>css/main.css</key>
 		<dict>
 			<key>caret</key>
@@ -205,14 +281,14 @@
 			<key>firstVisibleLine</key>
 			<integer>1182</integer>
 		</dict>
-		<key>s3_website.yml</key>
+		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>20</integer>
+				<integer>35</integer>
 				<key>line</key>
-				<integer>9</integer>
+				<integer>31</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -231,18 +307,22 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>85</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>what-we-do/index.html</string>
+		<string>index.html</string>
 		<string>css/main.css</string>
-		<string>s3_website.yml</string>
+		<string>_projects/2013-10-11-turtle-power.yml</string>
+		<string>_includes/post.html</string>
+		<string>_projects/2013-10-16-gopro-bombsquad-3.yml</string>
+		<string>_layouts/project.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{52, 4}, {1124, 1414}}</string>
+	<string>{{3, 544}, {793, 874}}</string>
 </dict>
 </plist>

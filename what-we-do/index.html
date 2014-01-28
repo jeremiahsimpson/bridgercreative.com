@@ -97,6 +97,16 @@ testimonials:
     name: Watkins Group
   - quote: This is exciting stuff and it's been a huge help having a pro like you to work with!
     name: GoPro Bomb Squad
+custom_js: |-
+  <script type="text/javascript">
+    $('#zigzag_inner').
+    on('show.bs.collapse', function () {
+      $('#how_we_work').addClass('open')
+    }).
+    on('hide.bs.collapse', function () {
+      $('#how_we_work').removeClass('open')
+    })
+  </script>
 ---
 
 <div id="{{ page.title | slug }}" class="container">
@@ -116,7 +126,7 @@ testimonials:
 <div id="how_we_work">
   <a data-toggle="collapse" href="#zigzag_inner">
     How We Work
-    <span class="glyphicon glyphicon-arrow-down"></span>
+    <span></span>
   </a>
   <div id="zigzag_top"></div>
   <div id="zigzag_outer">
@@ -147,20 +157,7 @@ testimonials:
 <div id="testimonials">
   <div class="container">
     <div class="row">
-      
-      <div id="testimonials_carousel" class="carousel fading slide" data-ride="carousel">
-        <div class="carousel-inner">
-          {% for testimonial in page.testimonials %}
-          <div class="item {% if forloop.first%}active{% endif %}">
-            <div class="testimonial">
-              <div class="quote lead">&ldquo;{{ testimonial.quote }}&rdquo;</div>
-              <div class="quoted">{{ testimonial.name }}</div>
-              </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      
+    {% include testimonials.html list=page.testimonials %}
     </div>
   </div>
 </div>

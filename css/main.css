@@ -89,13 +89,17 @@ header .navbar-brand {
 }
 
 #logo_overlay span {
-    display: inline-block;
+    display: block;
+    background: transparent url('/img/logo_overlay@2x.png') 0 0 no-repeat;
+	background-size: 168px auto;
+	width:168px;
+	height:50px;
     opacity: 0;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    -ms-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
 }
 
 .navbar-brand:hover #logo_overlay {
@@ -261,24 +265,24 @@ footer {
 
 .embed-play.loading:before {
     background-color: rgba(1, 1, 1, 0.25);
-    -webkit-animation: spin 2s linear infinite;
-    -moz-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    -webkit-animation: loading-spin 2s linear infinite;
+    -moz-animation: loading-spin 2s linear infinite;
+    animation: loading-spin 2s linear infinite;
 }
 
-@-moz-keyframes spin {
+@-moz-keyframes loading-spin {
     100% {
         -moz-transform: rotate(360deg);
     }
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes loading-spin {
     100% {
         -webkit-transform: rotate(360deg);
     }
 }
 
-@keyframes spin {
+@keyframes loading-spin {
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -293,7 +297,6 @@ footer {
 
 #home_banner {
     margin-bottom: 1.5em;
-    border-bottom: 3px solid #f15a24;
 }
 
 #home_banner .carousel .item {
@@ -423,11 +426,14 @@ a.twitter-timeline > span {
     width: 8.6%;
 }
 
-.tooltip {}
+#we_believe .tooltip {
+	margin-top: 15px;
+}
 
 .tooltip-inner {
     background: #f15a24;
     padding: 5px;
+	border-radius: 0;
 }
 
 .tooltip.bottom .tooltip-arrow {
@@ -617,6 +623,14 @@ a.twitter-timeline > span {
     line-height: 1.5em;
 }
 
+.profile-contact a {
+	color:white;
+}
+
+.profile-contact a:hover {
+	text-decoration: underline;
+}
+
 .profile-contact span.icon {
     position: relative;
     top: 0.25em;
@@ -636,21 +650,35 @@ a.twitter-timeline > span {
     width: 100%;
 }
 
+#testimonials .item {
+    height: 200px;
+    line-height: 200px;
+}
+
+#testimonials .testimonial {
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#testimonials .lead {
+    color: white;
+}
+
 #about-us .quote-container {
+	height:225px;
     text-align: center;
     margin: 3em 0;
     color: #f15a24;
     font-size: 1.2em;
 }
 
-#about-us .quote-content {
+#about-us .quote.lead {
     color: #f15a24;
     width: 83%;
     line-height: 1.5em;
     margin: 0 auto;
 }
-
-#about-us .quoted {}
 
 .instagram-container img {
     width: 100%;
@@ -778,26 +806,29 @@ a.twitter-timeline > span {
 }
 
 .project-image {
-    height: 300px;
-    line-height: 300px;
-    background-color: #eee;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-
+	background: #eee;
+	background-repeat: none;
+	background-size: cover;
 }
 
 .project-image a {
-    display: block;
-    height: 100%;
+	width: 100%;
+	height: 100%;
+    display:block;
+    border: 4px solid transparent;
 }
 
 .project-image img {
-    display: none;
+	opacity: 0;
+	width:100%;
+	display: block;
 }
 
 .project-image a:hover {
     border: 4px solid #f15a24;
+}
+
+.project-image a:hover img {
 }
 
 #project_banner_image {
@@ -815,11 +846,6 @@ a.twitter-timeline > span {
     font-weight: normal;
     font-size: 2em;
     margin-top: 1.5em;
-}
-
-#project .flat-list a {
-    font-style: italic;
-    color: black;
 }
 
 .project-descr {
@@ -905,9 +931,11 @@ a.twitter-timeline > span {
 }
 
 #how_we_work a span {
+	position:relative;
     display: block;
     color: white;
-    background: #f15a24;
+    background: #f15a24 url('/img/how_we_work_arrow.png') 50% 50% no-repeat;
+	background-size: 24px auto;
     width: 70px;
     height: 70px;
     line-height: 75px;
@@ -915,6 +943,19 @@ a.twitter-timeline > span {
     font-weight: bold;
     margin: 0 auto;
     border-radius: 35px;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#how_we_work.open a span {
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 #zigzag_top {
@@ -1097,6 +1138,10 @@ a.twitter-timeline > span {
         background-image: url('/img/logo@2x.png');
     }
 
+	#logo_overlay span {
+    	background-image: url('/img/logo_overlay@2x.png');
+	}
+
     .social-icon a {
         background-image: url('/img/social-icons@2x.png');
     }
@@ -1112,6 +1157,11 @@ a.twitter-timeline > span {
     .profile-contact span.icon {
         background-image: url('/img/profile-contact-icons@2x.png');
     }
+
+	#how_we_work a span {
+		background-image: url('/img/how_we_work_arrow.png');
+	}
+
 }
 
 /*****************************************************************************/
@@ -1216,8 +1266,6 @@ a.twitter-timeline > span {
     }
 
     .project-image {
-        height: 190px;
-        line-height: 190px;
     }
 
     .project h3 {
@@ -1234,7 +1282,11 @@ a.twitter-timeline > span {
 		margin-top: -50px;
 		margin-left: -61px;
 	}
-	
+
+	#how_we_work a span {
+		
+	}
+
 	#zigzag_inner {
 		padding: 10px 0;
 	}
@@ -1252,7 +1304,11 @@ a.twitter-timeline > span {
 
 }
 
-@media(min-width:768px) and (max-width:991px){}
+@media(min-width:768px) and (max-width:991px){
+	#we_believe li {
+		width: 7.9%;
+	}
+}
 
 @media(min-width:992px) and (max-width:1199px){}
 

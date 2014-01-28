@@ -9,7 +9,7 @@ description: Heroes in a half shell... and bandages! Because this turtle gang is
   slice of pizza in every box. Turtle Power!
 date: 2013-10-11 12:03:44.000000000 +02:00
 categories:
-- .Visual Systems
+- Visual Systems
 - Packaging
 tags:
 - Band-Aid
@@ -26,6 +26,8 @@ media:
   url: /portfolio/list_tmnt_2.jpg
 - type: image
   url: /portfolio/list_tmnt_3.jpg
+- type: image
+  url: /portfolio/tmnt_strips.jpg
 - type: image
   url: /portfolio/tmnt_strips.jpg
 thumbnail:

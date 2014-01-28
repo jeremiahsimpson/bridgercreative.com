@@ -1,0 +1,12 @@
+<div id="testimonials_carousel" class="carousel fading slide" data-ride="carousel">
+  <div class="carousel-inner">
+    {% for testimonial in include.list %}
+    <div class="item {% if forloop.first%}active{% endif %}">
+      <div class="testimonial">
+        <div class="quote lead">&ldquo;{{ testimonial.quote }}&rdquo;</div>
+        <div class="quoted">{{ testimonial.name }}</div>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

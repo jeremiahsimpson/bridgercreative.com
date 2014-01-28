@@ -32,7 +32,7 @@ custom_js: |-
       </div>
       <div id="categories_list" class="panel-collapse collapse">
         <div class="panel-body">
-          <div class="col-md-6 filter-categories">
+          <div class="col-sm-6 filter-categories">
             <ul class="no-bullet">
               {% capture css_class %}{% if current_filter contains 'All Projects' %}active{% endif %}{% endcapture %}
               <li class="col-xs-6 {{css_class}}">
@@ -46,7 +46,7 @@ custom_js: |-
             {% endfor %}
             </ul>
           </div>
-          <div class="col-md-6 col-xs-12 filter-tags">
+          <div class="col-sm-6 col-xs-12 filter-tags">
             <ul class="flat-list comma-list">
             {% for tag in page.tags %}
               <li><a href="{{ tag.url }}">{{ tag.name }}</a></li>

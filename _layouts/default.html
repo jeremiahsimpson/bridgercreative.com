@@ -1,9 +1,4 @@
 ---
-logo_words:
-- Design
-- Create
-- Visual
-- Data
 nav_links:
 - What We Do
 - Our Work
@@ -45,8 +40,8 @@ nav_links:
 
 				  <div class="navbar-header">
 				    <a class="navbar-brand" href="/">
-				      <div id="logo_overlay" data-words="{{ page.logo_words | join: ',' }}">
-				        <span>{{ page.logo_words | random }}</span>
+				      <div id="logo_overlay" data-word-count="4" data-word-index="0">
+				        <span></span>
 				      </div>
 				      {{ site.name }}
 				    </a>
@@ -91,11 +86,11 @@ nav_links:
 					
 					<div id="social_links">
 						<ul class="flat-list">
-							<li class="social-icon facebook"><a href="https://www.facebook.com/studiobridger">Facebook</a></li>
-							<li class="social-icon instagram"><a href="https://instagram.com/bridgercreative">Instagram</a></li>
-							<li class="social-icon twitter"><a href="https://www.twitter.com/bridgercreative">Twitter</a></li>
-							<li class="social-icon youtube"><a href="https://www.youtube.com/user/BridgerCreative">YouTube</a></li>
-							<li class="social-icon pinterest"><a href="https://www.pinterest.com/bridgercreative/">Pinterest</a></li>
+							<li class="social-icon facebook"><a target="_blank" href="https://www.facebook.com/bridgercreative?ref=hl&bookmark_t=page">Facebook</a></li>
+							<li class="social-icon instagram"><a target="_blank" href="https://instagram.com/bridgercreative">Instagram</a></li>
+							<li class="social-icon twitter"><a target="_blank" href="https://www.twitter.com/bridgercreative">Twitter</a></li>
+							<li class="social-icon youtube"><a target="_blank" href="https://www.youtube.com/user/BridgerCreative">YouTube</a></li>
+							<li class="social-icon pinterest"><a target="_blank" href="https://www.pinterest.com/bridgercreative/">Pinterest</a></li>
 						</ul>
 					</div>
 					
@@ -110,14 +105,15 @@ nav_links:
     	$(document).ready(function() {
     	  $('.navbar-brand').on("mouseenter", function() {
     	    // Get the list of words allowed to show
-    	    var logo = $("#logo_overlay");
-    	    var target = logo.children('span');
-    	    var words = logo.data('words').split(',');
-    	    // Move to the next word in the list or start at the beginning
-    	    var i = words.indexOf(target.text().trim());
-    	    var new_word;
-    	    new_word = (i > -1 && i < (words.length-1)) ? words[i+1] : words[0];
-    	    target.text(new_word);
+    	    var logo  = $("#logo_overlay");
+    	    var count = parseInt(logo.data('word-count'));
+    	    var h     = -50; 
+    	    var i     = parseInt(logo.data('word-index'));
+    	    var next  = (i > -1 && i < (count-1)) ? i+1 : 0;
+          
+          // Move the background to the next position and save it.
+    	    logo.children('span').css('background-position-y', (next*h)+'px');
+    	    logo.data('word-index', next)
     	  })
     	});
 	    </script>

@@ -47,6 +47,7 @@ $(function() {
 								.addClass(col_class)
 								.append($("<a>")
 									.attr('href',photo_url)
+									.attr('target','_blank')
 									.append($("<img>")
 										.attr('src',photo_src))))
 					}
