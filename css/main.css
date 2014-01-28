@@ -28,6 +28,7 @@ header.navbar {
     background: white;
     border-bottom: 1px solid #ccc;
     height: 90px;
+	opacity: 0.9;
 }
 
 header .nav {
@@ -92,11 +93,11 @@ header .navbar-toggle .icon-bar {
     font-weight: bold;
     font-size: 2em;
     clip: rect(0 63px 46px 57px);
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 #logo_overlay span {
@@ -106,11 +107,11 @@ header .navbar-toggle .icon-bar {
     width: 168px;
     height: 50px;
     opacity: 0;
-    -ms-transition: opacity 1s ease;
-    -o-transition: opacity 1s ease;
-    -moz-transition: opacity 1s ease;
-    -webkit-transition: opacity 1s ease;
-    transition: opacity 1s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
 }
 
 .navbar-brand:hover #logo_overlay {
@@ -151,17 +152,31 @@ footer {
     border-top: 1px solid #ccc;
     color: #999;
     height: 250px;
-    padding-top: 15px;
 }
 
-#footer ul {
+footer ul {
     text-align: center;
 }
 
-#footer ul a {
+footer ul.nav a {
     font-weight: bold;
     font-size: 1em;
     color: black;
+	border-top: 7px solid transparent;
+	border-radius: 0;
+	margin-top:0;
+}
+
+footer .nav:hover .active a {
+    border-top-color: rgba(241, 90, 36, 0.5);
+}
+
+footer .nav .active a,
+footer .nav:hover .active a:hover,
+footer .nav a:hover {
+	background: none;
+	color: black;
+	border-top-color:#f15a24
 }
 
 #addresses {

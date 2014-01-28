@@ -1,6 +1,6 @@
 name: Bridger
 
-exclude: ["Rakefile", "README.md", "public", "Bridger Creative.tmproj", "Gemfile", "Gemfile.lock", "libs", "assets"]
+exclude: ["Rakefile", "README.md", "public", "Bridger Creative.tmproj", "Gemfile", "Gemfile.lock", "libs", "assets", "vendor"]
 gems: [oembed]
 keep_files:  ['.git']
 timezone: America/New_York
@@ -12,6 +12,7 @@ paginate_path: "blog/page:num"
 
 url: http://www.bridgercreative.com
 permalink: /blog/:year/:month/:day/:title/
+relative_permalinks: false
 category_dir: /blog/categories/
 future: false
 

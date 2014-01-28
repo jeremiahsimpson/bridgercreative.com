@@ -1,0 +1,5 @@
+{% for link in include.list %}
+  {% capture url %}{{ link | slug }}{% endcapture %}
+  {% capture css_class %}{% if page.url contains url %}active{% endif %}{% endcapture %}
+  <li class="{{ css_class }}"><a href="/{{ url }}">{{ link }}</a></li>
+{% endfor %}  
