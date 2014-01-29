@@ -17,6 +17,6 @@ tags:
 
 ---
 
-[![bicycleWheel](/posts/bicycleWheel.jpg)](http://9gag.tv/v/1996?ref=fbp9)
+[{% image post /posts/bicycleWheel.jpg %}](http://9gag.tv/v/1996?ref=fbp9)
 
 How cool is this?

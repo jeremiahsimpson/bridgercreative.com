@@ -14,12 +14,12 @@ tags: []
 
 ---
 
-[![IMG_2947_blog](/posts/IMG_2947_blog.jpg)](/posts/IMG_2947_blog.jpg)
+{% image post /posts/IMG_2947_blog.jpg %}
 
-[![IMG_0940_blog](/posts/IMG_0940_blog.jpg)](/posts/IMG_0940_blog.jpg)
+{% image post /posts/IMG_0940_blog.jpg %}
 
-[![IMG_1048_blog](/posts/IMG_1048_blog.jpg)](/posts/IMG_1048_blog.jpg)
+{% image post /posts/IMG_1048_blog.jpg %}
 
 Hanging with [Andy Kirk](http://www.visualisingdata.com/) after his insightful DataViz workshop. Thanks, Andy!
 
-[![IMG_3164_blog](/posts/IMG_3164_blog.jpg)](/posts/IMG_3164_blog.jpg)
+{% image post /posts/IMG_3164_blog.jpg %}

@@ -16,13 +16,13 @@ tags:
 
 ---
 
-![IMG_0264_blog](/posts/IMG_0264_blog.jpg)
+{% image post /posts/IMG_0264_blog.jpg %}
 
-![IMG_0351_blog](/posts/IMG_0351_blog.jpg)
+{% image post /posts/IMG_0351_blog.jpg %}
 
-![IMG_2528_blog](/posts/IMG_2528_blog.jpg)
+{% image post /posts/IMG_2528_blog.jpg %}
 
-![IMG_2709_blog](/posts/IMG_2709_blog.jpg)
+{% image post /posts/IMG_2709_blog.jpg %}
 
 It's not too bad when your 
 [PrePlay](http://preplaysports.com/) dev team is based in Paris.
