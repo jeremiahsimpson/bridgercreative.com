@@ -1,6 +1,6 @@
 name: Bridger
 
-exclude: ["Rakefile", "README.md", "public", "Bridger Creative.tmproj", "Gemfile", "Gemfile.lock", "libs", "assets", "vendor"]
+exclude: ["README.md", "public", "Bridger Creative.tmproj", "Gemfile", "Gemfile.lock", "libs", "assets", "vendor", "s3_config.yml"]
 gems: [oembed]
 keep_files:  ['.git']
 timezone: America/New_York

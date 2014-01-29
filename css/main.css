@@ -364,11 +364,10 @@ footer .nav a:hover {
 }
 
 #home_banner .carousel .item img {
-    max-width: 100%;
-    display: inline-block;
-    margin: 0 auto;
-    line-height: normal;
-    vertical-align: middle;
+	max-width: 100%;
+	display: inline-block;
+	margin: -1px auto 0 auto;
+	border: none;
 }
 
 .home-block {
@@ -991,7 +990,7 @@ a.twitter-timeline > span {
     display: block;
     color: white;
     background: #f15a24 url('/img/how_we_work_arrow.png') 50% 50% no-repeat;
-    background-size: 24px auto;
+    background-size: 22px auto;
     width: 70px;
     height: 70px;
     line-height: 75px;
@@ -1213,7 +1212,7 @@ a.twitter-timeline > span {
     }
 
     #how_we_work a span {
-        background-image: url('/img/how_we_work_arrow.png');
+        background-image: url('/img/how_we_work_arrow@2x.png');
     }
 }
 

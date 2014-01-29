@@ -46,7 +46,7 @@ custom_js: |-
             {% endfor %}
             </ul>
           </div>
-          <div class="col-sm-6 col-xs-12 filter-tags">
+          <div class="col-sm-6 filter-tags hidden-xs">
             <ul class="flat-list comma-list">
             {% for tag in page.tags %}
               <li><a href="{{ tag.url }}">{{ tag.name }}</a></li>
