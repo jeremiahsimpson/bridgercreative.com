@@ -1121,7 +1121,7 @@ a.twitter-timeline > span {
 }
 
 #address.contact-type {
-    font-size: 2.4em;
+    font-size: 2.35em;
 }
 
 #contact hr {
@@ -1285,7 +1285,7 @@ a.twitter-timeline > span {
     }
 
     #telephone.contact-type {
-        font-size: 3.4em;
+        font-size: 3.3em;
     }
 
     #email.contact-type {
@@ -1383,6 +1383,18 @@ a.twitter-timeline > span {
 	.profile-contact span.icon {
 		top: 0.4em;
 	}
+
+    #telephone.contact-type {
+        font-size: 8em;
+    }
+
+    #email.contact-type {
+        font-size: 4em;
+    }
+
+    #address.contact-type {
+        font-size: 1.8em;
+    }
 
 }
 
