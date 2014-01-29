@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% if page.banner %}
-<div id="project_banner" style="background-color:{{ page.banner_color }}; background-image: url('{{ page.banner_bg_image.url | image_url }}')">
+<div id="project_banner" style="background-color:{{ page.banner_color }}; background-image: url('{{ page.banner_bg_image }}')">
   {% if page.banner.type == 'image' %}
   <div id="project_banner_image" class="container" style="background-image: url('{{ page.banner.url | image_url: '1155xAUTO' }}')"></div>
   {% endif %}

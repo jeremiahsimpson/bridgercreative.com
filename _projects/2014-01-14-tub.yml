@@ -44,5 +44,5 @@ banner:
   type: image
   url: /portfolio/feature_12.jpg
 banner_color: ! '#999999'
-banner_bg_image: 
+banner_bg_image: '/img/stripes3.gif'
 repeat_background: false
