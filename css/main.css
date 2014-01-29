@@ -42,6 +42,7 @@ header .nav a {
     border-bottom: 7px solid transparent;
     padding-bottom: 17px;
     margin-left: 10px;
+	display:block;
 }
 
 header .nav:hover .active a {
@@ -1196,6 +1197,7 @@ a.twitter-timeline > span {
         position: static;
         margin: 0;
 		height:70px;
+		opacity: 1;
     }
 
 	header .navbar-brand {
@@ -1207,6 +1209,7 @@ a.twitter-timeline > span {
 		margin-top:8px;
 		z-index: 9;
 		position: relative;
+		max-height: none;
 	}
 
 	header .nav {

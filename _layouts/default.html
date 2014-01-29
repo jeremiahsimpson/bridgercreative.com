@@ -59,6 +59,9 @@ footer_nav_links:
           <nav role="navigation" class="collapse navbar-collapse" id="navbar_collapse">
 						<ul class="nav navbar-nav navbar-right">
 						  {% include nav_links.html list=page.header_nav_links %}
+						  <div class="visible-xs">
+  						  {% include nav_links.html list=page.footer_nav_links %}
+						  </div>
 				    </ul>
 					</nav>
 					
