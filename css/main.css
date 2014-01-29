@@ -1417,9 +1417,11 @@ a.twitter-timeline > span {
         background-image: url('/img/logo_overlay@2x.png');
     }
 
-	header .navbar-collapse.collapse,
-	header .navbar-collapse {
-		background-image: url('/img/logo_inverse@2x.png');
+	@media(max-width:767px){
+		header .navbar-collapse.collapse,
+		header .navbar-collapse {
+			background-image: url('/img/logo_inverse@2x.png');
+		}
 	}
 
     .social-icon a {
