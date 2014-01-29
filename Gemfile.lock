@@ -50,7 +50,6 @@ GEM
     mini_magick (3.7.0)
       subexec (~> 0.2.1)
     mysql2 (0.3.14)
-    narray (0.6.0.8)
     nokogiri (1.5.10)
     parslet (1.5.0)
       blankslate (~> 2.0)
@@ -63,8 +62,6 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rb-fsevent (0.9.4)
-    rb-gsl (1.15.3.1)
-      narray (>= 0.5.9)
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
@@ -101,6 +98,5 @@ DEPENDENCIES
   mini_magick
   mysql2
   pry
-  rb-gsl
   ruby-oembed
   s3_website
