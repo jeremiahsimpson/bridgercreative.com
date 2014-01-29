@@ -19,6 +19,8 @@ tags:
 
 ---
 
+{% image post /posts/toys_thenNow.jpg %}
+
 Toys and packaging used to be so much cooler. Less is more. 
 
 [Then and Now](http://www.cnn.com/2013/12/13/living/gallery/toys-then-and-now/index.html?hpt=hp_c3)

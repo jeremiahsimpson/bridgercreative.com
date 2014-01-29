@@ -17,6 +17,6 @@ tags:
 
 ---
 
-[![bicycleWheel](http://www.bridgercreative.com/wp-content/uploads/2013/12/bicycleWheel.jpg)](http://9gag.tv/v/1996?ref=fbp9)
+[![bicycleWheel](/posts/bicycleWheel.jpg)](http://9gag.tv/v/1996?ref=fbp9)
 
 How cool is this?
