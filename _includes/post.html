@@ -23,15 +23,18 @@
     {{ post.excerpt | markdownify }}
   {% endif %}
   </div>
+  
+  {% if post.title != page.title %}
   <div class="post-baseline row">
+
     {% if post.comments == true and page.comments != true %}
-    <div class="comment-link col-sm-4">
+    <div class="comment-link col-sm-12 col-md-4">
       <a href="{{ post.url }}" data-disqus-identifier="{{ post.title | slug }}" class="comment-count">0</a>
       <a href="{{ post.url }}">Leave A Comment</a>
     </div>
     {% endif %}
     
-    <div class="col-sm-8">
+    <div class="col-md-8 hidden-sm hidden-xs">
       <div class="post-share-widgets pull-right">
         <div class="facebook share-widget">
           <div class="fb-like" 
@@ -62,4 +65,6 @@
     </div>
 
   </div>
+  {% endif %}
+  
 </div>

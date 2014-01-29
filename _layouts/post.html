@@ -6,20 +6,16 @@ include_facebook: true
 
 <div id="blog" class="container">
   <div class="row">
-    <div id="blog_content" class="col-sm-8">
-
-      <div class="row">
-        {% include post.html post=page content=content %}
-      </div>
-
-      <div id="post_comments" class="row">
-        <div id="disqus_thread"></div>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      </div>
-
+    <div id="blog_content" class="col-sm-12">
+    {% include post.html post=page content=content %}
     </div>
 
-    <div id="blog_sidebar" class="col-sm-3 pull-right">
+    <div id="post_comments" class="col-sm-12">
+      <div id="disqus_thread"></div>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    <div id="blog_sidebar" class="col-sm-3 pull-right hidden-xs">
     {% include blog_sidebar.html %}
     </div>
 

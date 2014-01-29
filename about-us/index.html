@@ -38,21 +38,25 @@ testimonials:
   - quote: This is exciting stuff and it's been a huge help having a pro like you to work with!
     name: GoPro Bomb Squad
 
-custom_js: '<script type="text/javascript" src="/js/instagram.js"></script>'
+custom_js: 
+  <script type="text/javascript" src="/js/instagram.js"></script>
+
 ---
 
 <div class="row">
   {% for person in page.people %}
     <div class="col-sm-4 profile">
-      <div class="profile-content">
-        <h3>{{ person.name }}</h3>
-        <h5>{{ person.position }}</h5>
-        <div class="profile-description">
-          {{ person.description | markdownify }}
-        </div>
-        <div class="profile-contact">
-          <div class="profile-email"><span class="icon envelope"></span><a href="mailto:{{ person.email }}">{{ person.email }}</a></div>
-          <div class="profile-tel"><span class="icon telephone"></span>{{ person.tel }}</div>
+      <div class="profile-content-wrapper">
+        <div class="profile-content">
+          <h3>{{ person.name }}</h3>
+          <h5>{{ person.position }}</h5>
+          <div class="profile-description hidden-xs hidden-sm">
+            {{ person.description | markdownify }}
+          </div>
+          <div class="profile-contact">
+            <div class="profile-email"><span class="icon envelope"></span><a href="mailto:{{ person.email }}">{{ person.email }}</a></div>
+            <div class="profile-tel"><span class="icon telephone"></span>{{ person.tel }}</div>
+          </div>
         </div>
       </div>
       <div class="profile-img">
