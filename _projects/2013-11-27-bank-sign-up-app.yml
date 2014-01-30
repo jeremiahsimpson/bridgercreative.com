@@ -1,6 +1,6 @@
 ---
 layout: project
-published: true
+published: false
 title: Account Opening App
 name: bank-sign-up-app
 description: Designed to simplify the account opening process at a major African bank,
