@@ -1,8 +1,8 @@
 ---
 layout: project
-published: true
+published: false
 title: Semiconductor Performance App
-name: '227'
+name: 'semiconductor'
 description: ''
 date: 2013-11-22 17:51:28.000000000 +01:00
 categories:
