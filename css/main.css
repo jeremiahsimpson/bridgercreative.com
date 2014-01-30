@@ -1203,31 +1203,52 @@ a.twitter-timeline > span {
 		margin: 13px 0 0 10px;
 	}
 
-	header .navbar-collapse.collapse,
 	header .navbar-collapse {
-		background: rgba(1,1,1,0.75) url('/img/logo_inverse.png') 10px 13px no-repeat;
-		background-size: 158px auto;
+		background: rgba(1,1,1,0.75);
 		border:none;
-		margin-top:10px;
 		max-height: none;
-		display: block !important;
-		opacity: 0;
+		opacity: 1;
 		position: fixed;
 		width: 100%;
 		height: 100% !important;
 		z-index: 99;
-		bottom:0;
-		top:-1;
+		top:0;
+		display: block !important;
+	}
+
+	header .navbar-collapse:before {
+		display: block;
+		width: 158px;
+		height:46px;
+		top:13px;
+		left:10px;
+		position: fixed;
+		background: none url('/img/logo_inverse.png') 0 0 no-repeat;
+		background-size: 158px auto;
 	}
 
 	header .navbar-collapse {
-		opacity: 1;
+		-webkit-animation: nav-fade .25s reverse;
 	}
 
-	header .navbar-collapse,
-	header .collapsing {
-		-webkit-transition: opacity .5s ease;
-		transition: opacity .5s ease
+	header .navbar-collapse.collapse {
+		-webkit-animation: nav-fade .25s;
+		visibility: hidden;
+	}
+
+	@-webkit-keyframes nav-fade {
+		0% {
+			opacity: 1;
+			visibility: visible;
+		}
+		99% {
+			opacity: 0;
+			visibility: visible;
+		}
+		100% {
+			opacity: 0;
+			visibility: hidden;
+		}
 	}
 
 	header .nav {
@@ -1418,8 +1439,7 @@ a.twitter-timeline > span {
     }
 
 	@media(max-width:767px){
-		header .navbar-collapse.collapse,
-		header .navbar-collapse {
+		header .navbar-collapse:before {
 			background-image: url('/img/logo_inverse@2x.png');
 		}
 	}
