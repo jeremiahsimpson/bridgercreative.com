@@ -1,6 +1,6 @@
 ---
 layout: project
-published: true
+published: false
 title: Credit card application
 name: bank-web-app
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
