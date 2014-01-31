@@ -310,18 +310,19 @@ footer .nav a:hover {
     width: 100%;
 }
 
-.embed.loaded,
-.embed.loaded iframe {
+.embed.loaded {
     background: black !important;
 }
 
 .embed-play {
-	position: relative;
+    background: transparent url('/img/video-play.png') 50% 50% no-repeat;
+    background-size: 93px auto;
+    position: relative;
     overflow: hidden;
 }
 
 .embed-play:before {
-	content:'';
+    content: "";
     position: absolute;
     width: 200%;
     height: 200%;
@@ -329,7 +330,6 @@ footer .nav a:hover {
     left: -50%;
     z-index: 1;
     background: transparent url('/img/video-play.png') 50% 50% no-repeat;
-    background-size: 93px auto;
 }
 
 .embed-play.loading:before {
@@ -794,7 +794,7 @@ a.twitter-timeline > span {
     font-size: 0.6em;
     line-height: 3.5em;
     position: absolute;
-    margin-left: -1.75em;
+    margin-left: -10px;
 }
 
 #project_filter .panel-title {
@@ -861,10 +861,15 @@ a.twitter-timeline > span {
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 0.33em;
+    height: 2em;
+	overflow:hidden;
+	position:relative;
 }
 
 .project ul {
-    min-height: 3em;
+    height: 4em;
+	overflow:hidden;
+	position:relative;
 }
 
 .project li a, 
@@ -1437,11 +1442,6 @@ a.twitter-timeline > span {
     #logo_overlay span {
         background-image: url('/img/logo_overlay@2x.png');
     }
-
-	.embed-play:before {
-		background-image: url('/img/video-play@2x.png');
-	}
-
 
 	@media(max-width:767px){
 		header .navbar-collapse:before {
