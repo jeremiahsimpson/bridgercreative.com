@@ -310,19 +310,18 @@ footer .nav a:hover {
     width: 100%;
 }
 
-.embed.loaded {
+.embed.loaded,
+.embed.loaded iframe {
     background: black !important;
 }
 
 .embed-play {
-    background: transparent url('/img/video-play.png') 50% 50% no-repeat;
-    background-size: 93px auto;
-    position: relative;
+	position: relative;
     overflow: hidden;
 }
 
 .embed-play:before {
-    content: "";
+	content:'';
     position: absolute;
     width: 200%;
     height: 200%;
@@ -330,6 +329,7 @@ footer .nav a:hover {
     left: -50%;
     z-index: 1;
     background: transparent url('/img/video-play.png') 50% 50% no-repeat;
+    background-size: 93px auto;
 }
 
 .embed-play.loading:before {
@@ -1437,6 +1437,11 @@ a.twitter-timeline > span {
     #logo_overlay span {
         background-image: url('/img/logo_overlay@2x.png');
     }
+
+	.embed-play:before {
+		background-image: url('/img/video-play@2x.png');
+	}
+
 
 	@media(max-width:767px){
 		header .navbar-collapse:before {

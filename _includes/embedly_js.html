@@ -4,13 +4,21 @@
   $(document).ready(function() { 
     $.embedly.defaults.key = "{{ site.embedly_api_key }}"
     // Embed w Poster Image
+    var ios = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
     $('.embed .embed-play[data-src]').on('click', function(){
-      $(this).parent('.embed').addClass('loading');
+      var target = $(this).parent('.embed');
+      target.addClass('loading');
       $.embedly
-        .extract($(this).data('src'), { query: { autoplay: true } })
+        .extract($(this).data('src'), {  query: { 
+          autoplay: !ios,
+          maxwidth: target.width(),
+          maxheight: target.height(),
+        }})
         .done(function(results) {
-          $('a.embed-play').parent('.embed').addClass('loaded');
-          $('a.embed-play').parent('.embed').html(results[0].media.html)
+          target
+            .removeClass('loading')
+            .addClass('loaded')
+            .html(results[0].media.html);
         });
     })
 
@@ -18,7 +26,9 @@
     $('.embed[data-src]').each(function(i, el){
       $(el).addClass('loading');
       $.embedly
-        .extract($(this).data('src'))
+        .extract($(this).data('src'), {  query: { 
+          maxwidth: $(el).width()
+        }})
         .done(function(results) {
           $(el).addClass('loaded');
           $(el).html(results[0].media.html)
