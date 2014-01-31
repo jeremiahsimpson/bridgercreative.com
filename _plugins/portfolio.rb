@@ -7,7 +7,7 @@ module Jekyll
     def get_projects(site, taxonomy_singular = nil, taxonomy_plural = nil)
       {}.tap do |projects|
         dir = File.join(@base, './_projects/*.yml')
-        Dir[dir].reverse.each do |path|
+        Dir[dir].sort.reverse.each do |path|
           name   = File.basename(path, '.yml')
           config = YAML.load(File.read(path))
           if config['published']
