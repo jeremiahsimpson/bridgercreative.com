@@ -29,8 +29,6 @@ media:
   url: /portfolio/list_bombSq_7.gif
 - type: video
   url: 'http://www.youtube.com/watch?v=O2LkQ8JXOUk'
-- type: video
-  url: 'http://www.youtube.com/watch?v=O2LkQ8JXOUk'
   poster: /portfolio/list_goPro3.jpg
 - type: image
   url: /portfolio/list_goPro1.jpg
