@@ -30,6 +30,8 @@ media:
   url: /portfolio/tmnt_strips.jpg
 - type: image
   url: /portfolio/tmnt_strips.jpg
+- type: image
+  url: http://www.bridgercreative.com.s3.amazonaws.com/assets/test/webTest.png
 thumbnail:
   type: image
   url: /portfolio/gallery_tmnt_1.jpg
