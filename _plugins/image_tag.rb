@@ -20,12 +20,44 @@ require 'digest/md5'
 require 'mini_magick'
 require 'fastimage'
 
+require 'pry'
+
 module Jekyll
 
   module ImageGenerator
 
     def generate_image(instance, site_source, site_dest, image_source, image_dest)
+      if instance[:src].match(/^http/)
+        generate_remote_image(instance, site_source, site_dest, image_source, image_dest)
+      else
+        generate_local_image(instance, site_source, site_dest, image_source, image_dest)
+      end
+    end
+    
+    # Download remote files and pass onto local file thumbnail generator
+    def generate_remote_image(instance, site_source, site_dest, image_source, image_dest)
+      uri = URI(instance[:src])
+      res = Net::HTTP.get_response(uri)
 
+      # Raise if unable to download the image
+      raise "Image Tag: Unable to fetch \"#{uri}\"! Please confirm the correct image URL: #{res.message}" unless res.class == Net::HTTPOK
+      
+      file_name  = File.basename(uri.path)
+      image_path = File.join(site_source, image_source, file_name)
+      
+      # Write to a local file
+      if !File.exists?(image_path)
+        File.open(image_path, 'w') {|f| f.puts res.body }
+      end
+      
+      instance[:src] = file_name
+      
+      generate_local_image(instance, site_source, site_dest, image_source, image_dest)
+      
+    end
+    
+    # Generate thumbnails for local images
+    def generate_local_image(instance, site_source, site_dest, image_source, image_dest)
       image_path = File.join(site_source, image_source, instance[:src])
 
       raise "Image Tag: \"#{image_path}\" does not exist!" unless File.exist?(image_path)
@@ -239,7 +271,7 @@ module Jekyll
       instance.merge!(sizes)
 
       # Generate resized images
-      generated_path = generate_image(instance, config['source'], config['destination'], settings['source'], settings['output'])
+      generated_path = generate_image(instance, site.config['source'], site.config['destination'], settings['source'], settings['output'])
 
       # Generate the string represenation of the total path
       if settings['use_full_url']
