@@ -19,6 +19,31 @@ future: false
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+
+project_categories: &project_categories
+- Brand Identity
+- Branding
+- Environmental
+- Packaging
+- Publication
+- UX/UI
+- User Experience
+- User Interface
+- Design
+- Video & Motion
+- Visual Strategy
+- Visual Systems
+
+
+post_categories: &post_categories
+- Information Architecture
+- Publication
+- Ux/Ui
+- Brand Identity
+- Visual Systems
+- Blog
+- Infographics & Data Visualization
   
 # ----------------------- #
 #   3rd Party Settings    #
@@ -55,3 +80,68 @@ image:
     post: 
       width: 622
       height: AUTO
+
+prose:
+  siteurl: "http://www.bridgercreative.com.s3-website-us-east-1.amazonaws.com"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          value: "post"
+          label: Layout
+      - name: "date"
+        field: 
+          value: CURRENT_DATE
+          label: Date
+      - name: "published"
+        field: 
+          element: button
+          on: true
+          off: false
+          label: Publish
+      - name: "published"
+        field: 
+          element: button
+          on: true
+          off: false
+          label: Publish
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Select Categories"
+          options: *post_categories
+          alterable: true
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          options: ""
+          alterable: true
+
+    _projects:
+      - name: "layout"
+        field:
+          value: "project"
+          label: Layout
+      - name: "date"
+        field: 
+          value: CURRENT_DATE
+          label: Date
+      - name: "published"
+        field: 
+          element: button
+          on: true
+          off: false
+          label: Publish
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Select Categories"
+          options: *project_categories
+          alterable: true
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          options: ""
+          alterable: true
