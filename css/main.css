@@ -419,7 +419,9 @@ footer .nav a:hover {
 #twitter_container {
     display: inline-block;
 	/* Thatched bg img	 */
-    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFklEQVQIHWNgQAKvXr36D+cSyQGqBwD8PQ71NrMzrgAAAABJRU5ErkJggg==); 
+    background: transparent url(
+		data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAMUlEQVQIHWNkQALfv3////nzZwZGmBhMgJeXFyIEEnj16tV/EA0WwRAAiaKogGhkAAC7aSxPSKv/RAAAAABJRU5ErkJggg==
+	);
     width: 100%;
 }
 
