@@ -36,7 +36,7 @@ s3_reduced_redundancy: true
 
 # cloudfront_invalidate_root: true
 
-concurrency_level: 25
+concurrency_level: 20
 
 # redirects:
 #   index.php: /
