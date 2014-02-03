@@ -5,7 +5,7 @@
 /*****************************************************************************/
 
 body {
-    background-color: #efefef;
+    background-color: #231f20;
 }
 
 a, a:link, a:visited, a:active {
@@ -193,8 +193,7 @@ ul.comma-list li:last-child:after {
 }
 
 footer {
-    border-top: 1px solid #ccc;
-    color: #999;
+    color: #605d5c;
     height: 250px;
 }
 
@@ -205,7 +204,7 @@ footer ul {
 footer ul.nav a {
     font-weight: bold;
     font-size: 1em;
-    color: black;
+    color: white;
 	border-top: 7px solid transparent;
 	border-radius: 0;
 	margin-top:0;
@@ -219,7 +218,7 @@ footer .nav .active a,
 footer .nav:hover .active a:hover,
 footer .nav a:hover {
 	background: none;
-	color: black;
+	color: white;
 	border-top-color:#f15a24
 }
 
@@ -419,49 +418,14 @@ footer .nav a:hover {
 
 #twitter_container {
     display: inline-block;
-    background-image: -webkit-linear-gradient(
-    -45deg,
-    lightgray 0%, 
-    lightgray 25%, 
-    transparent 25%, 
-    transparent 50%, 
-    lightgray 50%, 
-    lightgray 75%, 
-    transparent 75%, 
-    transparent 100%
-    );
-    background-image: -moz-linear-gradient(
-    -45deg,
-    lightgray 0%, 
-    lightgray 25%, 
-    transparent 25%, 
-    transparent 50%, 
-    lightgray 50%, 
-    lightgray 75%, 
-    transparent 75%, 
-    transparent 100%
-    );
-
-    background-image: linear-gradient(
-    -45deg,
-    lightgray 0%, 
-    lightgray 25%, 
-    transparent 25%, 
-    transparent 50%, 
-    lightgray 50%, 
-    lightgray 75%, 
-    transparent 75%, 
-    transparent 100%
-    );
-
-    background-size: 8px 8px;
+	/* Thatched bg img	 */
+    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFklEQVQIHWNgQAKvXr36D+cSyQGqBwD8PQ71NrMzrgAAAABJRU5ErkJggg==); 
     width: 100%;
 }
 
 #twitter_inner {
     margin: 15px;
-    padding: 5px 15px;
-    background: white;
+    padding: 5px;
     height: 270px;
     overflow: scroll;
 }
@@ -1057,7 +1021,7 @@ a.twitter-timeline > span {
 }
 
 #testimonials {
-    background-color: rgb(51, 51, 51);
+    background-color: #4c4a4b;
     color: white;
     text-align: center;
     margin: 6em 0 -90px 0;
