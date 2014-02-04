@@ -20,7 +20,7 @@ require 'digest/md5'
 require 'mini_magick'
 require 'fastimage'
 
-require 'pry'
+# require 'pry'
 
 module Jekyll
 
