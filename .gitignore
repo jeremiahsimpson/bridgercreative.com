@@ -1,3 +1,4 @@
+*.tmproj
 _site
 _site/*
 public
