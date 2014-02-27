@@ -21,11 +21,11 @@ credits:
 - ! "Alex Trebek: \n[What is Deseret?](http://www.ksl.com/?sid=27279151)"
 media:
 - type: image
+  url: /portfolio/list_di.gif
+- type: image
   url: /portfolio/list_di_2.jpg
 - type: image
   url: /portfolio/list_di_sketch.gif
-- type: image
-  url: /portfolio/list_di.gif
 thumbnail:
   type: image
   url: /portfolio/gallery_di_1.jpg
