@@ -24,6 +24,6 @@ thumbnail:
 banner:
   type: image
   url: /portfolio/feature_aigaBL_2.jpg
-banner_color: ! '#999999'
+banner_color: ! '#6bbd29'
 banner_bg_image: 
 repeat_background: false
