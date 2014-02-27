@@ -32,6 +32,6 @@ thumbnail:
 banner:
   type: image
   url: /portfolio/feature_ppNFL_1.jpg
-banner_color: ! '#202020'
+banner_color: ! '#0b0b0b'
 banner_bg_image: 
 repeat_background: false
