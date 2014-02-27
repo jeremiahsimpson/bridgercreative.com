@@ -33,6 +33,6 @@ thumbnail:
 banner:
   type: image
   url: /portfolio/feature_ppMLB_1.jpg
-banner_color: ! '#999999'
+banner_color: ! '#0b0b0b'
 banner_bg_image: 
 repeat_background: false
