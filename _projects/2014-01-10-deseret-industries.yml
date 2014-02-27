@@ -32,6 +32,6 @@ thumbnail:
 banner:
   type: image
   url: /portfolio/feature_1.jpg
-banner_color: ! '#999999'
+banner_color: ! '#FFFFFF'
 banner_bg_image: 
 repeat_background: false
